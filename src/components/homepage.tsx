@@ -1,0 +1,139 @@
+import { icons } from "@/utils/icons";
+import { type Language, homepage } from "@/utils/translations";
+import Image from "next/image";
+import { useRouter } from "next/router";
+
+export default function Homepage() {
+  const router = useRouter();
+
+  const t = router.locale as keyof Language;
+
+  function formHandler(event: React.FormEvent<HTMLFormElement>) {
+    event.preventDefault();
+  }
+  
+  return (
+    <div>
+      <div className="z-0 flex flex-col lg:flex-row bg-cover px-2 h-fit lg:h-[70vh]">
+        <div className="w-full md:h-[50%] py-[50px] lg:w-[35%] lg:h-[70vh] bg-primary grid place-content-center text-white">
+          <div className="flex flex-col items-center gap-4">
+            <Image src={icons.logo} className="z-00 invert lg:w-[132px] w-[100px]" alt="logo" />
+            <h1 className="text-[23px] lg:text-[32px]">{homepage.title[t]}</h1>
+            <button onClick={() => document.getElementById("form")?.scrollIntoView({ behavior: "smooth", block: "center", inline: "end" })} className="bg-white text-primary font-semibold px-5 py-3 rounded">
+              {homepage.reservation_button[t]}
+            </button>
+          </div>
+        </div>
+        <div className="bg-wallpaper2 bg-cover lg:flex lg:flex-1 h-[300px] md:h-[600px] lg:h-full "></div>
+      </div>
+
+      <div className="flex justify-center bg-white text-black text-center md:text-start">
+        <div className="w-[400px] md:w-[700px] lg:w-[1000px] xl:w-[1200px] grid grid-cols-1 lg:grid-cols-2 gap-4 my-[100px] ">
+          <div className="flex flex-col gap-7">
+            <h2 className="text-[23px] text-primary">{homepage.intro[t]}</h2>
+            <h1 className="text-[32px] text-primary font-bold">
+              {homepage.intro_header[t]}
+            </h1>
+            <p className="text-lg">{homepage.intro_description_one[t]}</p>
+            <p className="text-lg">{homepage.intro_description_two[t]}</p>
+            <div className="flex justify-between [&>img]:rounded-lg [&>img]:w-[110px] [&>img]:md:w-[160px] lg:[&>img]:w-[150px] xl:[&>img]:w-[180px]">
+              <Image
+                src={icons.chicken_tikka}
+                alt="food"
+                
+              />
+              <Image
+                src={icons.chicken_korai}
+                alt="food"
+                
+              />
+              <Image
+                src={icons.mixed_grill}
+                alt="food"
+                
+              />
+            </div>
+          </div>
+          <div className="bg-wallpaper1 bg-cover rounded-lg h-[350px] lg:h-full"></div>
+        </div>
+      </div>
+
+      <div className=" w-full flex flex-col items-center gap-10 bg-[#fffafa] px-3 py-[75px] text-white text-center md:text-start">
+        <div className="w-[400px] md:w-[700px] lg:w-[1000px] xl:w-[1200px]">
+          <h2 className="text-[23px] text-primary">{homepage.menu_title[t]}</h2>
+          <h1 className="text-[32px] text-black font-bold">
+            {homepage.menu_description[t]}
+          </h1>
+        </div>
+        <div className="food-scroll w-full pb-2 flex flex-row gap-5 overflow-x-auto">
+          {homepage.dishes.map((item) => (
+            <div
+              key={item.name.en}
+              className="food-banner rounded-md flex-none overflow-hidden w-[250px] h-[300px] md:w-[300px] md:h-[400px] flex flex-col bg-cover bg-center justify-between"
+              style={{ backgroundImage: `url(${item.source})` }}
+            >
+              {item.price !== null ? (
+                <h1 className="bg-primary w-fit p-3 md:p-5 rounded-md font-bold">
+                  {item.price}kr
+                </h1>
+              ) : (
+                <div />
+              )}
+              <div className="bg-primary py-3 px-2 flex flex-col">
+                <h1 className="text-[20px] md:text-[25px] font-bold">{item.name[t]}</h1>
+                <p className="text-[12px] md:text-[18px] food-description">{item.description[t]}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <div className="bg-reservation bg-cover h-fit py-[75px] flex justify-center text-center md:text-start">
+        <div className="w-[400px] lg:w-[1000px] xl:w-[1200px] md:w-[700px] flex items-center flex-col lg:grid grid-cols-2 gap-14">
+          <div className="flex items-center">
+            <div className="text-white h-fit grid gap-10">
+              <h2 className="text-[18px]">{homepage.contact_us[t]}</h2>
+              <h1 className="text-[28px] font-bold">{homepage.contact_description_one[t]}</h1>
+              <p>{homepage.contact_description_two[t]}</p>
+              <div className="flex gap-10 items-center md:gap-4 flex-col md:flex-row [&>div]:rounded-md justify-between text-black">
+                <div className="w-[250px] h-[175px] bg-white flex flex-col items-center">
+                  <div className="bg-primary p-5 w-fit rounded-full mt-[-30px]">
+                    <Image src={icons.phone} alt="phone" className="invert" />
+                  </div>
+                  
+                  <h1 className="text-[23px] mt-3 font-semibold">{homepage.phone[t]}</h1>
+                  <h1 className="">093 234 34324</h1>
+                  <h1 className="">093 234 34324</h1>
+                </div>
+                <div className="w-[250px] h-[175px] bg-white flex flex-col items-center">
+                  <div className="bg-primary p-5 w-fit rounded-full mt-[-30px]">
+                    <Image src={icons.mail} alt="phone" className="invert" />
+                  </div>
+                  
+                  <h1 className="text-[23px] mt-3 font-semibold">{homepage.email[t]}</h1>
+                  <h1 className="">test@gmail.com</h1>
+                  <h1 className="">test@gmail.com</h1>
+                </div>
+              </div>
+            </div>
+          </div>
+          <form id="form" onSubmit={formHandler} className="bg-white rounded-lg w-full h-[550px] lg:h-full py-[30px] px-4 gap-5 flex flex-col items-center">
+            <h1 className="text-[28px] font-bold">{homepage.table_reservation_title[t]}</h1>
+            <div className="w-full grid grid-cols-2 flex-1 [&>input]:border [&>input]:rounded [&>input]:pl-5 [&>input]:border-[#ddd] gap-3">
+              <input type="text" className="focus:border-primary border outline-none" placeholder={`${homepage.name[t]}*`} />
+              <input type="text" className="focus:border-primary border outline-none" placeholder={`${homepage.mail[t]}*`} />
+              <input type="text" className="focus:border-primary border outline-none" placeholder={`${homepage.phone_number[t]}*`} />
+              <input type="text" className="focus:border-primary border outline-none" placeholder={`${homepage.guests[t]}*`} />
+              <input type="text" className="focus:border-primary border outline-none" placeholder={`${homepage.date[t]}`} />
+              <input type="text" className="focus:border-primary border outline-none" placeholder={`${homepage.time[t]}*`} />
+            </div>
+            <textarea placeholder={`${homepage.message[t]}`} className="focus:border-primary border outline-none w-full border-[#ddd] rounded pl-5 pt-3 h-[150px]" />
+            <button className="bg-primary w-full text-white font-semibold py-3 rounded ">{homepage.reservation_button[t]}</button>
+          </form>
+        </div>
+      </div>
+
+      
+    </div>
+  );
+}
