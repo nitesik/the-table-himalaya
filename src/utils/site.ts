@@ -6,27 +6,27 @@ export const siteSetting = {
     const items = [
       {
         en: "Home",
-        se: "",
+        se: "Hem",
         href: "/"
       },
       {
         en: "Menu",
-        se: "",
+        se: "Meny",
         href: "/menu"
       },
       {
         en: "Drinks",
-        se: "",
+        se: "Drycker",
         href: "/drinks"
       },
       {
         en: "Catering",
-        se: "",
+        se: "Catering",
         href: "/catering"
       },
       {
         en: "About Us",
-        se: "",
+        se: " Om oss",
         href: "/about-us"
       },
     ]

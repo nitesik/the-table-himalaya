@@ -14,12 +14,19 @@ export default function Navbar() {
 
   return (
     <nav className="w-full bg-[#ffffff] bg-cover flex justify-center sticky top-0 shadow-md shadow-primary">
-      <div className="z-50 w-[400px] md:w-[700px] lg:w-[1000px] xl:w-[1200px] py-5 flex items-center justify-between">
-        <Image src={icons.logo} alt="logo" className="w-[75px] lg:w-[100px]" onClick={() => router.push("/")} />
-        <div className="hidden md:flex text-md lg:text-lg gap-7 font-semibold text-primary">
-          {siteSetting.getHeaderLinks().map(item => <Link locale={router.locale} key={item.en} href={item.href} className={`${router.asPath === item.href ? "border-b-2 border-primary" : ""}`}>{item[t]}</Link>)}
+      <div className="z-50 md:px-0 w-[350px] md:w-[700px] lg:w-[1000px] xl:w-[1200px] 2xl:w-[1600px] py-5 flex items-center justify-between">
+        <div className="flex flex-row items-center gap-5 text-primary">
+          <Image src={icons.logo} alt="logo" className="w-[75px] lg:w-[100px]" onClick={() => router.push("/")} />
+          <h1 className="hidden lg:flex font-semibold md:text-[23px] lg:text-[32px]">The Table Himalaya</h1>
         </div>
-        <Image src={menuOpen ? icons.close : icons.menu} onClick={() => setMenuOpen(prev => !prev)} alt="menu" width={20} className="md:hidden cursor-pointer" />
+        <div className="hidden items-center md:flex text-md lg:text-lg gap-7 font-semibold text-primary">
+          {siteSetting.getHeaderLinks().map(item => <Link locale={router.locale} key={item.en} href={item.href} className={`${router.asPath === item.href ? "border-b-2 border-primary" : ""}`}>{item[t]}</Link>)}
+          <div className="flex gap-2 [&>*]:p-1 ">
+            <Image src={icons.english} alt="english" onClick={() => router.push(router.asPath, "", { locale: "en"})}  width={40} height={40} className={`rounded ${t === "en" ? "bg-primary" : ""}`} />
+            <Image src={icons.swedish} alt="swedish" onClick={() => router.push(router.asPath, "", { locale: "se"})}  width={40} height={40} className={`rounded ${t === "se" ? "bg-primary" : ""}`} />
+          </div>
+        </div>
+        <Image src={menuOpen ? icons.close : icons.menu} onClick={() => setMenuOpen(prev => !prev)} alt="menu" width={30} className="md:hidden cursor-pointer" />
       </div>
       {menuOpen && <div className="z-30 md:hidden fixed h-screen w-screen bg-white top-0 left-0 grid place-content-center">
           <div className="flex flex-col items-center gap-7 font-semibold text-primary text-[25px]">

@@ -11,6 +11,8 @@ import food_one from "@/assets/food_one.jpg";
 import food_two from "@/assets/food_two.jpg";
 import menu from "@/assets/menu.svg";
 import close from "@/assets/close.svg";
+import english from "@/assets/england.png";
+import swedish from "@/assets/sweden.png";
 
 export const icons = {
   logo,
@@ -25,5 +27,7 @@ export const icons = {
   food_one,
   food_two,
   menu,
-  close
+  close,
+  english,
+  swedish
 }

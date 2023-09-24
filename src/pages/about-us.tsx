@@ -11,7 +11,7 @@ export default function AboutUs() {
   const t = router.locale as Language;
   
   return (
-    <div>
+    <div className="z-0">
       <div className="flex justify-center py-[50px]">
         <div className="lg:w-[1000px] xl:w-[1200px] flex justify-center gap-10">
           <div className="grid place-content-center max-w-[450px] flex-1">
@@ -48,7 +48,7 @@ export default function AboutUs() {
 
       <div className="flex justify-center py-[100px]">
         <div className="lg:w-[1000px] xl:w-[1200px] flex justify-center gap-10">
-          <div className="bg-cover flex items-end h-[400px]">
+          <div className="bg-cover flex items-end h-[400px] -z-10">
             <Image src={icons.food_one} width={450} alt="food" className="rounded -translate-y-[75px]" />
             <Image src={icons.food_two} alt="food" height={270} className="rounded -translate-x-[50px]" />
           </div>

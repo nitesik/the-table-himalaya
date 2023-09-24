@@ -9,7 +9,7 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        'primary': '#fb6354ff'
+        'primary': '#a88b7d'
       },
       backgroundImage: {
         'nav-bg': "url('/navbar-background.jpg')",
