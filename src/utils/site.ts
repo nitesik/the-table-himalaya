@@ -45,55 +45,55 @@ export const siteSetting = {
       {
         en: "Our Favourites",
         se: "",
-        src: "/appetizer.svg"
+        src: "/favourites.svg"
 
       },
       {
         en: "Thali Dishes",
         se: "",
-        src: "/appetizer.svg"
+        src: "/thali.svg"
 
       },
       {
         en: "Vegetarian/Vegan",
         se: "",
-        src: "/appetizer.svg"
+        src: "/veg.svg"
 
       },
       {
         en: "Clay Oven",
         se: "",
-        src: "/appetizer.svg"
+        src: "/clay_oven.svg"
 
       },
       {
         en: "Mughlai Dishes",
         se: "",
-        src: "/appetizer.svg"
+        src: "/mughal.svg"
 
       },
       {
         en: "Bengali Dishes",
         se: "",
-        src: "/appetizer.svg"
+        src: "/bengali.svg"
 
       },
       {
         en: "Fish and Seafood",
         se: "",
-        src: "/appetizer.svg"
+        src: "/fish.svg"
 
       },
       {
         en: "Accessories and Bread",
         se: "",
-        src: "/appetizer.svg"
+        src: "/accessories.svg"
 
       },
       {
         en: "Desserts/Children's Menu",
         se: "",
-        src: "/appetizer.svg"
+        src: "/dessert.svg"
 
       },
 
