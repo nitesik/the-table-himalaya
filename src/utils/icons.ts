@@ -29,5 +29,5 @@ export const icons = {
   menu,
   close,
   english,
-  swedish
+  swedish,
 }

@@ -36,10 +36,19 @@ body {
 }
 
 .food-scroll::-webkit-scrollbar-thumb {
- background-color: #fb6354ff;
+ background-color: #a88b7d;
  border: 1px solid white;
 }
 
 textarea {
   resize: none;
+}
+
+.menu-scroll::-webkit-scrollbar {
+  background-color: white;
+  height: 5px;
+}
+
+.menu-scroll::-webkit-scrollbar-thumb {
+  background-color: #a88b7d;
 }
