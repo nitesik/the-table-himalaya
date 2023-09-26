@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { icons } from "@/utils/icons";
 import { type Language, siteSetting } from "@/utils/site";
 import Image from "next/image";
@@ -13,7 +14,7 @@ export default function Navbar() {
   const t = router.locale as Language;
 
   return (
-    <nav className="w-full bg-[#ffffff] bg-cover flex justify-center top-0 shadow-md shadow-primary">
+    <nav className={`z-50 w-full bg-[#ffffff] bg-cover flex justify-center ${menuOpen ? "sticky lg:relative" : ""} top-0 shadow-md shadow-primary`}>
       <div className="z-50 md:px-0 w-[350px] md:w-[700px] lg:w-[1000px] xl:w-[1200px] 2xl:w-[1500px] py-5 flex items-center justify-between">
         <div className="flex flex-row items-center gap-5 text-primary">
           <Image src={icons.logo} alt="logo" className="w-[75px] lg:w-[100px]" onClick={() => router.push("/")} />
