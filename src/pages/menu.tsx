@@ -3,10 +3,13 @@ import { menu } from "@/utils/translations";
 import Head from "next/head";
 import Image from "next/image";
 import { useRouter } from "next/router";
+import { useRef } from "react";
 
 export default function Menu() {
 
   const t = useRouter().locale as Language;
+
+  const testRef = useRef<HTMLDivElement>(null);
 
   return (
     <div>
@@ -22,7 +25,7 @@ export default function Menu() {
         </div>)}
       </div>
 
-      <div className="flex justify-center my-[100px]">
+      <div ref={testRef} id="hey" className="flex justify-center my-[100px]">
         <div className="w-[350px] md:w-[700px] lg:w-[1000px] xl:w-[1200px]">
           <div className="w-full h-[200px] bg-cover bg-center rounded-lg mb-5 bg-black" style={{backgroundImage: `url(${menu.appetizer.source})`}} />
           <div className="flex items-center gap-5" id={menu.appetizer.name.en}><h1 className="text-[27px] md:text-[40px] font-bold text-primary">{menu.appetizer.name[t]}</h1><hr className="flex-1 border-[1px] border-primary" /></div>
@@ -35,7 +38,7 @@ export default function Menu() {
         </div>
       </div>
 
-      <div className="flex justify-center my-[100px]">
+      <div id="bye" className="flex justify-center my-[100px]">
         <div className="w-[350px] md:w-[700px] lg:w-[1000px] xl:w-[1200px]">
           <div className="w-full h-[200px] bg-cover bg-center rounded-lg mb-5 bg-black" style={{backgroundImage: `url(${menu.favourites.source})`}} />
           <div className="flex items-center gap-5" id={menu.favourites.name.en}><h1 className="text-[27px] md:text-[40px] font-bold text-primary">{menu.favourites.name[t]}</h1><hr className="flex-1 border-[1px] border-primary" /></div>
@@ -66,7 +69,7 @@ export default function Menu() {
         </div>
       </div>
       
-      <div className="flex justify-center mt-[100px]">
+      <div id="test" className="flex justify-center mt-[100px]">
         <div className="w-[350px] md:w-[700px] lg:w-[1000px] xl:w-[1200px]">
           <div className="w-full h-[200px] bg-cover bg-center rounded-lg mb-5 bg-black" style={{backgroundImage: `url(${menu.veg.source})`}} />
           <div className="flex items-center gap-5" id={menu.veg.name.en}><h1 className="text-[27px] md:text-[40px] font-bold text-primary">{menu.veg.name[t]}</h1><hr className="flex-1 border-[1px] border-primary" /></div>
@@ -156,7 +159,7 @@ export default function Menu() {
         </div>
       </div>
       
-      <div className="flex justify-center my-[100px]">
+      <div  className="flex justify-center my-[100px]">
         <div className="w-[350px] md:w-[700px] lg:w-[1000px] xl:w-[1200px]">
           <div className="w-full h-[200px] bg-cover bg-center rounded-lg mb-5 bg-black" style={{backgroundImage: `url(${menu.accessories.source})`}} />
           <div className="flex items-center gap-5" id={menu.accessories.name.en}><h1 className="text-[27px] md:text-[40px] font-bold text-primary">{menu.accessories.name[t]}</h1><hr className="flex-1 border-[1px] border-primary" /></div>
@@ -168,7 +171,7 @@ export default function Menu() {
         </div>
       </div>
        
-      <div className="flex justify-center my-[100px]">
+      <div  className="flex justify-center my-[100px]">
         <div className="w-[350px] md:w-[700px] lg:w-[1000px] xl:w-[1200px]">
           <div className="w-full h-[200px] bg-cover bg-center rounded-lg mb-5 bg-black" style={{backgroundImage: `url(${menu.desserts_and_children.source})`}} />
           <div className="flex items-center gap-5" id={menu.desserts_and_children.name.en}><h1 className="text-[27px] md:text-[40px] font-bold text-primary">{menu.desserts_and_children.name[t]}</h1><hr className="flex-1 border-[1px] border-primary" /></div>

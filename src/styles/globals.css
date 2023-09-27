@@ -36,7 +36,7 @@ body {
 }
 
 .food-scroll::-webkit-scrollbar-thumb {
- background-color: #a88b7d;
+ background-color: #26554fff;
  border: 1px solid white;
 }
 
@@ -50,5 +50,5 @@ textarea {
 }
 
 .menu-scroll::-webkit-scrollbar-thumb {
-  background-color: #a88b7d;
+  background-color: #26554fff;
 }

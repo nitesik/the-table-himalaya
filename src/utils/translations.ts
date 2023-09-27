@@ -1351,3 +1351,285 @@ export const menu = {
   }
   
 };
+
+export const drinks = {
+  bottle_beer: {
+    name: {
+      en: "Bottle Beer cl Dragon Beer",
+      se: "Flask Öl cl Fatöl"
+    },
+    items: [
+      {
+        name: {
+          en: "Bangla",
+          se: "Bangla"
+        }
+      },
+      {
+        name: {
+          en: "Indian Beer; Light Stock Little",
+          se: "Indisk Öl; Ljus Lager Lite"
+        },
+        price: "33, 55"
+      },
+      {
+        name: {
+          en: "Fuller",
+          se: "Fylligare"
+        },
+        price: "66 95"
+      },
+      {
+        name: {
+          en: "Cobra",
+          se: "Cobra"
+        },
+        price: "33, 55"
+      },
+      {
+        name: {
+          en: "Light Lager Indian Beer",
+          se: "Ljus Lager Indish Öl"
+        },
+        price: "66, 95"
+      },
+      {
+        name: {
+          en: "Kingfisher",
+          se: "Kingfisher"
+        },
+      },
+      {
+        name: {
+          en: "Indian Light Foam",
+          se: "Indish Ljust Skum"
+        },
+        price: "33, 55"
+      },
+      {
+        name: {
+          en: "Bombay Gold",
+          se: "Bombay Gold"
+        },
+        price: "66, 86"
+      },
+      {
+        name: {
+          en: "Mariestads",
+          se: "Mariestads"
+        },
+        price: "50, 59"
+      },
+      {
+        name: {
+          en: "Cider (Pear, Mango, Apple),",
+          se: "Cider (Päron, Mango, Äppel),"
+        },
+        price: "33, 55"
+      },
+      {
+        name: {
+          en: "Folk Beer",
+          se: "Folköl"
+        },
+        price: "33, 49"
+      },
+      {
+        name: {
+          en: "Non-Alcoholic Beer",
+          se: "Alkoholfritt Öl"
+        },
+        price: "33, 39"
+      },
+      {
+        name: {
+          en: "Draft Beer",
+          se: "Fatöl"
+        }
+      },
+      {
+        name: {
+          en: "Spendrups Lager 5.3%",
+          se: "Spendrups Lager 5,3%"
+        },
+        price: "40, 49"
+      },
+      {
+        name: {
+          en: "Sitting Bulldog IPA 5.8%",
+          se: "Sitting Bulldog IPA 5,8%"
+        },
+        price: "40, 49"
+      }
+    ]
+  },
+  juice: {
+    name: {
+      en: "Lassi/Juice",
+      se: "Läsk/Juice"
+    },
+    items: [
+      {
+        name: {
+          en: "Cola, Fanta, Loka, Sprite, Zero",
+          se: "Cola, Fanta, Loka, Sprite, Zero"
+        },
+        price: "29"
+      },
+      {
+        name: {
+          en: "Mango Juice",
+          se: "Mango Juice"
+        },
+        price: "39"
+      },
+      {
+        name: {
+          en: "Mango Lassi",
+          se: "Mango Lassi"
+        },
+        price: "49"
+      },
+    ]
+  },
+  hot_beverage: {
+    name: {
+      en: "Hot Beverages",
+      se: "Varma Drycker"
+    },
+    items: [
+      {
+        name: {
+          en: "Coffee",
+          se: "Kaffe"
+        },
+        price: "25"
+      },
+      {
+        name: {
+          en: "Irish Coffee 4CL",
+          se: "Irish Kaffe 4CL"
+        },
+        price: "86"
+      },
+      {
+        name: {
+          en: "Indian Chai",
+          se: "Indisk Chai"
+        },
+        price: "25"
+      },
+    ]
+  },
+  drinks: {
+    name: {
+      en: "Drinks",
+      se: "Drinker"
+    },
+    description: {
+      en: "4cl-109 kr, 6cl-129 kr",
+      se: "4cl-109 kr, 6cl-129 kr"
+    },
+    items: [
+      {
+        name: {
+          en: "Gin Tonic(Gin, Tonic, Citron)",
+          se: "Gin Tonic(Gin, Tonic, Citron)"
+        },
+        description: {
+          en: "(Gin, Tonic, Citron)",
+          se: "(Gin, Tonic, Citron)"
+        }
+      },
+      {
+        name: {
+          en: "Vodka Lime",
+          se: "Vodka Lime"
+        },
+        description: {
+          en: "(Bodka, Krossad IS, Lime Fruit)",
+          se: "(Bodka, Krossad IS, Lime Fruit)"
+        }
+      },
+      {
+        name: {
+          en: "Vodka Lime",
+          se: "Vodka Lime"
+        },
+        description: {
+          en: "(Bodka, Krossad IS, Lime Fruit)",
+          se: "(Bodka, Krossad IS, Lime Fruit)"
+        }
+      },
+      {
+        name: {
+          en: "Whisky Sour",
+          se: "Whisky Sour"
+        },
+        description: {
+          en: "(Whiskey, Citronsaft)",
+          se: "(Whiskey, Citronsaft)"
+        }
+      },
+      {
+        name: {
+          en: "Cava",
+          se: "Cava"
+        },
+        description: {
+          en: "(Whiskey, Citronsaft)",
+          se: "(Whiskey, Citronsaft)"
+        }
+      },
+      {
+        name: {
+          en: "Glas",
+          se: "Glas",
+        },
+        price: "69"
+      },
+      {
+        name: {
+          en: "Flaska",
+          se: "Flaska",
+        },
+        price: "276"
+      },
+      {
+        name: {
+          en: "Flaska",
+          se: "Flaska",
+        },
+        price: "276"
+      },
+      {
+        name: {
+          en: "House Wine Red",
+          se: "Husets Vin Rött",
+        }
+      },
+      {
+        name: {
+          en: "Torre Del Falasco Corvina IGT-Red (Italy)",
+          se: "Torre Del Falasco Corvina IGT-Rött"
+        },
+        description: {
+          en: "Medium-bodied wine with notes of blackberries, morels, dark chocolate, cherry pits and brisk acidity and fruity, long aftertaste.",
+          se: "Medelfylligt vin med toner av björnbär, moreller, mörk choklad, körsbärskärnor samt pigg syra och fruktig, lång eftersmak."
+        },
+        price: "75, 295"
+      },
+      {
+        name: {
+          en: "House Wine White",
+          se: "Husets Vin Vitt"
+        },
+        description: {
+          en: "Medium-bodied wine with fresh acidity, good concentration as well, mineral rich, long, spicy taste and aftertaste",
+          se: "Medelfylligt vin med fräsch syra, bra koncentration samt Mineralrich, lång, kryddig smak och eftersmak."
+        },
+        price: "75, 295"
+      },
+    ]
+  }
+}
