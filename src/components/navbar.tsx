@@ -32,6 +32,10 @@ export default function Navbar() {
       {menuOpen && <div className="z-30 md:hidden fixed h-screen w-screen bg-white top-0 left-0 grid place-content-center">
           <div className="flex flex-col items-center gap-7 font-semibold text-primary text-[25px]">
             {siteSetting.getHeaderLinks().map(item => <Link key={item.en} href={item.href} onClick={() => setMenuOpen(false)} className={`${router.asPath === item.href ? "border-b-2 border-primary" : ""}`}>{item[t]}</Link>)}
+            <div className="flex gap-2 [&>*]:p-1 ">
+            <Image src={icons.english} alt="english" onClick={() => router.push("", "", { locale: "en"})}  width={40} height={40} className={`rounded ${t === "en" ? "bg-primary" : ""}`} />
+            <Image src={icons.swedish} alt="swedish" onClick={() => router.push("", "", { locale: "se"})}  width={40} height={40} className={`rounded ${t === "se" ? "bg-primary" : ""}`} />
+          </div>
           </div>
         </div>}
     </nav>
