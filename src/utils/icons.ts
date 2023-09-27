@@ -1,4 +1,4 @@
-import logo from '@/assets/logo.svg';
+import logo from '@/assets/table-himalaya-custom.svg';
 import chicken_korai from "@/assets/chicken-korai.jpg"
 import chicken_tikka from "@/assets/chicken-tikka.jpg"
 import mixed_grill from "@/assets/mixed-grill.jpg";
