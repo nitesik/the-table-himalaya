@@ -1588,13 +1588,7 @@ export const drinks = {
         },
         price: "69"
       },
-      {
-        name: {
-          en: "Flaska",
-          se: "Flaska",
-        },
-        price: "276"
-      },
+      
       {
         name: {
           en: "Flaska",
@@ -1630,6 +1624,174 @@ export const drinks = {
         },
         price: "75, 295"
       },
+    ]
+  },
+  red_wine: {
+    name: {
+      en: "Red Wine",
+      se: "Rött Vin"
+    },
+    items: [
+      {
+        name: {
+          en: "Vina Maipo",
+          se: "Vina Maipo"
+        },
+        sub: [
+          {
+            name: {
+              en: "Cabernet Sauvignon(Chille)",
+              se: "Cabernet Sauvignon(Chille)"
+            },
+            description: {
+              en: "This bright ruby red has an attractive aroma of fresh red fruits,with notes of spices and tobacco. The palate is juicy, with harmonic tannins and good aftertaste.",
+              se: "Denna ljusa rubinröda har en attraktiv doft av färska röda frukter, med toner av kryddor och tobak. Smaken är saftig, med harmoniska tanniner och god eftersmak."
+            },
+            price: "235"
+          }
+        ]
+      },
+      {
+        name: {
+          en: "Costa",
+          se: "Costa"
+        },
+        sub: [
+          {
+            name: {
+              en: "Salento Negroamaro(Italia)",
+              se: "Salento Negroamaro(Italia)"
+            },
+            price: "65, 260"
+          },
+          {
+            name: {
+              en: "Grand Vin De Bordeaux (France) Flaska",
+              se: "Grand Vin De Bordeaux (France) Flaska"
+            },
+            price: "395"
+          },
+          {
+            name: {
+              en: "Luma Rosso I Sicilia (Italy)",
+              se: "Luma Rosso I Sicilia (Italy)"
+            },
+            price: "265"
+          },
+          {
+            name: {
+              en: "Roma Ross (Italian)",
+              se: "Roma Ross (Italian)"
+            },
+            price: "325"
+          },
+          {
+            name: {
+              en: "Dark Horse Pinot Noir (USA)",
+              se: "Dark Horse Pinot Noir (USA)"
+            },
+            description: {
+              en: "An elegant Pinot Noir with notes of cherry and a layered, flavorful finish.",
+              se: "En elegant Pinot Noir med noter av körsbär och en skiktad, smakrik finish."
+            },
+            price: "350"
+          },
+          
+        ]
+      },
+      {
+        name: {
+          name: {
+            en: "Vitt Wine",
+            se: "Vitt Vin"
+          },
+          sub: [
+            {
+              name: {
+                en: "LA Merdionale Ordinary Sauvignon",
+                se: "LA Merdionale Vanlig Sauvignon"
+              },
+              description: {
+                en: "Wine with aromas of pink grapefruit and lemons.",
+                se: "Vin med aromer av rosa grapefrukt och citroner."
+              },
+              price: "65, 265"
+            },
+            
+          ]
+        }
+      },
+      {
+        name: {
+          en: "Bianco Salento (Italian)",
+          se: "Bianco Salento (Italien)"
+        },
+        description: {
+          en: "Medium-bodied wine with pleasant warmth, freshness, fruity taste of peaches and melon. Good balance and with a small, fresh aftertaste.",
+          se: "Medelfylligt vin med trevlig värme, fräschör, fruktig smak av persikor och melon. Bra balans och med liten, frisk eftersmak."
+        }
+      },
+      {
+        name: {
+          en: "Dark Horse Pinot Grigio (USA)",
+          se: "Dark Horse Pinot Grigio (USA)"
+        },
+        description: {
+          en: "A dry Pinot Grigio with notes of stonefruit and a balanced, crisp finish.",
+          se: 'En torr Pinot Grigio med toner av stenfrukt och en balanserad, krispig finish.'
+        }
+      },
+      {
+        name: {
+          en: "Rose Wine",
+          se: "Rose Vin"
+        },
+        sub: [
+          {
+            name: {
+              en: "Vina Maipo",
+              se: "Vina Maipo"
+            },
+            description: {
+              en: "Bright delicate pink color wine with fruity aromas, especially wild berries and pomegranate. In palate has good acidity, with mineral and fresh red fruits flavors.",
+              se: "Ljust, delikat rosa färg vin med fruktiga aromer, särskilt vilda bär och granatäpple. I gommen har bra syra, med mineral och färska röda frukter smaker."
+            },
+            price: "235"
+          }
+        ]
+      },
+      {
+        name: {
+          en: "Alcohol Free",
+          se: "Alkoholfritt"
+        },
+        sub: [
+            {
+              name: {
+                en: "Nature Red",
+                se: "Nature Red"
+              },
+              price: "215"
+            },
+            {
+              name: {
+                en: "Torre Spanien",
+                se: "Torre Spanien"
+              },
+              description: {
+                en: "Light wine with hints of pomegranate, red currants and vanilla.",
+                se: "Lätt vin med inslag av granatäpple, röda vinbär och vanilj."
+              }
+            },
+            {
+              name: {
+                en: "Chapel Hill Sparkling",
+                se: "Chapel Hill Sparkling"
+              },
+              price: "215"
+            }
+        ]
+      }
     ]
   }
 }

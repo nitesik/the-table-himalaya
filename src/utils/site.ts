@@ -38,61 +38,61 @@ export const siteSetting = {
     const items = [
       {
         en: "Appetizers",
-        se: "",
+        se: "Förrätter",
         src: "/appetizer.svg"
 
       },
       {
         en: "Our Favourites",
-        se: "",
+        se: "Våra Favoriter",
         src: "/favourites.svg"
 
       },
       {
         en: "Thali Dishes",
-        se: "",
+        se: "Thali Rätter",
         src: "/thali.svg"
 
       },
       {
         en: "Vegetarian/Vegan",
-        se: "",
+        se: "Vegetariska/Veganska",
         src: "/veg.svg"
 
       },
       {
         en: "Clay Oven",
-        se: "",
+        se: "Lerugn",
         src: "/clay_oven.svg"
 
       },
       {
         en: "Mughlai Dishes",
-        se: "",
+        se: "Mughlai Rätter",
         src: "/mughal.svg"
 
       },
       {
         en: "Bengali Dishes",
-        se: "",
+        se: "Bengali Rätter",
         src: "/bengali.svg"
 
       },
       {
         en: "Fish and Seafood",
-        se: "",
+        se: "Fisk Och Skaldjur",
         src: "/fish.svg"
 
       },
       {
         en: "Accessories and Bread",
-        se: "",
+        se: "Tillbehor Och Brod",
         src: "/accessories.svg"
 
       },
       {
         en: "Desserts/Children's Menu",
-        se: "",
+        se: "Efterrätter/Barnmeny",
         src: "/dessert.svg"
 
       },

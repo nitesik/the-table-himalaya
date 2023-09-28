@@ -20,7 +20,7 @@ export default function Menu() {
         {siteSetting.getMenuHeader().map(item => <div onClick={() => document.getElementById(item.en)?.scrollIntoView({behavior: "smooth", block: "center"})} className="w-[125px] md:w-[200px]  text-slate-800 font-semibold scroll text-center flex flex-shrink-0 justify-center border border-y-slate-200" key={item.en}>
           <div className="py-[10px] md:py-[20px] flex flex-col items-center gap-3 w-full border-white border-b-[10px] hover:border-primary">
             <Image className="stroke-gray-100" src={item.src} alt="menu" width={32} height={32} />
-            <h1 className="font-bold text-xs md:text-sm text-primary">{item.en}</h1>
+            <h1 className="font-bold text-xs md:text-sm text-primary">{item[t]}</h1>
           </div>
         </div>)}
       </div>

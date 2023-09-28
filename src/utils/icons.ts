@@ -13,6 +13,7 @@ import menu from "@/assets/menu.svg";
 import close from "@/assets/close.svg";
 import english from "@/assets/england.png";
 import swedish from "@/assets/sweden.png";
+import arrow_top from "@/assets/arrow-top.svg";
 
 export const icons = {
   logo,
@@ -30,4 +31,5 @@ export const icons = {
   close,
   english,
   swedish,
+  arrow_top
 }
