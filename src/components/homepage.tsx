@@ -62,9 +62,9 @@ export default function Homepage() {
         </div>
       </div>
 
-      <div className=" w-full flex flex-col items-center gap-10 bg-[#fffafa] px-3 py-[75px] text-white text-center md:text-start">
+      <div className=" w-full flex flex-col items-center gap-10 bg-primary-blur px-3 py-[75px] text-white text-center md:text-start">
         <div className="w-[350px] md:w-[700px] lg:w-[1000px] xl:w-[1200px]">
-          <h2 className="text-[23px] text-primary">{homepage.menu_title[t]}</h2>
+          <h2 className="text-[23px] font-semibold text-primary">{homepage.menu_title[t]}</h2>
           <h1 className="text-[32px] text-black font-bold">
             {homepage.menu_description[t]}
           </h1>
@@ -121,9 +121,9 @@ export default function Homepage() {
               </div>
             </div>
           </div>
-          <form id="form" onSubmit={formHandler} className=" md:mx-0 bg-white rounded-lg md:w-full h-[550px] lg:h-full py-[30px] px-2 md:px-4 gap-5 flex flex-col items-center">
+          <form id="form" onSubmit={formHandler} className=" md:mx-0 bg-white rounded-lg md:w-full h-[550px] lg:h-full py-[30px] px-4 md:px-7 gap-5 flex flex-col items-center">
             <h1 className="text-[28px] font-bold">{homepage.table_reservation_title[t]}</h1>
-            <div className="w-full grid grid-cols-2 flex-1 [&>input]:border [&>input]:rounded [&>input]:pl-5 [&>input]:border-[#ddd] gap-3">
+            <div className="w-full grid grid-cols-2 flex-1 [&>input]:border [&>input]:rounded [&>input]:pl-2 md:[&>input]:pl-5 [&>input]:border-[#ddd] gap-3">
               <input type="text" className="focus:border-primary border outline-none" placeholder={`${homepage.name[t]}*`} />
               <input type="text" className="focus:border-primary border outline-none" placeholder={`${homepage.mail[t]}*`} />
               <input type="text" className="focus:border-primary border outline-none" placeholder={`${homepage.phone_number[t]}*`} />

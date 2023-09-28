@@ -1551,16 +1551,7 @@ export const drinks = {
           se: "(Bodka, Krossad IS, Lime Fruit)"
         }
       },
-      {
-        name: {
-          en: "Vodka Lime",
-          se: "Vodka Lime"
-        },
-        description: {
-          en: "(Bodka, Krossad IS, Lime Fruit)",
-          se: "(Bodka, Krossad IS, Lime Fruit)"
-        }
-      },
+    
       {
         name: {
           en: "Whisky Sour",
@@ -1794,4 +1785,275 @@ export const drinks = {
       }
     ]
   }
+}
+
+export const catering = {
+  description: {
+    en: "Surely it's fun to have a party? Arranging food for many people, on the other hand, can be a stressful moment and you would like to have time to participate yourself as well. That's why we at Table Himalaya have come up with a perfect catering plan for your event.",
+    se: "Visst är det kul att ha fest? Att ordna mat för många personer kan däremot vara ett stressmoment och man vill gärna hinna delta själv också. Därför har vi på Table Himalaya kommit fram till en perfekt cateringplan för ert event."
+  },
+
+  category: [
+    {
+      name: {
+        en: "Starters & Salads",
+        se: "Förrätt och Sallad"
+      },
+      source: "/starters.png",
+      description: {
+        en: "Choose any 2",
+        se: "Välj valfri 2"
+      },
+      items: 
+      [
+        {
+          name: {
+            en: "Onion Bhaji",
+            se: "Onion Bhaji"
+          },
+          source: "/onion-bhaji.jpg",
+          description: {
+            en: "Fried onions breaded in chickpea flour.",
+            se: "Stekt lök panerad i kikärtsmjöl."
+          }
+        },  
+        {
+          name: {
+            en: "Papadam",
+            se: "Papadam"
+          },
+          source: "/papadam.jpg",
+
+          description: {
+            en: "Crispy lentil bread with mango chutney.",
+            se: "Krispigt linsbröd med mango chutney."
+          }
+        },  
+        {
+          name: {
+            en: "Shekh Kebab",
+            se: "Shekh Kebab"
+          },
+          source: "/shekh-kebab.jpg",
+          description: {
+            en: "Lamb mince mixed with finely chopped onion, chilli, garlic, coriander and ginger, rolled on a skewer and grilled in a clay oven.",
+            se: "Lammmynta blandad med finhakad lök, chili, vitlök, koriander och ingefära, rullad på spett och grillad i leraugn."
+          }
+        },
+        {
+          name: {
+            en: "Samosa Chaat",
+            se: "Samosa Chaat"
+          },
+          source: "/samosa-chaat.jpg",
+
+          description: {
+            en: "Samosa Chaat - Homemade vegetarian samosa, topped with raita, cucumber, tomato, onion, coriander tamarind sauce and mint chutney.",
+            se: "Hemlagad vegetarisk samosa, toppad med raita, gurka, tomat, lök, koriander tamarindsås och mynta cutney."
+          }
+        },  
+        {
+          name: {
+            en: "Panir Salad",
+            se: "Panir Salad"
+          },
+          source: "/paneer-salad.jpeg",
+          description: {
+            en: "Mix salad, homemade Indian cheese, olive oil, lime juice.",
+            se: "Mix sallad, hemlagad indisk ost, olivolja, limesaft."
+          }
+        },  
+      ]
+    },
+    {
+      name: {
+        en: "Small Buffet",
+        se: "Mindre Buffé",
+      },
+      source: "/buffet.png",
+      items: [
+        {
+          name: {
+            en: "Onion Bhaji",
+            se: "Onion Bhaji"
+          },
+          source: "/onion-bhaji.jpg",
+
+          description: {
+            en: "Fried onions breaded in chickpea flour.",
+            se: "Stekt lök panerad i kikärtsmjöl."
+          }
+        },  
+        {
+          name: {
+            en: "Papadam",
+            se: "Papadam"
+          },
+          source: "/papadam.jpg",
+          description: {
+            en: "Crispy lentil bread with mango chutney.",
+            se: "Krispigt linsbröd med mango chutney."
+          }
+        },
+        {
+          name: {
+            en: "Chicken Tikka Masala",
+            se: "Kyckling Tikka Masala"
+          },
+          source: "/chicken-tikka.jpg",
+          
+        },
+        {
+          name: {
+            en: "Mix Vegetarian Masala (Vegan)",
+            se: "Mix Vegetarisk Masala (Vegon)"
+          },
+          source: "/mix-veg.jpeg",
+
+          description: {
+            en: "Mixed vegetables in a tomato-based vegetarian vegan sauce.",
+            se: "Blandade grönsaker i en tomatbaserad vegetarisk vegon sås."
+          }
+        },
+        {
+          name: {
+            en: "Naan Bread",
+            se: "Naanbröd"
+          },
+          source: "/naan.jpg",
+          
+        }
+      ],
+      price: "149 kr per person",
+      delivery: {
+        en: "Delivery SEK 450 within customs",
+        se: "Leverans 450kr inom tullarna"
+      }
+    },
+    {
+      name: {
+        en: "Main Course ",
+        se: "Huvudrets "
+      },
+      source: "/main-course.png",
+      description: {
+        en: "Choose any 2",
+        se: "Välj valfri 2"
+      },
+      items: [
+        {
+          name: {
+            en: "Mixed Chicken Grill",
+            se: 'Mixed Kyckling Grill'
+          },
+          source: "/mixed-grill.jpg",
+          description: {
+            en: "Chicken fillet marinated in tandoori, garlic and green chili, grilled in a clay oven and served with rice, fresh vegetables and sauce",
+            se: "Kycklingfilé marinerad i tandoori, vitlök och grön chili, grillad i leraugn och serveras med ris, färska grönsaker och sås"
+          }
+        },
+        {
+          name: {
+            en: "Vindaloo Steak",
+            se: "Vindaloo Steak"
+          },
+          source: "/vindaloo-steak.jpg",
+
+          description: {
+            en: "A very hearty South Indian dish served with rice",
+            se: "En mycket stark maträtt från södra Indien serverad medris"
+          }
+        },
+        {
+          name: {
+            en: "Chicken Tikka Butter Masala",
+            se: "Kyckling Tikka Butter Masala"
+          },
+          source: "/chicken-butter.jpeg",
+
+          description: {
+            en: "Grilled chicken breast fillet cooked with butter fried spices served with rice",
+            se: "Grillad kycklingbröstfilé tillagad med smörstekt kryddor serverad med ris"
+          }
+        },
+        {
+          name: {
+            en: "Biryani",
+            se: "Biryani"
+          },
+          source: "/biryani.jpeg",
+          description: {
+            en: "Indian saffron risotto with oriental spices. Choose between steak and vegetarian. Served with masala sauce and vegetables",
+            se: "Indisk saffranrisotto med orientaliska kryddor. Välj mellan biff och vegetarian. Serveras med masalasås och grönsaker"
+          }
+        },
+        {
+          name: {
+            en: "Palak Panir",
+            se: "Palak Panir"
+          },
+          source: "/palak-paneer.jpg",
+          description: {
+            en: "Homemade cream cheese cooked with spinach served with rice.",
+            se: "Hemlagad gräddost tillagad med spenat serverad med ris."
+          }
+        },
+        {
+          name: {
+            en: "Vegan Kofte",
+            se: "Vegan Kofte"
+          },
+          source: "/veg-kofte.jpg",
+          description: {
+            en: "Vegetable buns in a spinach sauce (gluten and dairy free)",
+            se: "Vegetabiliska bullar i en spenatsås (gluten- och mjölkfri)"
+          }
+        }
+      ]
+    },
+    {
+      name: {
+        se: "Dessert",
+        en: "Dessert"
+      },
+      source: "/dessert.png",
+      description: {
+        en: "Choose any 1",
+        se: "Välj valfri 1"
+      },
+      items: [
+        {
+          name: {
+            en: "Gulab Jamun",
+            se: "Gulab Jamun"
+          },
+          source: "/gulab-jamun.jpg",
+
+          description: {
+            en: "Soft lumps made of cottage cheese in cardamom syrup",
+            se: "Mjuka klimpar gjorda av keso i kardemummsirap"
+          }
+        },
+        {
+          name: {
+            en: "Fruit with vanilla cream",
+            se: "Frukt med vanilla cream"
+          },
+          source: "/fruit-vanilla.jpg",
+
+        },
+        {
+          name: {
+            en: "Gajar Ka Halwa",
+            se: "Gajar Ka Halwa"
+          },
+          source: "/gajar-halwa.jpg",
+          description: {
+            en: "Halwa made of carrot, dry fruits, nuts and condensed milk",
+            se: "Halwa gjorde morot, torkad frukt, nötter och kondenserad mjölk"
+          }
+        }
+      ]
+    }
+  ]
 }

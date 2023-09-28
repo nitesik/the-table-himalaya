@@ -15,7 +15,7 @@ export default function Navbar({ id }: { id : string}) {
 
   return (
     <nav id={id} className={`z-50 w-full bg-[#ffffff] bg-cover flex justify-center ${menuOpen ? "sticky lg:relative" : ""} top-0 shadow-md shadow-primary`}>
-      <div className="z-50 md:px-0 w-[350px] md:w-[700px] lg:w-[1000px] xl:w-[1200px] 2xl:w-[1500px] py-5 flex items-center justify-between">
+      <div className="z-50 md:px-0 w-[350px] md:w-[700px] lg:w-[1000px] xl:w-[1200px] py-5 flex items-center justify-between">
         <div className="flex flex-row items-center gap-5 text-primary cursor-pointer" onClick={() => router.push("/")}>
           <Image src={icons.logo} alt="logo" className="w-[75px] lg:w-[100px]"/>
           <h1 className="hidden lg:flex font-semibold md:text-[23px] lg:text-[32px]">The Table Himalaya</h1>
