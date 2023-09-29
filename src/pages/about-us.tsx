@@ -1,90 +1,122 @@
 import { icons } from "@/utils/icons";
 import { Language } from "@/utils/site";
-import { homepage } from "@/utils/translations";
+import { about_us, homepage } from "@/utils/translations";
 import Image from "next/image";
 import { useRouter } from "next/router";
 
 export default function AboutUs() {
-
   const router = useRouter();
 
   const t = router.locale as Language;
-  
+
   return (
     <div className="z-0">
       <div className="flex justify-center py-[50px]">
-        <div className="lg:w-[1000px] xl:w-[1200px] flex justify-center gap-10">
+        <div className="w-[350px] md:w-[700px] mb-[25px] lg:mb-[100px] lg:w-[1000px] xl:w-[1200px] flex items-center flex-col lg:flex-row justify-center gap-10">
           <div className="grid place-content-center max-w-[450px] flex-1">
-            <div className="flex flex-col gap-5">
+            <div className="flex flex-col lg:text-start text-center gap-5">
               <h1 className="text-[38px] font-semibold text-primary">
-                About Us
+                {about_us.about_us[t]}
               </h1>
               <p>
-                You will witness God shaping the divided seas as we bring
-                together our own divided forms, ultimately replenishing them by
-                the end of this process.
+                {about_us.first_description[t]}
               </p>
               <div className="flex mt-5 justify-between">
                 <div className="flex flex-col items-center gap-3">
                   <Image src={icons.speed} alt="speed" />
-                  <h2>Fast Service</h2>
+                  <h2>{about_us.fast_service[t]}</h2>
                 </div>
                 <hr className="h-full border" />
                 <div className="flex flex-col items-center gap-3">
                   <Image src={icons.grape} alt="speed" />
-                  <h2>Fresh Food</h2>
+                  <h2>{about_us.fresh_food[t]}</h2>
                 </div>
                 <hr className="h-full border" />
                 <div className="flex flex-col items-center gap-3">
                   <Image src={icons.headphones} alt="speed" />
-                  <h2>Fast Service</h2>
+                  <h2>{about_us.fast_support[t]}</h2>
                 </div>
               </div>
             </div>
           </div>
-          <div className="bg-restaurant bg-cover flex-1 h-[600px] rounded"></div>
+          <div className="bg-restaurant bg-cover bg-center flex-none lg:flex-1 h-[300px] lg:h-[600px] w-full rounded"></div>
         </div>
       </div>
 
-      <div className="flex justify-center py-[100px]">
-        <div className="lg:w-[1000px] xl:w-[1200px] flex justify-center gap-10">
-          <div className="bg-cover flex items-end h-[400px] -z-10">
-            <Image src={icons.food_one} width={450} alt="food" className="rounded -translate-y-[75px]" />
-            <Image src={icons.food_two} alt="food" height={270} className="rounded -translate-x-[50px]" />
+      <div className="flex justify-center pb-[150px] lg:py-[100px] text-center lg:text-start">
+        <div className="w-[350px] md:w-full md:mx-[50px] lg:mx-0 lg:w-[1000px] xl:w-[1200px] flex items-center flex-col-reverse lg:flex-row justify-center gap-10">
+          <div className="bg-cover flex flex-col items-center gap-5 lg:flex-row lg:items-end h-fit -z-10">
+            <Image
+              src={icons.food_one}
+              width={450}
+              alt="food"
+              className="rounded lg:-translate-y-[75px]"
+            />
+            <Image
+              src={icons.food_two}
+              alt="food"
+              height={270}
+              className="rounded lg:-translate-x-[50px] w-full lg:w-[175px] object-fill "
+            />
           </div>
 
-          <div className="grid max-w-[450px] flex-1">
+          <div className="grid w-full lg:max-w-[450px] flex-1">
             <div className="flex flex-col gap-3">
               <h2 className="text-[23px] font-semibold text-primary">
-                About Us
+              {about_us.about_us[t]}
               </h2>
-              <h1 className="text-[38px] font-semibold">We speak the language of Foods.</h1>
+              <h1 className="text-[38px] font-semibold">
+              {about_us.second_title[t]}
+              </h1>
               <p>
-              Welcome to The Table Himalaya, where culinary artistry meets a warm and inviting atmosphere. Nestled in the heart of Stockholm, our restaurant is a gastronomic haven that promises an unforgettable dining experience. From the moment you step through our doors, you&apos;ll be transported into a world of exquisite flavors, impeccable service, and a welcoming ambiance that feels like home. Whether you&apos;re seeking a romantic dinner for two, a memorable celebration with friends and family, or simply a delightful meal to savor, we invite you to join us and indulge in a culinary journey that celebrates the finest in food and hospitality.
+              {about_us.second_description[t]}
               </p>
-             
             </div>
           </div>
         </div>
       </div>
 
-      <div className="flex justify-center my-[75px]">
-        <div className="lg:w-[1000px] xl:w-[1200px]">
+      <div className="flex justify-center lg:my-[75px] lg:text-start text-center">
+        <div className="w-[350px] md:w-[700px] mb-[0px] lg:w-[1000px] xl:w-[1200px]">
           <div>
-            <h2 className="text-primary text-[29px] font-semibold">Featured Food</h2>
-            <h1 className=" text-[45px] font-semibold w-[13ch]">Fresh taste and great price</h1>
+            <h2 className="text-primary text-[29px] font-bold">
+            {about_us.featured_food[t]}
+            </h2>
+            <h1 className="text-[30px] lg:text-[45px] font-semibold lg:w-[13ch]">
+            {about_us.featured_food_info[t]}
+            </h1>
           </div>
-          <div className="flex mt-[50px] justify-between">
-            {homepage.dishes.slice(3, 6).map(item => <div key={item.name.en} className="w-[350px] h-[500px] bg-cover bg-no-repeat bg-center flex items-end" style={{backgroundImage: `url(${item.source})`}}>
-              <div className="bg-primary py-3 px-5 text-white w-full grid gap-1">
-                <div className="flex justify-between">
-                  <h1 className="text-[25px] font-bold">{item.name[t]}</h1>
-                  {item.price && <p className="text-[25px] font-semibold">{item.price}kr</p>}
+          <div className="flex mt-[50px] flex-col gap-14 text-start lg:gap-0 lg:flex-row justify-between">
+            {homepage.dishes.slice(3, 6).map((item) => (
+              <div
+                key={item.name.en}
+                className="h-[500px] lg:w-[300px] xl:w-[350px] lg:h-[450px] xl:h-[500px] bg-cover bg-no-repeat bg-center flex items-end"
+                style={{ backgroundImage: `url(${item.source})` }}
+              >
+                <div className="bg-primary py-3 px-5 text-white w-full grid gap-1">
+                  <div className="flex justify-between">
+                    <h1 className="text-[25px] font-bold">{item.name[t]}</h1>
+                    {item.price && (
+                      <p className="text-[25px] font-semibold">
+                        {item.price}kr
+                      </p>
+                    )}
+                  </div>
+                  <p className="text-sm">{item.description[t]}</p>
                 </div>
-                <p className="text-sm">{item.description[t]}</p>
               </div>
-            </div>)}
+            ))}
           </div>
+        </div>
+      </div>
+
+      <div className="flex justify-center mt-[50px]">
+        <div className="w-[350px] md:w-[700px] mb-[100px] lg:w-[1000px] xl:w-[1200px]">
+          <iframe
+            className="w-full h-[400px]"
+            loading="lazy"
+            src={`https://www.google.com/maps/embed/v1/place?key=${process.env.NEXT_PUBLIC_GOOGLE_API}&q=cumin+stockholm&language=${t === "en" ? "en" : "sv"}`}
+          ></iframe>
         </div>
       </div>
     </div>

@@ -140,7 +140,7 @@ export const homepage = {
 
   email: {
     en: "Email",
-    se: "email",
+    se: "Email",
   },
 
   table_reservation_title: {
@@ -180,7 +180,7 @@ export const homepage = {
 
   message: {
     en: "Message",
-    se: "",
+    se: "meddelande",
   },
 };
 
@@ -1793,6 +1793,25 @@ export const catering = {
     se: "Visst är det kul att ha fest? Att ordna mat för många personer kan däremot vara ett stressmoment och man vill gärna hinna delta själv också. Därför har vi på Table Himalaya kommit fram till en perfekt cateringplan för ert event."
   },
 
+  chef_info: {
+    title: {
+      en: "Food should be",
+      se: "Mat ska vara"
+    },
+    text_one: {
+      en: "Abid Khan began his cooking journey in 1991 in Sweden. Today, together with his wife, he runs the Cumin Club restaurants on Södermannagatan and Luntmakargatan in Stockholm. He cooks food from the heart, food that his guests enjoy and that children enjoy.",
+      se: "Abid Khan började sin matlagningsresa 1991 i Sverige. Idag driver han, tillsammans med sin fru, restaurangerna Cumin Club på Södermannagatan och på Luntmakargatan i Stockholm. Han lagar mat från hjärtat, mat som hans gäster tycker om och som barn tycker om."
+    },
+    text_two: {
+      en: "Abid Khan is passionate about his cooking and his own spice mixes. He is careful to make everything from scratch with natural ingredients and spices 'I don't trust ready-made powders,' he says. Once or twice a week he stands and mixes and mortars his various seasonings for Tikka Masala, Korma and the other classic spice mixes.",
+      se: "Abid Khan brinner för sin matlagning och sina egna kryddblandningar. Han är noga med att göra allt från grunden med naturliga råvaror och kryddor “Jag litar inte på färdiga pulver”, säger han. En till två gånger per vecka står han och mixar och mortlar sina olika smaksättningar till Tikka Masala, Korma och de andra klassiska kryddblandningarna."
+    },
+    text_three: {
+      en: "Abid also never uses gluten or lactose (except yogurt) in its food. 'The taste is not in wheat or cream', says Abid. 'I have never used these ingredients in my kitchen,' he continues. It suits today's society very well as Abid has noticed that many of his guests are allergic or want to avoid these particular substances.",
+      se: "Abid använder heller aldrig gluten eller laktos (förutom yoghurt) i sin mat. “Smaken sitter inte i vete eller grädde”, menar Abid. “Jag har aldrig använt dessa råvaror i mitt kök”, fortsätter han. Det passar dagens samhälle väldigt bra då Abid märkt att många av hans gäster är allergiker eller vill undvika just dessa ämnen."
+    },
+  },
+
   category: [
     {
       name: {
@@ -2056,4 +2075,43 @@ export const catering = {
       ]
     }
   ]
+}
+
+export const about_us = {
+  about_us: {
+    en: "About Us",
+    se: "Om Oss"
+  },
+  first_description: {
+    en: "You will witness God shaping the divided seas as we bring together our own divided forms, ultimately replenishing them by the end of this process.",
+    se: "Du kommer att bevittna hur Gud formar de delade haven när vi sammanför våra egna delade former, och slutligen fyller på dem i slutet av denna process."
+  },
+  fast_service: {
+    en: "Fast Service",
+    se: "Snabb Service",
+  },
+  fresh_food: {
+    en: "Fresh Food",
+    se: "Färsk mat"
+  },
+  fast_support: {
+    en: "Fast Support",
+    se: "Snabb Support"
+  },
+  second_title: {
+    en: "We Speak the Language of Foods",
+    se: "Vi talar matens språk"
+  },
+  second_description: {
+    en: "Welcome to The Table Himalaya, where culinary artistry meets a warm and inviting atmosphere. Nestled in the heart of Stockholm, our restaurant is a gastronomic haven that promises an unforgettable dining experience. From the moment you step through our doors, you'll be transported into a world of exquisite flavors, impeccable service, and a welcoming ambiance that feels like home. Whether you're seeking a romantic dinner for two, a memorable celebration with friends and family, or simply a delightful meal to savor, we invite you to join us and indulge in a culinary journey that celebrates the finest in food and hospitality.",
+    se: "Välkommen till The Table Himalaya, där kulinariskt konstnärskap möter en varm och inbjudande atmosfär. Inbäddat i hjärtat av Stockholm är vår restaurang en gastronomisk fristad som utlovar en oförglömlig matupplevelse. Från det ögonblick du kliver in genom våra dörrar kommer du att transporteras in i en värld av utsökta smaker, oklanderlig service och en välkomnande atmosfär som känns som hemma. Oavsett om du letar efter en romantisk middag för två, en minnesvärd fest med vänner och familj, eller bara en härlig måltid att njuta av, bjuder vi in ​​dig att gå med oss ​​och njuta av en kulinarisk resa som firar det finaste inom mat och gästfrihet."
+  },
+  featured_food: {
+    en: "Featured Food",
+    se: "Utvald Mat"
+  },
+  featured_food_info: {
+    en: "Fresh taste and great price",
+    se: "Fräsch smak och bra pris"
+  }
 }

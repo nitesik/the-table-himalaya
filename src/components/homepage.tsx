@@ -2,17 +2,81 @@ import { icons } from "@/utils/icons";
 import { type Language, homepage } from "@/utils/translations";
 import Head from "next/head";
 import Image from "next/image";
+import Link from "next/link";
 import { useRouter } from "next/router";
+import { useState } from "react";
+import { toast } from "react-toastify";
 
 export default function Homepage() {
   const router = useRouter();
 
   const t = router.locale as keyof Language;
 
-  function formHandler(event: React.FormEvent<HTMLFormElement>) {
+  const [name, setName] = useState<string>("");
+  const [email, setEmail] = useState<string>("");
+  const [date, setDate] = useState<string>("");
+  const [phone, setPhone] = useState<string>("");
+  const [time, setTime] = useState<string>("");
+  const [message, setMessage] = useState<string>("");
+  const [guests, setGuests] = useState<string>("");
+
+  const [isLoading, setIsLoading] = useState(false);
+
+  async function formHandler(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
+
+    setIsLoading(true);
+    
+    const res = await fetch("/api/mail", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        name,
+        guests,
+        email,
+        date,
+        phone,
+        time,
+        message
+      }),
+    });
+    const data = await res.json();
+    console.log(data);
+
+    if (res.ok) {
+      toast.success('Reservation mail sent', {
+        position: "top-center",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+        });
+        setIsLoading(false)
+    };
+
+    if (!res.ok) {
+      toast.error('Could not be sent, please try again later', {
+        position: "top-center",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+        });
+
+        setIsLoading(false);
+    }
+
+    
   }
-  
+
   return (
     <div>
       <Head>
@@ -21,9 +85,22 @@ export default function Homepage() {
       <div className="flex flex-col lg:flex-row bg-cover px-2 h-fit lg:h-[70vh]">
         <div className="w-full md:h-[50%] py-[50px] lg:w-[35%] lg:h-[70vh] bg-primary grid place-content-center text-white">
           <div className="flex flex-col items-center gap-4">
-            <h1 className="text-[23px] lg:text-[32px] font-bold">The Table Himalaya</h1>
+            <h1 className="text-[23px] lg:text-[32px] font-bold">
+              The Table Himalaya
+            </h1>
             <h1 className="text-[23px] lg:text-[25px]">{homepage.title[t]}</h1>
-            <button onClick={() => document.getElementById("form")?.scrollIntoView({ behavior: "smooth", block: "center", inline: "end" })} className="bg-white text-primary font-semibold px-5 py-3 rounded">
+            <button
+              onClick={() =>
+                document
+                  .getElementById("form")
+                  ?.scrollIntoView({
+                    behavior: "smooth",
+                    block: "center",
+                    inline: "end",
+                  })
+              }
+              className="bg-white text-primary font-semibold px-5 py-3 rounded"
+            >
               {homepage.reservation_button[t]}
             </button>
           </div>
@@ -41,21 +118,9 @@ export default function Homepage() {
             <p className="text-lg">{homepage.intro_description_one[t]}</p>
             <p className="text-lg">{homepage.intro_description_two[t]}</p>
             <div className="flex justify-between [&>img]:rounded-lg [&>img]:w-[110px] [&>img]:md:w-[160px] lg:[&>img]:w-[150px] xl:[&>img]:w-[180px]">
-              <Image
-                src={icons.chicken_tikka}
-                alt="food"
-                
-              />
-              <Image
-                src={icons.chicken_korai}
-                alt="food"
-                
-              />
-              <Image
-                src={icons.mixed_grill}
-                alt="food"
-                
-              />
+              <Image src={icons.chicken_tikka} alt="food" />
+              <Image src={icons.chicken_korai} alt="food" />
+              <Image src={icons.mixed_grill} alt="food" />
             </div>
           </div>
           <div className="bg-wallpaper1 bg-cover rounded-lg h-[350px] lg:h-full"></div>
@@ -64,7 +129,9 @@ export default function Homepage() {
 
       <div className=" w-full flex flex-col items-center gap-10 bg-primary-blur px-3 py-[75px] text-white text-center md:text-start">
         <div className="w-[350px] md:w-[700px] lg:w-[1000px] xl:w-[1200px]">
-          <h2 className="text-[23px] font-semibold text-primary">{homepage.menu_title[t]}</h2>
+          <h2 className="text-[23px] font-semibold text-primary">
+            {homepage.menu_title[t]}
+          </h2>
           <h1 className="text-[32px] text-black font-bold">
             {homepage.menu_description[t]}
           </h1>
@@ -84,8 +151,12 @@ export default function Homepage() {
                 <div />
               )}
               <div className="bg-primary py-3 px-2 flex flex-col">
-                <h1 className="text-[20px] md:text-[25px] font-bold">{item.name[t]}</h1>
-                <p className="text-[12px] md:text-[18px] food-description">{item.description[t]}</p>
+                <h1 className="text-[20px] md:text-[25px] font-bold">
+                  {item.name[t]}
+                </h1>
+                <p className="text-[12px] md:text-[18px] food-description">
+                  {item.description[t]}
+                </p>
               </div>
             </div>
           ))}
@@ -97,47 +168,106 @@ export default function Homepage() {
           <div className="flex items-center">
             <div className="text-white h-fit grid gap-10">
               <h2 className="text-[18px]">{homepage.contact_us[t]}</h2>
-              <h1 className="text-[28px] font-bold">{homepage.contact_description_one[t]}</h1>
+              <h1 className="text-[28px] font-bold">
+                {homepage.contact_description_one[t]}
+              </h1>
               <p>{homepage.contact_description_two[t]}</p>
               <div className="flex gap-10 items-center md:gap-4 flex-col md:flex-row [&>div]:rounded-md justify-between text-black">
                 <div className="w-[250px] h-[175px] bg-white flex flex-col items-center">
                   <div className="bg-primary p-5 w-fit rounded-full mt-[-30px]">
                     <Image src={icons.phone} alt="phone" className="invert" />
                   </div>
-                  
-                  <h1 className="text-[23px] mt-3 font-semibold">{homepage.phone[t]}</h1>
-                  <h1 className="">093 234 34324</h1>
-                  <h1 className="">093 234 34324</h1>
+
+                  <h1 className="text-[23px] mt-3 font-semibold">
+                    {homepage.phone[t]}
+                  </h1>
+                  <Link href={"tel:0705474852"}><h1 className="mt-[20px]">0705474852</h1></Link>
+                  {/* <h1 className="">093 234 34324</h1> */}
                 </div>
                 <div className="w-[250px] h-[175px] bg-white flex flex-col items-center">
                   <div className="bg-primary p-5 w-fit rounded-full mt-[-30px]">
                     <Image src={icons.mail} alt="phone" className="invert" />
                   </div>
-                  
-                  <h1 className="text-[23px] mt-3 font-semibold">{homepage.email[t]}</h1>
-                  <h1 className="">test@gmail.com</h1>
-                  <h1 className="">test@gmail.com</h1>
+
+                  <h1 className="text-[23px] mt-3 font-semibold">
+                    {homepage.email[t]}
+                  </h1>
+                  <Link href={"mailto:rajkumar.777@hotmail.com"}><h1 className="mt-[20px]">rajkumar.777@hotmail.com</h1></Link>
+                  {/* <h1 className="">test@gmail.com</h1> */}
                 </div>
               </div>
             </div>
           </div>
-          <form id="form" onSubmit={formHandler} className=" md:mx-0 bg-white rounded-lg md:w-full h-[550px] lg:h-full py-[30px] px-4 md:px-7 gap-5 flex flex-col items-center">
-            <h1 className="text-[28px] font-bold">{homepage.table_reservation_title[t]}</h1>
+          <form
+            id="form"
+            onSubmit={formHandler}
+            className=" md:mx-0 bg-white rounded-lg md:w-full h-[550px] lg:h-full py-[30px] px-4 md:px-7 gap-5 flex flex-col items-center"
+          >
+            <h1 className="text-[28px] font-bold">
+              {homepage.table_reservation_title[t]}
+            </h1>
             <div className="w-full grid grid-cols-2 flex-1 [&>input]:border [&>input]:rounded [&>input]:pl-2 md:[&>input]:pl-5 [&>input]:border-[#ddd] gap-3">
-              <input type="text" className="focus:border-primary border outline-none" placeholder={`${homepage.name[t]}*`} />
-              <input type="text" className="focus:border-primary border outline-none" placeholder={`${homepage.mail[t]}*`} />
-              <input type="text" className="focus:border-primary border outline-none" placeholder={`${homepage.phone_number[t]}*`} />
-              <input type="text" className="focus:border-primary border outline-none" placeholder={`${homepage.guests[t]}*`} />
-              <input type="text" className="focus:border-primary border outline-none" placeholder={`${homepage.date[t]}`} />
-              <input type="text" className="focus:border-primary border outline-none" placeholder={`${homepage.time[t]}*`} />
+              <input
+                type="text"
+                className="focus:border-primary border outline-none"
+                placeholder={`${homepage.name[t]}*`}
+                onChange={e => setName(e.target.value)}
+                value={name}
+                required
+              />
+              <input
+                type="text"
+                className="focus:border-primary border outline-none"
+                placeholder={`${homepage.mail[t]}*`}
+                onChange={e => setEmail(e.target.value)}
+                value={email}
+                required
+              />
+              <input
+                type="text"
+                className="focus:border-primary border outline-none"
+                placeholder={`${homepage.phone_number[t]}*`}
+                onChange={e => setPhone(e.target.value)}
+                value={phone}
+                required
+              />
+              <input
+                type="text"
+                className="focus:border-primary border outline-none"
+                placeholder={`${homepage.guests[t]}*`}
+                onChange={e => setGuests(e.target.value)}
+                value={guests}
+                required
+              />
+              <input
+                type="text"
+                className="focus:border-primary border outline-none"
+                placeholder={`${homepage.date[t]}*`}
+                onChange={e => setDate(e.target.value)}
+                value={date}
+                required
+              />
+              <input
+                type="text"
+                className="focus:border-primary border outline-none"
+                placeholder={`${homepage.time[t]}*`}
+                onChange={e => setTime(e.target.value)}
+                value={time}
+                required
+              />
             </div>
-            <textarea placeholder={`${homepage.message[t]}`} className="focus:border-primary border outline-none w-full border-[#ddd] rounded pl-5 pt-3 h-[150px]" />
-            <button className="bg-primary w-full text-white font-semibold py-3 rounded ">{homepage.reservation_button[t]}</button>
+            <textarea
+              placeholder={`${homepage.message[t]}`}
+              className="focus:border-primary border outline-none w-full border-[#ddd] rounded pl-5 pt-3 h-[150px]"
+              onChange={e => setMessage(e.target.value)}
+              value={message}
+            />
+            <button disabled={isLoading} className="bg-primary w-full text-white font-semibold py-3 rounded ">
+              {homepage.reservation_button[t]}
+            </button>
           </form>
         </div>
       </div>
-
-      
     </div>
   );
 }

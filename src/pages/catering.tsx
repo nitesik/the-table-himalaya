@@ -3,6 +3,7 @@ import { catering } from "@/utils/translations";
 import { useRouter } from "next/router";
 import { Language } from "@/utils/site";
 import Image from "next/image";
+import { icons } from "@/utils/icons";
 
 export default function Catering() {
   const [categoryIndex, setCategoryIndex] = useState(0);
@@ -12,7 +13,7 @@ export default function Catering() {
   return (
     <div className="flex justify-center">
       <div className="w-[350px] md:w-[700px] mb-[100px] lg:w-[1000px] xl:w-[1200px] flex flex-col items-center">
-        <div className="my-[50px]">
+        <div className="mt-[50px]">
           <h1 className="text-center text-[32px] md:text-left md:w-full md:text-[45px] font-semibold">
             Catering
           </h1>
@@ -20,6 +21,19 @@ export default function Catering() {
             {catering.description[t]}
           </p>
         </div>
+
+        <div className="flex justify-center my-[50px] md:my-[100px] rounded-xl bg-primary-blur w-full">
+          <div className="w-[350px] md:w-[700px] lg:w-[1000px] py-[50px] px-[25px] flex md flex-col md:flex-row items-center md:items-start gap-5 text-center md:text-start md:gap-11">
+            <Image src={icons.chef} alt="chef" width={250} height={450} className="rounded-xl" />
+            <div className="flex flex-col gap-3">
+              <h1 className="text-[32px] font-bold text-primary ">{catering.chef_info.title[t]}</h1>
+              <p>{catering.chef_info.text_one[t]}</p>
+              <p>{catering.chef_info.text_two[t]}</p>
+              <p>{catering.chef_info.text_three[t]}</p>
+            </div>
+          </div>
+        </div>
+        
         <div className="w-full md:w-[500px] lg:w-[700px] flex  justify-between">
           {catering.category.map((item, index) => (
             <div
