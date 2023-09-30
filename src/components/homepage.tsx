@@ -181,7 +181,8 @@ export default function Homepage() {
                   <h1 className="text-[23px] mt-3 font-semibold">
                     {homepage.phone[t]}
                   </h1>
-                  <Link href={"tel:0705474852"}><h1 className="mt-[20px]">0705474852</h1></Link>
+                  <Link href={"tel:0705474852"}><h1 className="mt-[10px]">+4686123780</h1></Link>
+                  <Link href={"tel:0705474852"}><h1 className="mt-[10px]">0760353799</h1></Link>
                   {/* <h1 className="">093 234 34324</h1> */}
                 </div>
                 <div className="w-[250px] h-[175px] bg-white flex flex-col items-center">
@@ -206,7 +207,7 @@ export default function Homepage() {
             <h1 className="text-[28px] font-bold">
               {homepage.table_reservation_title[t]}
             </h1>
-            <div className="w-full grid grid-cols-2 flex-1 [&>input]:border [&>input]:rounded [&>input]:pl-2 md:[&>input]:pl-5 [&>input]:border-[#ddd] gap-3">
+            <div className="w-full grid grid-cols-2 flex-1 [&>input]:border [&>input]:rounded [&>input]:px-2 md:[&>input]:px-5 [&>input]:border-[#ddd] gap-3">
               <input
                 type="text"
                 className="focus:border-primary border outline-none"
@@ -216,7 +217,7 @@ export default function Homepage() {
                 required
               />
               <input
-                type="text"
+                type="email"
                 className="focus:border-primary border outline-none"
                 placeholder={`${homepage.mail[t]}*`}
                 onChange={e => setEmail(e.target.value)}
@@ -224,7 +225,7 @@ export default function Homepage() {
                 required
               />
               <input
-                type="text"
+                type="tel"
                 className="focus:border-primary border outline-none"
                 placeholder={`${homepage.phone_number[t]}*`}
                 onChange={e => setPhone(e.target.value)}
@@ -232,7 +233,7 @@ export default function Homepage() {
                 required
               />
               <input
-                type="text"
+                type="number"
                 className="focus:border-primary border outline-none"
                 placeholder={`${homepage.guests[t]}*`}
                 onChange={e => setGuests(e.target.value)}
@@ -240,7 +241,7 @@ export default function Homepage() {
                 required
               />
               <input
-                type="text"
+                type="date"
                 className="focus:border-primary border outline-none"
                 placeholder={`${homepage.date[t]}*`}
                 onChange={e => setDate(e.target.value)}
@@ -248,7 +249,7 @@ export default function Homepage() {
                 required
               />
               <input
-                type="text"
+                type="time"
                 className="focus:border-primary border outline-none"
                 placeholder={`${homepage.time[t]}*`}
                 onChange={e => setTime(e.target.value)}

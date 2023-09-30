@@ -1,6 +1,7 @@
 import { icons } from "@/utils/icons";
 import { Language } from "@/utils/site";
 import { about_us, homepage } from "@/utils/translations";
+import Head from "next/head";
 import Image from "next/image";
 import { useRouter } from "next/router";
 
@@ -11,6 +12,9 @@ export default function AboutUs() {
 
   return (
     <div className="z-0">
+      <Head>
+        <title>The Table Himalaya - About Us</title>
+      </Head>
       <div className="flex justify-center py-[50px]">
         <div className="w-[350px] md:w-[700px] mb-[25px] lg:mb-[100px] lg:w-[1000px] xl:w-[1200px] flex items-center flex-col lg:flex-row justify-center gap-10">
           <div className="grid place-content-center max-w-[450px] flex-1">

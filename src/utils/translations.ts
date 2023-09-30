@@ -129,8 +129,8 @@ export const homepage = {
   },
 
   contact_description_two: {
-    en: "At our cafe, you can either secure a table by making a reservation in advance or simply walk in whenever you like",
-    se: "På vårt café kan du antingen säkra ett bord genom att boka i förväg eller helt enkelt gå in när du vill",
+    en: "At our restaurant, you can either secure a table by making a reservation in advance or simply walk in whenever you like",
+    se: "På vårt restaurang kan du antingen säkra ett bord genom att boka i förväg eller helt enkelt gå in när du vill",
   },
 
   phone: {
@@ -1533,8 +1533,8 @@ export const drinks = {
     items: [
       {
         name: {
-          en: "Gin Tonic(Gin, Tonic, Citron)",
-          se: "Gin Tonic(Gin, Tonic, Citron)"
+          en: "Gin Tonic",
+          se: "Gin Tonic"
         },
         description: {
           en: "(Gin, Tonic, Citron)",
