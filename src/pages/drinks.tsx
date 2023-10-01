@@ -48,7 +48,7 @@ export default function Drinks() {
         </div>
       </div>
 
-      <div className="flex justify-center my-[100px]">
+      <div className="flex justify-center my-[50px]">
         <div className="w-[350px] md:w-[700px] lg:w-[1000px] xl:w-[1200px]">
           <div className="flex items-center gap-5" id={drinks.drinks.name.en}><h1 className="text-[27px] md:text-[40px] font-bold text-primary">{drinks.drinks.name[t]}</h1><hr className="flex-1 border-[1px] border-primary" /></div>
           <h2 className="text-primary text-[20px] font-semibold">{drinks.drinks.description[t]}</h2>
@@ -67,7 +67,6 @@ export default function Drinks() {
           <div className="w-full grid lg:grid-cols-1 gap-7">
             {drinks.red_wine.items.map((item, index) => <div className="mt-5" key={index}>
               <h2 className="text-[25px] md:text-[32px] text-primary font-bold">{item.name[t]}</h2>
-              <p className="text-[18px] text-primary mt-3 font-semibold">{item.description?.[t]}</p>
               <div>{item.sub?.map(sub => <div key={sub.name[t]} className="grid gap-3 ml-3 mt-5">
                 <div className="flex gap-5 text-[18px] font-semibold text-primary"><div className="flex items-center gap-1"><>•</><h1>{sub.name[t]}</h1></div>{sub.price && <p>{sub.price} kr</p>}</div>
                 {/* <h2>{sub.name && sub.name[t]}</h2> */}

@@ -124,8 +124,8 @@ export const homepage = {
   },
 
   contact_description_one: {
-    en: "You have the option to either make a reservation in advance or simply drop by our cafe without prior booking.",
-    se: "Du har möjlighet att antingen boka i förväg eller helt enkelt komma förbi vårt café utan förbokning",
+    en: "You have the option to either make a reservation in advance or simply drop by our restaurnat without prior booking.",
+    se: "Du har möjlighet att antingen boka i förväg eller helt enkelt komma förbi vårt restaurnag utan förbokning",
   },
 
   contact_description_two: {
@@ -348,8 +348,8 @@ export const menu = {
             price: 179,
             description: {
               en: null,
-              se: null
-            }
+              se: null,
+            },
           },
           {
             name: {
@@ -461,8 +461,7 @@ export const menu = {
             },
             price: 179,
           },
-         
-          
+
           {
             name: {
               en: "Chicken",
@@ -570,8 +569,8 @@ export const menu = {
           },
           {
             name: {
-              en: "Tigerräkor/Scampi Prawns",
-              se: "Tiger/Scampi Prawns",
+              en: "Tiger/Scampi Prawns",
+              se: "Tigerräkor/Scampi Prawns",
             },
             price: 209,
           },
@@ -726,378 +725,375 @@ export const menu = {
     source: "/thali-banner.jpeg",
     name: {
       en: "Thali Dishes",
-      se: "Thali Rätter"
+      se: "Thali Rätter",
     },
     items: [
       {
         name: {
           en: "Vegan Thali",
-          se: "Vegan Thali"
+          se: "Vegan Thali",
         },
         description: {
           en: "Vegan pakora, spinach vadji, dall, oumph(chaap), rice, salad and chapati bread.",
-          se: "Vegansk pakora, spenat vadji, dall, oumph(chaap), ris, sallad och chapatibröd."
+          se: "Vegansk pakora, spenat vadji, dall, oumph(chaap), ris, sallad och chapatibröd.",
         },
-        price: 199
+        price: 199,
       },
       {
         name: {
           en: "Ayurveda Thali",
-          se: "Ayurveda Thali"
+          se: "Ayurveda Thali",
         },
         description: {
           en: "Three vegetarian dishes: okra palak paneer, mix-veg and dill, served with rice, naan and dahi vada.",
-          se: "Tre vegetariska rätter: okra palak paneer, mix-veg och dill, serveras ris, naan och dahi vada."
+          se: "Tre vegetariska rätter: okra palak paneer, mix-veg och dill, serveras ris, naan och dahi vada.",
         },
-        price: 199
+        price: 199,
       },
       {
         name: {
           en: "Lamb Thali",
-          se: "Lamm Thali"
+          se: "Lamm Thali",
         },
 
         description: {
           en: "Grilled lamb fillet, lamb sambal masala and steaks on lamb, served with rice, dahi vada and naan.",
-          se: "Grillad lammytterfilé, lamm sambal-masala och biffar på lamm, serveras med ris, dahi vada och naan."
+          se: "Grillad lammytterfilé, lamm sambal-masala och biffar på lamm, serveras med ris, dahi vada och naan.",
         },
-        price: 225
+        price: 225,
       },
       {
         name: {
           en: "Chicken Thali",
-          se: "Kyckling Thali"
+          se: "Kyckling Thali",
         },
 
         description: {
           en: "Grilled chicken fillet, Chicken Tikka Masala and Chicken Basanti, served with rice, raita and garlic naan.",
-          se: "Grillad kycklingfilé, kyckling Tikka Masala och kyckling Basanti, serveras med ris, raita och vitlöksnaan."
+          se: "Grillad kycklingfilé, kyckling Tikka Masala och kyckling Basanti, serveras med ris, raita och vitlöksnaan.",
         },
-        price: 189
+        price: 189,
       },
-    ]
+    ],
   },
   veg: {
     source: "/vegetarian-banner.jpg",
     name: {
       en: "Vegetarian/Vegan",
-      se: "Vegetariska/Veganska"
+      se: "Vegetariska/Veganska",
     },
     items: [
       {
         name: {
           en: "Palak Paneer",
-          se: "Palak Paneer"
+          se: "Palak Paneer",
         },
         description: {
           en: "Homemade cream cheese prepared with leaf spinach.",
-          se: "Hemlagad färskost tillagad med bladspenat."
+          se: "Hemlagad färskost tillagad med bladspenat.",
         },
-        price: 179
+        price: 179,
       },
       {
         name: {
           en: "Paneer Tikka Masala",
-          se: "Paneer Tikka Masala"
+          se: "Paneer Tikka Masala",
         },
         description: {
           en: "Homemade cheese with lentils and fresh coriander in a creamy sauce.",
-          se: "Hemgjord ost med linser och färsk koriander i gräddig sås."
+          se: "Hemgjord ost med linser och färsk koriander i gräddig sås.",
         },
-        price: 169
+        price: 169,
       },
       {
         name: {
           en: "Okra Palak Paneer",
-          se: "Okra Palak Paneer"
+          se: "Okra Palak Paneer",
         },
         description: {
           en: "Green okra, leaf spinach with homemade cheese and creamy sauce.",
           se: "Grön okra, bladspenat med hemlagad ost och krämigt god sås.",
         },
-        price: 169
+        price: 169,
       },
       {
         name: {
           en: "Matar Paneer",
-          se: "Matar Paneer"
+          se: "Matar Paneer",
         },
         description: {
           en: "Green peas with homemade Indian cheese and fresh coriander in tomato and curry sauce.",
           se: "Gröna ärtor med hemgjord indisk ost och färsk korinder i tomat-och curry sås.",
         },
-        price: 169
+        price: 169,
       },
       {
         name: {
           en: "Four in one (Aloo, saag, gobi, dal)",
-          se: "Fyra i ett (aloo, saag, gobi, dal)"
+          se: "Fyra i ett (aloo, saag, gobi, dal)",
         },
         description: {
           en: "Fried spinach with potatoes, cauliflower and yellow lentils.",
           se: "Stekt spenat med potatis, blomkål och gula linser.",
         },
-        price: 169
+        price: 169,
       },
       {
         name: {
           en: "Shahi aloo",
-          se: "Shahi aloo"
+          se: "Shahi aloo",
         },
         description: {
           en: "Eggplant and potatoes cooked with onions and oriental herbs.",
           se: "Aubergine och potatis tillagad med lök och orientaliska örter.",
         },
-        price: 169
+        price: 169,
       },
       {
         name: {
           en: "Bengali sabzi",
-          se: "Bengali sabzi"
+          se: "Bengali sabzi",
         },
         description: {
           en: "Fried pumpkin, green papaya and eggplant with fresh ginger, garlic and coriander, marinated in cumin. Served with a traditional Bengali sauce",
           se: "Stekt pumpa, grön papaya och aubergine med färsk ingefära, vitlök och koriander, marinerad i kummin. Serveras med en traditionell bengalisk sås",
         },
-        price: 169
+        price: 169,
       },
-    ]
+    ],
   },
   vegan: {
     name: {
-      en: 'Vegan',
-      se: "Vegan"
+      en: "Vegan",
+      se: "Vegan",
     },
     items: [
       {
         name: {
           en: "Saag Vendi Vadji",
-          se: "Saag Vendi Vadji"
+          se: "Saag Vendi Vadji",
         },
         description: {
           en: "Fried spinach and okra with green chilli, onion, coriander and ginger in tomato sauce.",
-          se: "Stekt spenat och okra med grön chili, lök, koriander och ingefära i tomatsås."
+          se: "Stekt spenat och okra med grön chili, lök, koriander och ingefära i tomatsås.",
         },
-        price: 175
+        price: 175,
       },
       {
         name: {
           en: "Vegan Kofte",
-          se: "Vegan Kofte"
+          se: "Vegan Kofte",
         },
         description: {
           en: "Vegetable balls cooked in sauce. Gluten free.",
-          se: "Grönsaksbullar tillagade i sås. Glutenfri."
+          se: "Grönsaksbullar tillagade i sås. Glutenfri.",
         },
-        price: 159
+        price: 159,
       },
-      
-    ]
+    ],
   },
   clay_oven: {
     source: "/clay-oven-banner.jpeg",
     name: {
       en: "Clay Oven",
-      se: "Lerugn"
+      se: "Lerugn",
     },
     items: [
       {
         name: {
           en: "Tandoori Grill Sizzler",
-          se: "Tandoori Grill Sizlar"
+          se: "Tandoori Grill Sizlar",
         },
         description: {
           en: "These dishes are grilled in our clay oven and served with stir-fried, fresh vegetables and tandoori sauce.",
-          se: "Dessa rätter grillas i vår lerugn och serveras med wokade, färska grönsaker och tandoorisås."
+          se: "Dessa rätter grillas i vår lerugn och serveras med wokade, färska grönsaker och tandoorisås.",
         },
         sub: [
           {
             name: {
               en: "Chicken Grill",
-              se: "Kyckling Grill"
+              se: "Kyckling Grill",
             },
-            price: 189
+            price: 189,
           },
           {
             name: {
               en: "Grill Fillet of Lamb",
-              se: "Lammytterfile Grill"
+              se: "Lammytterfile Grill",
             },
-            price: 199
+            price: 199,
           },
           {
             name: {
               en: "Garlic Chicken Grill",
-              se: "Vitlökskyckling Grill"
+              se: "Vitlökskyckling Grill",
             },
             description: {
               en: "Chicken fillet marinated in garlic, ginger, kazu nuts, cream and fennel grilled in a clay oven and stir-fried fresh vegetables and sauce.",
-              se: "Kycklingfilé marinerad i vitlök, ingefära, kazu nötter, grädde och fänkål grillad i lerugn och wokade färska grönsaker och sås."
+              se: "Kycklingfilé marinerad i vitlök, ingefära, kazu nötter, grädde och fänkål grillad i lerugn och wokade färska grönsaker och sås.",
             },
-            price: 189
+            price: 189,
           },
           {
             name: {
               en: "Chili Chicken Grill",
-              se: "Chili Kyckling Grill"
+              se: "Chili Kyckling Grill",
             },
             description: {
               en: "Chicken fillet marinated in garlic and ginger with pickled chili and fresh green chili grilled in a clay oven and stir-fried fresh vegetables and sauce.",
-              se: "Kycklingfilé marinerad i vitlök och ingefära med inlagd chili och färsk grön chili grillad i lerugn och wokade färska grönsaker och sås."
+              se: "Kycklingfilé marinerad i vitlök och ingefära med inlagd chili och färsk grön chili grillad i lerugn och wokade färska grönsaker och sås.",
             },
-            price: 189
+            price: 189,
           },
           {
             name: {
               en: "Mixed Chicken Grill",
-              se: "Blandad Kyckling Grill"
+              se: "Blandad Kyckling Grill",
             },
             description: {
               en: "Chicken fillet marinated in tandoori, garlic and green chili, grilled in a clay oven and stir-fried fresh vegetables and sauce.",
-              se: "Kycklingfilé marinerad i tandoori, vitlök och grön chili, grillad i lerugn och wokade färska grönsaker och sås."
+              se: "Kycklingfilé marinerad i tandoori, vitlök och grön chili, grillad i lerugn och wokade färska grönsaker och sås.",
             },
-            price: 189
+            price: 189,
           },
           {
             name: {
               en: "Mughlai Shami Kabab Sizzler",
-              se: "Mughlai Shami Kabab Sizlar"
+              se: "Mughlai Shami Kabab Sizlar",
             },
             description: {
               en: "Lamb with finely chopped onion, chilli, garlic, coriander and ginger, served with stir-fried vegetables and tandoori sauce.",
-              se: "Lamm med finhackad lök, chili, vitlök, koriander och ingefära, serveras med wokade grönsaker och tandoorisås."
+              se: "Lamm med finhackad lök, chili, vitlök, koriander och ingefära, serveras med wokade grönsaker och tandoorisås.",
             },
-            price: 189
+            price: 189,
           },
           {
             name: {
               en: "The Table Himalaya Mixed Grill",
-              se: "The Table Himalaya Mixed Grill"
+              se: "The Table Himalaya Mixed Grill",
             },
             description: {
               en: "Grilled chicken, lamb fillet and stir-fried tiger prawns, fresh vegetables and tandoori sauce.",
-              se: "Grillad kyckling, lammytterfilé och tigerräkor wokade, färska grönsaker och tandoorisås."
+              se: "Grillad kyckling, lammytterfilé och tigerräkor wokade, färska grönsaker och tandoorisås.",
             },
-            price: 220
+            price: 220,
           },
-        ]
+        ],
       },
-    ]
+    ],
   },
   mughlai_dishes: {
     source: "/mughlai-banner.jpg",
     name: {
       en: "Mughlai Dishes",
-      se: "Mughlai Rätter"
+      se: "Mughlai Rätter",
     },
     items: [
       {
         name: {
           en: "Biryani",
-          se: "Biryani"
+          se: "Biryani",
         },
         description: {
           en: "Indian feast risotto with nutmeg, cloves, cardamom, coriander and ginger and saffron. Served with sauce and salad.",
-          se: "Indisk fest-risotto med muskot, kryddnejlika, kardemumma, koriander och ingefära och saffran. Serveras med sås och sallad."
+          se: "Indisk fest-risotto med muskot, kryddnejlika, kardemumma, koriander och ingefära och saffran. Serveras med sås och sallad.",
         },
         sub: [
           {
             name: {
               en: "Chicken",
-              se: "Kyckling"
+              se: "Kyckling",
             },
-            price: 189
+            price: 189,
           },
           {
             name: {
               en: "Lamb",
-              se: "Lamm"
+              se: "Lamm",
             },
-            price: 199
+            price: 199,
           },
           {
             name: {
               en: "Tiger/Scampi Prawns",
-              se: "Tigerräkor/Scampi Prawns"
+              se: "Tigerräkor/Scampi Prawns",
             },
-            price: 209
+            price: 209,
           },
           {
             name: {
               en: "Fish",
-              se: "Fisk"
+              se: "Fisk",
             },
-            price: 169
+            price: 169,
           },
           {
             name: {
               en: "Veg",
-              se: "Veg"
+              se: "Veg",
             },
-            price: 179
+            price: 179,
           },
         ],
-
       },
       {
         name: {
           en: "Korma",
-          se: "Korma"
+          se: "Korma",
         },
         description: {
           en: "Prepared with crème fraîche, raisins, spices and cashew nuts in a mild sauce.",
-          se: "Tillagas med crème fraîche, russin, kryddor och cashewnötter i en mild sås."
+          se: "Tillagas med crème fraîche, russin, kryddor och cashewnötter i en mild sås.",
         },
         sub: [
           {
             name: {
               en: "Chicken",
-              se: "Kyckling"
+              se: "Kyckling",
             },
-            price: 189
+            price: 189,
           },
           {
             name: {
               en: "Lamb",
-              se: "Lamm"
+              se: "Lamm",
             },
-            price: 199
+            price: 199,
           },
           {
             name: {
               en: "Tiger/Scampi Prawns",
-              se: "Tigerräkor/Scampi Prawns"
+              se: "Tigerräkor/Scampi Prawns",
             },
-            price: 209
+            price: 209,
           },
           {
             name: {
               en: "Veg Korma",
-              se: "Veg Korma"
+              se: "Veg Korma",
             },
-            price: 175
+            price: 175,
           },
           {
             name: {
               en: "Mughlai Paneer Kofta",
-              se: "Mughlai Paneer Kofta"
+              se: "Mughlai Paneer Kofta",
             },
             description: {
               en: "Homemade Indian cheese with crème fraîche, raisins, spices and cashew nuts in a mild sauce.",
-              se: "Hemlagad indisk ost med crème fraîche, russin, kryddor och cashewnötter i en mild sås."
+              se: "Hemlagad indisk ost med crème fraîche, russin, kryddor och cashewnötter i en mild sås.",
             },
-            price: 189
+            price: 189,
           },
-        ]
-      }
-      
-    ]
+        ],
+      },
+    ],
   },
   bengali_ratter: {
     source: "/bengali-banner.jpg",
     name: {
       en: "Bengali Dishes",
-      se: "Bengali Rätter"
+      se: "Bengali Rätter",
     },
     items: [
       {
@@ -1107,19 +1103,19 @@ export const menu = {
         },
         description: {
           en: "Very traditional Bengali dish; slow cooked with oriental spices from Chittagong, Bangladesh's second largest city Traditional bengali dish, slow cooked with oriental spices, has its origins in Chittagong(Bangladesh)",
-          se: "Mycket traditionell bengalisk rätt; långkok med orientaliska kryddor från Chittagong, Bangladesh näst största stad Traditional bengali dish, slow cooked with oriental spices, has its origins in Chittagong(Bangladesh)"
+          se: "Mycket traditionell bengalisk rätt; långkok med orientaliska kryddor från Chittagong, Bangladesh näst största stad Traditional bengali dish, slow cooked with oriental spices, has its origins in Chittagong(Bangladesh)",
         },
         sub: [
           {
             name: {
               en: "Lamb",
-              se: "Lamm"
+              se: "Lamm",
             },
-            price: 199
-          }
-        ]
-      }
-    ]
+            price: 199,
+          },
+        ],
+      },
+    ],
   },
 
   fish_and_seafood: {
@@ -1132,683 +1128,678 @@ export const menu = {
       {
         name: {
           en: "Seafood Curry",
-          se: "Skaldjurscurry"
+          se: "Skaldjurscurry",
         },
         description: {
           en: "Traditionally Goan spiced tiger prawns, scampi, green clams, prawns, mussels, squid and crabsticks, cooked in fish sauce.",
-          se: "Traditionellt Goankryddade tigerräkor, scampi, grön-musslor, räkor, musslor, bläckfisk och crabsticks, tillagad i fisksås."
+          se: "Traditionellt Goankryddade tigerräkor, scampi, grön-musslor, räkor, musslor, bläckfisk och crabsticks, tillagad i fisksås.",
         },
-        price: 189
+        price: 189,
       },
       {
         name: {
           en: "Shrimp Palak",
-          se: "Shrimp Palak"
+          se: "Shrimp Palak",
         },
         description: {
           en: "Pumpkin and small prawns with leaf spinach and fresh coriander in tomato sauce.",
-          se: "Pumpa och små räkor med bladspenat och färsk koriander i tomatsås."
+          se: "Pumpa och små räkor med bladspenat och färsk koriander i tomatsås.",
         },
-        price: 189
+        price: 189,
       },
       {
         name: {
           en: "Salmon Tikka Masala",
-          se: "Lax Tikka Masala"
+          se: "Lax Tikka Masala",
         },
         description: {
           en: "Salmon fillet cooked in tomato and onion sauce.",
-          se: "Laxfilé tillagad i tomat och löksås."
+          se: "Laxfilé tillagad i tomat och löksås.",
         },
-        price: 189
+        price: 189,
       },
-    ]
+    ],
   },
 
   accessories: {
     source: "/accessories-banner.jpg",
     name: {
       en: "Accessories and Bread",
-      se: "TILLBEHOR OCH BROD"
+      se: "TILLBEHOR OCH BROD",
     },
     items: [
       {
         name: {
           en: "Regular Naan",
-          se: "regelbunden Naan"
+          se: "regelbunden Naan",
         },
-        price: 25
+        price: 25,
       },
       {
         name: {
           en: "Garlic Naan",
-          se: "Garlic Naan"
+          se: "Garlic Naan",
         },
         description: {
           en: "Naan with garlic and coriander.",
-          se: "Naan med vitlök och koriander."
+          se: "Naan med vitlök och koriander.",
         },
-        price: 35
+        price: 35,
       },
       {
         name: {
           en: "Masala Naan",
-          se: "Masala Naan"
+          se: "Masala Naan",
         },
         description: {
           en: "Naan with garlic and coriander.",
-          se: "Naan med vitlök och koriander."
+          se: "Naan med vitlök och koriander.",
         },
-        price: 25
+        price: 25,
       },
       {
         name: {
           en: "Paneer Naan",
-          se: "Paneer Naan"
+          se: "Paneer Naan",
         },
         description: {
           en: "Homemade cheese baked in naan",
-          se: "Hemlagad ost inbakad i naan"
+          se: "Hemlagad ost inbakad i naan",
         },
-        price: 35
+        price: 35,
       },
       {
         name: {
           en: "Potato Kulcha",
-          se: "Potato Kulcha"
+          se: "Potato Kulcha",
         },
         description: {
           en: "Potatoes baked in naan",
-          se: "Potatis inbakad i naan"
+          se: "Potatis inbakad i naan",
         },
-        price: 29
+        price: 29,
       },
       {
         name: {
           en: "Peshwari naan",
-          se: "Peshwari naan"
+          se: "Peshwari naan",
         },
         description: {
           en: "Dates, cheese, coconut and almonds baked in naan",
-          se: "Dadlar, ost, kokos, och mandel inbakade i naan"
+          se: "Dadlar, ost, kokos, och mandel inbakade i naan",
         },
-        price: 35
+        price: 35,
       },
       {
         name: {
           en: "Chapati",
-          se: "Chapati"
+          se: "Chapati",
         },
         description: {
           en: "Typical Indian bread baked on Indian wheat flour",
-          se: "Typiskt indiskt bröd bakat på indiskt vetemjöl"
+          se: "Typiskt indiskt bröd bakat på indiskt vetemjöl",
         },
-        price: 35
+        price: 35,
       },
-    ]
+    ],
   },
 
   desserts_and_children: {
     source: "/dessert-banner.jpg",
     name: {
       en: "Desserts/Children's Menu",
-      se: "EFTERRÄTTER/BARNMENY"
+      se: "EFTERRÄTTER/BARNMENY",
     },
     items: [
       {
         name: {
           en: "Children's Menu",
-          se: "BARNMENY"
+          se: "BARNMENY",
         },
         description: {
           en: "NOTE : All dishes are available with a vegetarian option. Served with rice and salad.",
-          se: "NOTERA : Alla rätter finns med vegetariskt alternativ. Serveras med ris och sallad."
+          se: "NOTERA : Alla rätter finns med vegetariskt alternativ. Serveras med ris och sallad.",
         },
         sub: [
           {
             name: {
               en: "Chicken Tikka Grill",
-              se: "Kyckling Tikka Grill"
+              se: "Kyckling Tikka Grill",
             },
             description: {
               en: "",
-              se: ""
+              se: "",
             },
-            price: 99
+            price: 99,
           },
           {
             name: {
               en: "Chicken Korma",
-              se: "Kyckling Korma"
+              se: "Kyckling Korma",
             },
-            price: 99
+            price: 99,
           },
           {
             name: {
               en: "Chicken Masala",
-              se: "Kyckling Masala"
+              se: "Kyckling Masala",
             },
-            price: 99
+            price: 99,
           },
-        ]
+        ],
       },
       {
         name: {
           en: "Desserts",
-          se: "Efterrätter"
+          se: "Efterrätter",
         },
         sub: [
           {
             name: {
               en: "Kesar Pista Kulfi",
-              se: "Kesar Pista Kulfi"
+              se: "Kesar Pista Kulfi",
             },
             description: {
               en: "Traditional Indian ice cream flavored with roasted cashew nuts and saffron",
-              se: "Traditionell indisk glass smaksatt med rostade cashewnötter och saffron"
+              se: "Traditionell indisk glass smaksatt med rostade cashewnötter och saffron",
             },
-            price: 69
+            price: 69,
           },
           {
             name: {
               en: "Mango Lassi",
-              se: "Mango Lassi"
+              se: "Mango Lassi",
             },
             description: {
               en: "Indian milkshake made with mango, yoghurt and sugar.",
-              se: "Indisk milkshake gjörd på mango, yoghurt, och socker"
+              se: "Indisk milkshake gjörd på mango, yoghurt, och socker",
             },
-            price: 49
+            price: 49,
           },
           {
             name: {
               en: "Ice Cream Sorbet",
-              se: "Ice Cream Sorbet"
+              se: "Ice Cream Sorbet",
             },
             description: {
               en: "Mango and lime flavored ice cream",
-              se: "Glass med smak av mango och lime"
+              se: "Glass med smak av mango och lime",
             },
-            price: 69
+            price: 69,
           },
           {
             name: {
               en: "Mango Juice",
-              se: "Mango Juice"
+              se: "Mango Juice",
             },
-            price: 39
+            price: 39,
           },
           {
             name: {
               en: "Gulab Jamun",
-              se: "Gulab Jamun"
+              se: "Gulab Jamun",
             },
-            price: 69
+            price: 69,
           },
-        ]
-      }
-    ]
-  }
-  
+        ],
+      },
+    ],
+  },
 };
 
 export const drinks = {
   bottle_beer: {
     name: {
       en: "Bottle Beer cl Dragon Beer",
-      se: "Flask Öl cl Fatöl"
+      se: "Flask Öl cl Fatöl",
     },
     items: [
       {
         name: {
           en: "Bangla",
-          se: "Bangla"
-        }
+          se: "Bangla",
+        },
       },
       {
         name: {
           en: "Indian Beer; Light Stock Little",
-          se: "Indisk Öl; Ljus Lager Lite"
+          se: "Indisk Öl; Ljus Lager Lite",
         },
-        price: "33, 55"
+        price: "33, 55",
       },
       {
         name: {
           en: "Fuller",
-          se: "Fylligare"
+          se: "Fylligare",
         },
-        price: "66 95"
+        price: "66 95",
       },
       {
         name: {
           en: "Cobra",
-          se: "Cobra"
+          se: "Cobra",
         },
-        price: "33, 55"
+        price: "33, 55",
       },
       {
         name: {
           en: "Light Lager Indian Beer",
-          se: "Ljus Lager Indish Öl"
+          se: "Ljus Lager Indish Öl",
         },
-        price: "66, 95"
+        price: "66, 95",
       },
       {
         name: {
           en: "Kingfisher",
-          se: "Kingfisher"
+          se: "Kingfisher",
         },
       },
       {
         name: {
           en: "Indian Light Foam",
-          se: "Indish Ljust Skum"
+          se: "Indish Ljust Skum",
         },
-        price: "33, 55"
+        price: "33, 55",
       },
       {
         name: {
           en: "Bombay Gold",
-          se: "Bombay Gold"
+          se: "Bombay Gold",
         },
-        price: "66, 86"
+        price: "66, 86",
       },
       {
         name: {
           en: "Mariestads",
-          se: "Mariestads"
+          se: "Mariestads",
         },
-        price: "50, 59"
+        price: "50, 59",
       },
       {
         name: {
           en: "Cider (Pear, Mango, Apple),",
-          se: "Cider (Päron, Mango, Äppel),"
+          se: "Cider (Päron, Mango, Äppel),",
         },
-        price: "33, 55"
+        price: "33, 55",
       },
       {
         name: {
           en: "Folk Beer",
-          se: "Folköl"
+          se: "Folköl",
         },
-        price: "33, 49"
+        price: "33, 49",
       },
       {
         name: {
           en: "Non-Alcoholic Beer",
-          se: "Alkoholfritt Öl"
+          se: "Alkoholfritt Öl",
         },
-        price: "33, 39"
+        price: "33, 39",
       },
       {
         name: {
           en: "Draft Beer",
-          se: "Fatöl"
-        }
+          se: "Fatöl",
+        },
       },
       {
         name: {
           en: "Spendrups Lager 5.3%",
-          se: "Spendrups Lager 5,3%"
+          se: "Spendrups Lager 5,3%",
         },
-        price: "40, 49"
+        price: "40, 49",
       },
       {
         name: {
           en: "Sitting Bulldog IPA 5.8%",
-          se: "Sitting Bulldog IPA 5,8%"
+          se: "Sitting Bulldog IPA 5,8%",
         },
-        price: "40, 49"
-      }
-    ]
+        price: "40, 49",
+      },
+    ],
   },
   juice: {
     name: {
       en: "Lassi/Juice",
-      se: "Läsk/Juice"
+      se: "Läsk/Juice",
     },
     items: [
       {
         name: {
           en: "Cola, Fanta, Loka, Sprite, Zero",
-          se: "Cola, Fanta, Loka, Sprite, Zero"
+          se: "Cola, Fanta, Loka, Sprite, Zero",
         },
-        price: "29"
+        price: "29",
       },
       {
         name: {
           en: "Mango Juice",
-          se: "Mango Juice"
+          se: "Mango Juice",
         },
-        price: "39"
+        price: "39",
       },
       {
         name: {
           en: "Mango Lassi",
-          se: "Mango Lassi"
+          se: "Mango Lassi",
         },
-        price: "49"
+        price: "49",
       },
-    ]
+    ],
   },
   hot_beverage: {
     name: {
       en: "Hot Beverages",
-      se: "Varma Drycker"
+      se: "Varma Drycker",
     },
     items: [
       {
         name: {
           en: "Coffee",
-          se: "Kaffe"
+          se: "Kaffe",
         },
-        price: "25"
+        price: "25",
       },
       {
         name: {
           en: "Irish Coffee 4CL",
-          se: "Irish Kaffe 4CL"
+          se: "Irish Kaffe 4CL",
         },
-        price: "86"
+        price: "86",
       },
       {
         name: {
           en: "Indian Chai",
-          se: "Indisk Chai"
+          se: "Indisk Chai",
         },
-        price: "25"
+        price: "25",
       },
-    ]
+    ],
   },
   drinks: {
     name: {
       en: "Drinks",
-      se: "Drinker"
+      se: "Drinker",
     },
     description: {
       en: "4cl-109 kr, 6cl-129 kr",
-      se: "4cl-109 kr, 6cl-129 kr"
+      se: "4cl-109 kr, 6cl-129 kr",
     },
     items: [
       {
         name: {
           en: "Gin Tonic",
-          se: "Gin Tonic"
+          se: "Gin Tonic",
         },
         description: {
           en: "(Gin, Tonic, Citron)",
-          se: "(Gin, Tonic, Citron)"
-        }
+          se: "(Gin, Tonic, Citron)",
+        },
       },
       {
         name: {
           en: "Vodka Lime",
-          se: "Vodka Lime"
+          se: "Vodka Lime",
         },
         description: {
           en: "(Bodka, Krossad IS, Lime Fruit)",
-          se: "(Bodka, Krossad IS, Lime Fruit)"
-        }
+          se: "(Bodka, Krossad IS, Lime Fruit)",
+        },
       },
-    
+
       {
         name: {
           en: "Whisky Sour",
-          se: "Whisky Sour"
+          se: "Whisky Sour",
         },
         description: {
           en: "(Whiskey, Citronsaft)",
-          se: "(Whiskey, Citronsaft)"
-        }
+          se: "(Whiskey, Citronsaft)",
+        },
       },
       {
         name: {
           en: "Cava",
-          se: "Cava"
+          se: "Cava",
         },
         description: {
           en: "(Whiskey, Citronsaft)",
-          se: "(Whiskey, Citronsaft)"
-        }
+          se: "(Whiskey, Citronsaft)",
+        },
       },
       {
         name: {
           en: "Glas",
           se: "Glas",
         },
-        price: "69"
+        price: "69",
       },
-      
+
       {
         name: {
           en: "Flaska",
           se: "Flaska",
         },
-        price: "276"
+        price: "276",
       },
       {
         name: {
           en: "House Wine Red",
           se: "Husets Vin Rött",
-        }
+        },
       },
       {
         name: {
           en: "Torre Del Falasco Corvina IGT-Red (Italy)",
-          se: "Torre Del Falasco Corvina IGT-Rött"
+          se: "Torre Del Falasco Corvina IGT-Rött",
         },
         description: {
           en: "Medium-bodied wine with notes of blackberries, morels, dark chocolate, cherry pits and brisk acidity and fruity, long aftertaste.",
-          se: "Medelfylligt vin med toner av björnbär, moreller, mörk choklad, körsbärskärnor samt pigg syra och fruktig, lång eftersmak."
+          se: "Medelfylligt vin med toner av björnbär, moreller, mörk choklad, körsbärskärnor samt pigg syra och fruktig, lång eftersmak.",
         },
-        price: "75, 295"
+        price: "75, 295",
       },
       {
         name: {
           en: "House Wine White",
-          se: "Husets Vin Vitt"
+          se: "Husets Vin Vitt",
         },
         description: {
           en: "Medium-bodied wine with fresh acidity, good concentration as well, mineral rich, long, spicy taste and aftertaste",
-          se: "Medelfylligt vin med fräsch syra, bra koncentration samt Mineralrich, lång, kryddig smak och eftersmak."
+          se: "Medelfylligt vin med fräsch syra, bra koncentration samt Mineralrich, lång, kryddig smak och eftersmak.",
         },
-        price: "75, 295"
+        price: "75, 295",
       },
-    ]
+    ],
   },
   red_wine: {
     name: {
       en: "Red Wine",
-      se: "Rött Vin"
+      se: "Rött Vin",
     },
     items: [
       {
         name: {
           en: "Vina Maipo",
-          se: "Vina Maipo"
+          se: "Vina Maipo",
         },
         sub: [
           {
             name: {
               en: "Cabernet Sauvignon(Chille)",
-              se: "Cabernet Sauvignon(Chille)"
+              se: "Cabernet Sauvignon(Chille)",
             },
             description: {
               en: "This bright ruby red has an attractive aroma of fresh red fruits,with notes of spices and tobacco. The palate is juicy, with harmonic tannins and good aftertaste.",
-              se: "Denna ljusa rubinröda har en attraktiv doft av färska röda frukter, med toner av kryddor och tobak. Smaken är saftig, med harmoniska tanniner och god eftersmak."
+              se: "Denna ljusa rubinröda har en attraktiv doft av färska röda frukter, med toner av kryddor och tobak. Smaken är saftig, med harmoniska tanniner och god eftersmak.",
             },
-            price: "235"
-          }
-        ]
+            price: "235",
+          },
+        ],
       },
       {
         name: {
           en: "Costa",
-          se: "Costa"
+          se: "Costa",
         },
         sub: [
           {
             name: {
               en: "Salento Negroamaro(Italia)",
-              se: "Salento Negroamaro(Italia)"
+              se: "Salento Negroamaro(Italia)",
             },
-            price: "65, 260"
+            price: "65, 260",
           },
           {
             name: {
               en: "Grand Vin De Bordeaux (France) Flaska",
-              se: "Grand Vin De Bordeaux (France) Flaska"
+              se: "Grand Vin De Bordeaux (France) Flaska",
             },
-            price: "395"
+            price: "395",
           },
           {
             name: {
               en: "Luma Rosso I Sicilia (Italy)",
-              se: "Luma Rosso I Sicilia (Italy)"
+              se: "Luma Rosso I Sicilia (Italy)",
             },
-            price: "265"
+            price: "265",
           },
           {
             name: {
               en: "Roma Ross (Italian)",
-              se: "Roma Ross (Italian)"
+              se: "Roma Ross (Italian)",
             },
-            price: "325"
+            price: "325",
           },
           {
             name: {
               en: "Dark Horse Pinot Noir (USA)",
-              se: "Dark Horse Pinot Noir (USA)"
+              se: "Dark Horse Pinot Noir (USA)",
             },
             description: {
               en: "An elegant Pinot Noir with notes of cherry and a layered, flavorful finish.",
-              se: "En elegant Pinot Noir med noter av körsbär och en skiktad, smakrik finish."
+              se: "En elegant Pinot Noir med noter av körsbär och en skiktad, smakrik finish.",
             },
-            price: "350"
+            price: "350",
           },
-          
-        ]
+        ],
       },
       {
         name: {
-          name: {
-            en: "Vitt Wine",
-            se: "Vitt Vin"
-          },
-          sub: [
-            {
-              name: {
-                en: "LA Merdionale Ordinary Sauvignon",
-                se: "LA Merdionale Vanlig Sauvignon"
-              },
-              description: {
-                en: "Wine with aromas of pink grapefruit and lemons.",
-                se: "Vin med aromer av rosa grapefrukt och citroner."
-              },
-              price: "65, 265"
+          en: "Vitt Wine",
+          se: "Vitt Vin",
+        },
+        sub: [
+          {
+            name: {
+              en: "LA Merdionale Ordinary Sauvignon",
+              se: "LA Merdionale Vanlig Sauvignon",
             },
-            
-          ]
-        }
-      },
-      {
-        name: {
-          en: "Bianco Salento (Italian)",
-          se: "Bianco Salento (Italien)"
-        },
-        description: {
-          en: "Medium-bodied wine with pleasant warmth, freshness, fruity taste of peaches and melon. Good balance and with a small, fresh aftertaste.",
-          se: "Medelfylligt vin med trevlig värme, fräschör, fruktig smak av persikor och melon. Bra balans och med liten, frisk eftersmak."
-        }
-      },
-      {
-        name: {
-          en: "Dark Horse Pinot Grigio (USA)",
-          se: "Dark Horse Pinot Grigio (USA)"
-        },
-        description: {
-          en: "A dry Pinot Grigio with notes of stonefruit and a balanced, crisp finish.",
-          se: 'En torr Pinot Grigio med toner av stenfrukt och en balanserad, krispig finish.'
-        }
+            description: {
+              en: "Wine with aromas of pink grapefruit and lemons.",
+              se: "Vin med aromer av rosa grapefrukt och citroner.",
+            },
+            price: "65, 265",
+          },
+          {
+            name: {
+              en: "Bianco Salento (Italian)",
+              se: "Bianco Salento (Italien)",
+            },
+            description: {
+              en: "Medium-bodied wine with pleasant warmth, freshness, fruity taste of peaches and melon. Good balance and with a small, fresh aftertaste.",
+              se: "Medelfylligt vin med trevlig värme, fräschör, fruktig smak av persikor och melon. Bra balans och med liten, frisk eftersmak.",
+            },
+          },
+          {
+            name: {
+              en: "Dark Horse Pinot Grigio (USA)",
+              se: "Dark Horse Pinot Grigio (USA)",
+            },
+            description: {
+              en: "A dry Pinot Grigio with notes of stonefruit and a balanced, crisp finish.",
+              se: "En torr Pinot Grigio med toner av stenfrukt och en balanserad, krispig finish.",
+            },
+          },
+        ],
       },
       {
         name: {
           en: "Rose Wine",
-          se: "Rose Vin"
+          se: "Rose Vin",
         },
         sub: [
           {
             name: {
               en: "Vina Maipo",
-              se: "Vina Maipo"
+              se: "Vina Maipo",
             },
             description: {
               en: "Bright delicate pink color wine with fruity aromas, especially wild berries and pomegranate. In palate has good acidity, with mineral and fresh red fruits flavors.",
-              se: "Ljust, delikat rosa färg vin med fruktiga aromer, särskilt vilda bär och granatäpple. I gommen har bra syra, med mineral och färska röda frukter smaker."
+              se: "Ljust, delikat rosa färg vin med fruktiga aromer, särskilt vilda bär och granatäpple. I gommen har bra syra, med mineral och färska röda frukter smaker.",
             },
-            price: "235"
-          }
-        ]
+            price: "235",
+          },
+        ],
       },
       {
         name: {
           en: "Alcohol Free",
-          se: "Alkoholfritt"
+          se: "Alkoholfritt",
         },
         sub: [
-            {
-              name: {
-                en: "Nature Red",
-                se: "Nature Red"
-              },
-              price: "215"
+          {
+            name: {
+              en: "Nature Red",
+              se: "Nature Red",
             },
-            {
-              name: {
-                en: "Torre Spanien",
-                se: "Torre Spanien"
-              },
-              description: {
-                en: "Light wine with hints of pomegranate, red currants and vanilla.",
-                se: "Lätt vin med inslag av granatäpple, röda vinbär och vanilj."
-              }
+            price: "215",
+          },
+          {
+            name: {
+              en: "Torre Spanien",
+              se: "Torre Spanien",
             },
-            {
-              name: {
-                en: "Chapel Hill Sparkling",
-                se: "Chapel Hill Sparkling"
-              },
-              price: "215"
-            }
-        ]
-      }
-    ]
-  }
-}
+            description: {
+              en: "Light wine with hints of pomegranate, red currants and vanilla.",
+              se: "Lätt vin med inslag av granatäpple, röda vinbär och vanilj.",
+            },
+          },
+          {
+            name: {
+              en: "Chapel Hill Sparkling",
+              se: "Chapel Hill Sparkling",
+            },
+            price: "215",
+          },
+        ],
+      },
+    ],
+  },
+};
 
 export const catering = {
   description: {
     en: "Surely it's fun to have a party? Arranging food for many people, on the other hand, can be a stressful moment and you would like to have time to participate yourself as well. That's why we at Table Himalaya have come up with a perfect catering plan for your event.",
-    se: "Visst är det kul att ha fest? Att ordna mat för många personer kan däremot vara ett stressmoment och man vill gärna hinna delta själv också. Därför har vi på Table Himalaya kommit fram till en perfekt cateringplan för ert event."
+    se: "Visst är det kul att ha fest? Att ordna mat för många personer kan däremot vara ett stressmoment och man vill gärna hinna delta själv också. Därför har vi på Table Himalaya kommit fram till en perfekt cateringplan för ert event.",
   },
 
   chef_info: {
     title: {
       en: "Food should be",
-      se: "Mat ska vara"
+      se: "Mat ska vara",
     },
     text_one: {
       en: "Abid Khan began his cooking journey in 1991 in Sweden. Today, together with his wife, he runs the Cumin Club restaurants on Södermannagatan and Luntmakargatan in Stockholm. He cooks food from the heart, food that his guests enjoy and that children enjoy.",
-      se: "Abid Khan började sin matlagningsresa 1991 i Sverige. Idag driver han, tillsammans med sin fru, restaurangerna Cumin Club på Södermannagatan och på Luntmakargatan i Stockholm. Han lagar mat från hjärtat, mat som hans gäster tycker om och som barn tycker om."
+      se: "Abid Khan började sin matlagningsresa 1991 i Sverige. Idag driver han, tillsammans med sin fru, restaurangerna Cumin Club på Södermannagatan och på Luntmakargatan i Stockholm. Han lagar mat från hjärtat, mat som hans gäster tycker om och som barn tycker om.",
     },
     text_two: {
       en: "Abid Khan is passionate about his cooking and his own spice mixes. He is careful to make everything from scratch with natural ingredients and spices 'I don't trust ready-made powders,' he says. Once or twice a week he stands and mixes and mortars his various seasonings for Tikka Masala, Korma and the other classic spice mixes.",
-      se: "Abid Khan brinner för sin matlagning och sina egna kryddblandningar. Han är noga med att göra allt från grunden med naturliga råvaror och kryddor “Jag litar inte på färdiga pulver”, säger han. En till två gånger per vecka står han och mixar och mortlar sina olika smaksättningar till Tikka Masala, Korma och de andra klassiska kryddblandningarna."
+      se: "Abid Khan brinner för sin matlagning och sina egna kryddblandningar. Han är noga med att göra allt från grunden med naturliga råvaror och kryddor “Jag litar inte på färdiga pulver”, säger han. En till två gånger per vecka står han och mixar och mortlar sina olika smaksättningar till Tikka Masala, Korma och de andra klassiska kryddblandningarna.",
     },
     text_three: {
       en: "Abid also never uses gluten or lactose (except yogurt) in its food. 'The taste is not in wheat or cream', says Abid. 'I have never used these ingredients in my kitchen,' he continues. It suits today's society very well as Abid has noticed that many of his guests are allergic or want to avoid these particular substances.",
-      se: "Abid använder heller aldrig gluten eller laktos (förutom yoghurt) i sin mat. “Smaken sitter inte i vete eller grädde”, menar Abid. “Jag har aldrig använt dessa råvaror i mitt kök”, fortsätter han. Det passar dagens samhälle väldigt bra då Abid märkt att många av hans gäster är allergiker eller vill undvika just dessa ämnen."
+      se: "Abid använder heller aldrig gluten eller laktos (förutom yoghurt) i sin mat. “Smaken sitter inte i vete eller grädde”, menar Abid. “Jag har aldrig använt dessa råvaror i mitt kök”, fortsätter han. Det passar dagens samhälle väldigt bra då Abid märkt att många av hans gäster är allergiker eller vill undvika just dessa ämnen.",
     },
   },
 
@@ -1816,73 +1807,72 @@ export const catering = {
     {
       name: {
         en: "Starters & Salads",
-        se: "Förrätt och Sallad"
+        se: "Förrätt och Sallad",
       },
       source: "/starters.png",
       description: {
         en: "Choose any 2",
-        se: "Välj valfri 2"
+        se: "Välj valfri 2",
       },
-      items: 
-      [
+      items: [
         {
           name: {
             en: "Onion Bhaji",
-            se: "Onion Bhaji"
+            se: "Onion Bhaji",
           },
           source: "/onion-bhaji.jpg",
           description: {
             en: "Fried onions breaded in chickpea flour.",
-            se: "Stekt lök panerad i kikärtsmjöl."
-          }
-        },  
+            se: "Stekt lök panerad i kikärtsmjöl.",
+          },
+        },
         {
           name: {
             en: "Papadam",
-            se: "Papadam"
+            se: "Papadam",
           },
           source: "/papadam.jpg",
 
           description: {
             en: "Crispy lentil bread with mango chutney.",
-            se: "Krispigt linsbröd med mango chutney."
-          }
-        },  
+            se: "Krispigt linsbröd med mango chutney.",
+          },
+        },
         {
           name: {
             en: "Shekh Kebab",
-            se: "Shekh Kebab"
+            se: "Shekh Kebab",
           },
           source: "/shekh-kebab.jpg",
           description: {
             en: "Lamb mince mixed with finely chopped onion, chilli, garlic, coriander and ginger, rolled on a skewer and grilled in a clay oven.",
-            se: "Lammmynta blandad med finhakad lök, chili, vitlök, koriander och ingefära, rullad på spett och grillad i leraugn."
-          }
+            se: "Lammmynta blandad med finhakad lök, chili, vitlök, koriander och ingefära, rullad på spett och grillad i leraugn.",
+          },
         },
         {
           name: {
             en: "Samosa Chaat",
-            se: "Samosa Chaat"
+            se: "Samosa Chaat",
           },
           source: "/samosa-chaat.jpg",
 
           description: {
             en: "Samosa Chaat - Homemade vegetarian samosa, topped with raita, cucumber, tomato, onion, coriander tamarind sauce and mint chutney.",
-            se: "Hemlagad vegetarisk samosa, toppad med raita, gurka, tomat, lök, koriander tamarindsås och mynta cutney."
-          }
-        },  
+            se: "Hemlagad vegetarisk samosa, toppad med raita, gurka, tomat, lök, koriander tamarindsås och mynta cutney.",
+          },
+        },
         {
           name: {
             en: "Panir Salad",
-            se: "Panir Salad"
+            se: "Panir Salad",
           },
           source: "/paneer-salad.jpeg",
           description: {
             en: "Mix salad, homemade Indian cheese, olive oil, lime juice.",
-            se: "Mix sallad, hemlagad indisk ost, olivolja, limesaft."
-          }
-        },  
-      ]
+            se: "Mix sallad, hemlagad indisk ost, olivolja, limesaft.",
+          },
+        },
+      ],
     },
     {
       name: {
@@ -1894,197 +1884,194 @@ export const catering = {
         {
           name: {
             en: "Onion Bhaji",
-            se: "Onion Bhaji"
+            se: "Onion Bhaji",
           },
           source: "/onion-bhaji.jpg",
 
           description: {
             en: "Fried onions breaded in chickpea flour.",
-            se: "Stekt lök panerad i kikärtsmjöl."
-          }
-        },  
+            se: "Stekt lök panerad i kikärtsmjöl.",
+          },
+        },
         {
           name: {
             en: "Papadam",
-            se: "Papadam"
+            se: "Papadam",
           },
           source: "/papadam.jpg",
           description: {
             en: "Crispy lentil bread with mango chutney.",
-            se: "Krispigt linsbröd med mango chutney."
-          }
+            se: "Krispigt linsbröd med mango chutney.",
+          },
         },
         {
           name: {
             en: "Chicken Tikka Masala",
-            se: "Kyckling Tikka Masala"
+            se: "Kyckling Tikka Masala",
           },
           source: "/chicken-tikka.jpg",
-          
         },
         {
           name: {
             en: "Mix Vegetarian Masala (Vegan)",
-            se: "Mix Vegetarisk Masala (Vegon)"
+            se: "Mix Vegetarisk Masala (Vegon)",
           },
           source: "/mix-veg.jpeg",
 
           description: {
             en: "Mixed vegetables in a tomato-based vegetarian vegan sauce.",
-            se: "Blandade grönsaker i en tomatbaserad vegetarisk vegon sås."
-          }
+            se: "Blandade grönsaker i en tomatbaserad vegetarisk vegon sås.",
+          },
         },
         {
           name: {
             en: "Naan Bread",
-            se: "Naanbröd"
+            se: "Naanbröd",
           },
           source: "/naan.jpg",
-          
-        }
+        },
       ],
       price: "149 kr per person",
       delivery: {
         en: "Delivery SEK 450 within customs",
-        se: "Leverans 450kr inom tullarna"
-      }
+        se: "Leverans 450kr inom tullarna",
+      },
     },
     {
       name: {
         en: "Main Course ",
-        se: "Huvudrets "
+        se: "Huvudrets ",
       },
       source: "/main-course.png",
       description: {
         en: "Choose any 2",
-        se: "Välj valfri 2"
+        se: "Välj valfri 2",
       },
       items: [
         {
           name: {
             en: "Mixed Chicken Grill",
-            se: 'Mixed Kyckling Grill'
+            se: "Mixed Kyckling Grill",
           },
           source: "/mixed-grill.jpg",
           description: {
             en: "Chicken fillet marinated in tandoori, garlic and green chili, grilled in a clay oven and served with rice, fresh vegetables and sauce",
-            se: "Kycklingfilé marinerad i tandoori, vitlök och grön chili, grillad i leraugn och serveras med ris, färska grönsaker och sås"
-          }
+            se: "Kycklingfilé marinerad i tandoori, vitlök och grön chili, grillad i leraugn och serveras med ris, färska grönsaker och sås",
+          },
         },
         {
           name: {
             en: "Vindaloo Steak",
-            se: "Vindaloo Steak"
+            se: "Vindaloo Steak",
           },
           source: "/vindaloo-steak.jpg",
 
           description: {
             en: "A very hearty South Indian dish served with rice",
-            se: "En mycket stark maträtt från södra Indien serverad medris"
-          }
+            se: "En mycket stark maträtt från södra Indien serverad medris",
+          },
         },
         {
           name: {
             en: "Chicken Tikka Butter Masala",
-            se: "Kyckling Tikka Butter Masala"
+            se: "Kyckling Tikka Butter Masala",
           },
           source: "/chicken-butter.jpeg",
 
           description: {
             en: "Grilled chicken breast fillet cooked with butter fried spices served with rice",
-            se: "Grillad kycklingbröstfilé tillagad med smörstekt kryddor serverad med ris"
-          }
+            se: "Grillad kycklingbröstfilé tillagad med smörstekt kryddor serverad med ris",
+          },
         },
         {
           name: {
             en: "Biryani",
-            se: "Biryani"
+            se: "Biryani",
           },
           source: "/biryani.jpeg",
           description: {
             en: "Indian saffron risotto with oriental spices. Choose between steak and vegetarian. Served with masala sauce and vegetables",
-            se: "Indisk saffranrisotto med orientaliska kryddor. Välj mellan biff och vegetarian. Serveras med masalasås och grönsaker"
-          }
+            se: "Indisk saffranrisotto med orientaliska kryddor. Välj mellan biff och vegetarian. Serveras med masalasås och grönsaker",
+          },
         },
         {
           name: {
             en: "Palak Panir",
-            se: "Palak Panir"
+            se: "Palak Panir",
           },
           source: "/palak-paneer.jpg",
           description: {
             en: "Homemade cream cheese cooked with spinach served with rice.",
-            se: "Hemlagad gräddost tillagad med spenat serverad med ris."
-          }
+            se: "Hemlagad gräddost tillagad med spenat serverad med ris.",
+          },
         },
         {
           name: {
             en: "Vegan Kofte",
-            se: "Vegan Kofte"
+            se: "Vegan Kofte",
           },
           source: "/veg-kofte.jpg",
           description: {
             en: "Vegetable buns in a spinach sauce (gluten and dairy free)",
-            se: "Vegetabiliska bullar i en spenatsås (gluten- och mjölkfri)"
-          }
-        }
-      ]
+            se: "Vegetabiliska bullar i en spenatsås (gluten- och mjölkfri)",
+          },
+        },
+      ],
     },
     {
       name: {
         se: "Dessert",
-        en: "Dessert"
+        en: "Dessert",
       },
       source: "/dessert.png",
       description: {
         en: "Choose any 1",
-        se: "Välj valfri 1"
+        se: "Välj valfri 1",
       },
       items: [
         {
           name: {
             en: "Gulab Jamun",
-            se: "Gulab Jamun"
+            se: "Gulab Jamun",
           },
           source: "/gulab-jamun.jpg",
 
           description: {
             en: "Soft lumps made of cottage cheese in cardamom syrup",
-            se: "Mjuka klimpar gjorda av keso i kardemummsirap"
-          }
+            se: "Mjuka klimpar gjorda av keso i kardemummsirap",
+          },
         },
         {
           name: {
             en: "Fruit with vanilla cream",
-            se: "Frukt med vanilla cream"
+            se: "Frukt med vanilla cream",
           },
           source: "/fruit-vanilla.jpg",
-
         },
         {
           name: {
             en: "Gajar Ka Halwa",
-            se: "Gajar Ka Halwa"
+            se: "Gajar Ka Halwa",
           },
           source: "/gajar-halwa.jpg",
           description: {
             en: "Halwa made of carrot, dry fruits, nuts and condensed milk",
-            se: "Halwa gjorde morot, torkad frukt, nötter och kondenserad mjölk"
-          }
-        }
-      ]
-    }
-  ]
-}
+            se: "Halwa gjorde morot, torkad frukt, nötter och kondenserad mjölk",
+          },
+        },
+      ],
+    },
+  ],
+};
 
 export const about_us = {
   about_us: {
     en: "About Us",
-    se: "Om Oss"
+    se: "Om Oss",
   },
   first_description: {
     en: "You will witness God shaping the divided seas as we bring together our own divided forms, ultimately replenishing them by the end of this process.",
-    se: "Du kommer att bevittna hur Gud formar de delade haven när vi sammanför våra egna delade former, och slutligen fyller på dem i slutet av denna process."
+    se: "Du kommer att bevittna hur Gud formar de delade haven när vi sammanför våra egna delade former, och slutligen fyller på dem i slutet av denna process.",
   },
   fast_service: {
     en: "Fast Service",
@@ -2092,26 +2079,26 @@ export const about_us = {
   },
   fresh_food: {
     en: "Fresh Food",
-    se: "Färsk mat"
+    se: "Färsk mat",
   },
   fast_support: {
     en: "Fast Support",
-    se: "Snabb Support"
+    se: "Snabb Support",
   },
   second_title: {
     en: "We Speak the Language of Foods",
-    se: "Vi talar matens språk"
+    se: "Vi talar matens språk",
   },
   second_description: {
     en: "Welcome to The Table Himalaya, where culinary artistry meets a warm and inviting atmosphere. Nestled in the heart of Stockholm, our restaurant is a gastronomic haven that promises an unforgettable dining experience. From the moment you step through our doors, you'll be transported into a world of exquisite flavors, impeccable service, and a welcoming ambiance that feels like home. Whether you're seeking a romantic dinner for two, a memorable celebration with friends and family, or simply a delightful meal to savor, we invite you to join us and indulge in a culinary journey that celebrates the finest in food and hospitality.",
-    se: "Välkommen till The Table Himalaya, där kulinariskt konstnärskap möter en varm och inbjudande atmosfär. Inbäddat i hjärtat av Stockholm är vår restaurang en gastronomisk fristad som utlovar en oförglömlig matupplevelse. Från det ögonblick du kliver in genom våra dörrar kommer du att transporteras in i en värld av utsökta smaker, oklanderlig service och en välkomnande atmosfär som känns som hemma. Oavsett om du letar efter en romantisk middag för två, en minnesvärd fest med vänner och familj, eller bara en härlig måltid att njuta av, bjuder vi in ​​dig att gå med oss ​​och njuta av en kulinarisk resa som firar det finaste inom mat och gästfrihet."
+    se: "Välkommen till The Table Himalaya, där kulinariskt konstnärskap möter en varm och inbjudande atmosfär. Inbäddat i hjärtat av Stockholm är vår restaurang en gastronomisk fristad som utlovar en oförglömlig matupplevelse. Från det ögonblick du kliver in genom våra dörrar kommer du att transporteras in i en värld av utsökta smaker, oklanderlig service och en välkomnande atmosfär som känns som hemma. Oavsett om du letar efter en romantisk middag för två, en minnesvärd fest med vänner och familj, eller bara en härlig måltid att njuta av, bjuder vi in ​​dig att gå med oss ​​och njuta av en kulinarisk resa som firar det finaste inom mat och gästfrihet.",
   },
   featured_food: {
     en: "Featured Food",
-    se: "Utvald Mat"
+    se: "Utvald Mat",
   },
   featured_food_info: {
     en: "Fresh taste and great price",
-    se: "Fräsch smak och bra pris"
-  }
-}
+    se: "Fräsch smak och bra pris",
+  },
+};
