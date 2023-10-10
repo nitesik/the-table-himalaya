@@ -273,6 +273,7 @@ export default function Homepage() {
       <div className="flex justify-center mt-[50px]">
         <div className="w-[350px] md:w-[700px] mb-[100px] lg:w-[1000px] xl:w-[1200px]">
           <iframe
+            title="map"
             className="w-full h-[500px]"
             loading="lazy"
             src={`https://www.google.com/maps/embed/v1/place?key=${process.env.NEXT_PUBLIC_GOOGLE_API}&q=cumin+stockholm&language=${t === "en" ? "en" : "sv"}`}
