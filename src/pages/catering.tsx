@@ -91,89 +91,96 @@ export default function Catering() {
         </div>
 
         <div className="mt-[50px] rounded w-full p-10 bg-primary">
-          <h1 className="text-white text-center text-lg lg:text-[23px]">NOTE: Please call us at 0760353799/+4686123780 for special catering requests !!</h1>
+          <h1 className="text-white text-center text-lg lg:text-[23px]">
+            NOTE: Please call us at 0760353799/+4686123780 for special catering
+            requests !!
+          </h1>
         </div>
 
         <form
-            id="form"
-            onSubmit={formHandler}
-            className=" md:mx-0 bg-white rounded-lg md:w-full h-[550px] lg:h-full py-[30px] px-4 md:px-7 gap-5 flex flex-col items-center"
-          >
-            <h1 className="text-[28px] font-bold">
-              Catering Reservation
-            </h1>
-            <div className="w-full grid grid-cols-2 flex-1 [&>input]:border [&>input]:rounded [&>input]:py-4 [&>input]:px-2 md:[&>input]:px-5 [&>input]:border-[#ddd] gap-3">
-              <input
-                type="text"
-                className="focus:border-primary border outline-none"
-                placeholder={`${homepage.name[t]}*`}
-                onChange={(e) => setName(e.target.value)}
-                value={name}
-                required
-              />
-              <input
-                type="email"
-                className="focus:border-primary border outline-none"
-                placeholder={`${homepage.mail[t]}*`}
-                onChange={(e) => setEmail(e.target.value)}
-                value={email}
-                required
-              />
-              <input
-                type="text"
-                className="focus:border-primary border outline-none"
-                placeholder={`${homepage.phone_number[t]}*`}
-                onChange={(e) => setPhone(e.target.value)}
-                value={phone}
-                required
-              />
-              <input
-                type="number"
-                className="focus:border-primary border outline-none"
-                placeholder={`${homepage.guests[t]}*`}
-                onChange={(e) => setGuests(e.target.value)}
-                value={guests}
-                required
-              />
-              <input
-                type="date"
-                className="focus:border-primary border outline-none"
-                placeholder={`${homepage.date[t]}*`}
-                onChange={(e) => setDate(e.target.value)}
-                value={date}
-                required
-              />
-              <input
-                type="time"
-                className="focus:border-primary border outline-none"
-                placeholder={`${homepage.time[t]}*`}
-                onChange={(e) => setTime(e.target.value)}
-                value={time}
-                required
-              />
-            </div>
-            <textarea
-              placeholder={`${homepage.message[t]}`}
-              className="focus:border-primary border outline-none w-full border-[#ddd] rounded pl-5 pt-3 h-[150px]"
-              onChange={(e) => setMessage(e.target.value)}
-              value={message}
+          id="form"
+          onSubmit={formHandler}
+          className=" md:mx-0 bg-white rounded-lg md:w-full h-[550px] lg:h-full py-[30px] px-4 md:px-7 gap-5 flex flex-col items-center"
+        >
+          <h1 className="text-[28px] font-bold">Catering Reservation</h1>
+          <div className="w-full grid grid-cols-2 flex-1 [&>input]:border [&>input]:rounded [&>input]:py-4 [&>input]:px-2 md:[&>input]:px-5 [&>input]:border-[#ddd] gap-3">
+            <input
+              type="text"
+              className="focus:border-primary border outline-none"
+              placeholder={`${homepage.name[t]}*`}
+              onChange={(e) => setName(e.target.value)}
+              value={name}
+              required
             />
-            <button
-              disabled={isLoading}
-              className="bg-primary w-full text-white font-semibold py-3 rounded "
-            >
-              {homepage.reservation_button[t]}
-            </button>
-          </form>
-        
+            <input
+              type="email"
+              className="focus:border-primary border outline-none"
+              placeholder={`${homepage.mail[t]}*`}
+              onChange={(e) => setEmail(e.target.value)}
+              value={email}
+              required
+            />
+            <input
+              type="text"
+              className="focus:border-primary border outline-none"
+              placeholder={`${homepage.phone_number[t]}*`}
+              onChange={(e) => setPhone(e.target.value)}
+              value={phone}
+              required
+            />
+            <input
+              type="number"
+              className="focus:border-primary border outline-none"
+              placeholder={`${homepage.guests[t]}*`}
+              onChange={(e) => setGuests(e.target.value)}
+              value={guests}
+              required
+            />
+            <input
+              type="date"
+              className="focus:border-primary border outline-none"
+              placeholder={`${homepage.date[t]}*`}
+              onChange={(e) => setDate(e.target.value)}
+              value={date}
+              required
+            />
+            <input
+              type="time"
+              className="focus:border-primary border outline-none"
+              placeholder={`${homepage.time[t]}*`}
+              onChange={(e) => setTime(e.target.value)}
+              value={time}
+              required
+            />
+          </div>
+          <textarea
+            placeholder={`${homepage.message[t]}`}
+            className="focus:border-primary border outline-none w-full border-[#ddd] rounded pl-5 pt-3 h-[150px]"
+            onChange={(e) => setMessage(e.target.value)}
+            value={message}
+          />
+          <button
+            disabled={isLoading}
+            className="bg-primary w-full text-white font-semibold py-3 rounded "
+          >
+            {homepage.reservation_button[t]}
+          </button>
+        </form>
+
         <div className="mt-[50px] w-full md:w-[500px] lg:w-[700px] flex justify-between">
           {catering.category.map((item, index) => (
             <div
               key={index}
               onClick={() => setCategoryIndex(index)}
-              className="flex-none w-[20%] md:w-[25%] flex flex-col gap-3 items-center text-center"
+              className="flex-none cursor-pointer w-[20%] md:w-fit flex flex-col gap-3 items-center text-center"
             >
-              <p className="w-fit bg-primary-blur rounded-xl p-5"><Image src={item.source} alt="image" width={50} height={50} /></p>{" "}
+              <p
+                className={`w-fit rounded-xl p-5 ${
+                  categoryIndex === index ? "bg-primary" : "bg-primary-blur"
+                }`}
+              >
+                <Image src={item.source} alt="image" width={50} height={50} />
+              </p>{" "}
               <p
                 className={`text-[20px] font-semibold ${
                   categoryIndex === index ? "text-primary" : "text-black"
@@ -198,7 +205,13 @@ export default function Catering() {
         <div className="mt-[35px] md:mt-[50px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
           {catering.category[categoryIndex].items.map((item) => (
             <div key={item.name[t]} className="flex items-start gap-5">
-              <Image src={item.source} alt="image" width={138} height={138} className="rounded-xl mt-[10px]" />
+              <Image
+                src={item.source}
+                alt="image"
+                width={138}
+                height={138}
+                className="rounded-xl mt-[10px]"
+              />
               <div>
                 <h1 className="text-[23px] text-primary font-semibold">
                   {item.name[t]}
