@@ -186,6 +186,7 @@ export const homepage = {
 
 export const menu = {
   appetizer: {
+    index: 0,
     name: {
       en: "Appetizers",
       se: "Förrätter",
@@ -194,14 +195,14 @@ export const menu = {
     items: [
       {
         name: {
-          en: "Vegetarian Platter",
-          se: "Vegetarian Platter",
+          en: "Grönsak/ Chicken Pakauda",
+          se: "Grönsak/ Chicken Pakauda",
         },
         description: {
-          en: "Combination starters including: samosa, onion bhaji, piazu and paneer tikka",
-          se: "Kombination av förrätter inklusive: samosa, lök bhaji , piazu och paneer tikka",
+          en: "A deep-fried vegetable/chicken mixture with lentil flour in hot oil to achieve a rich and crispy taste. Served with a fresh coriander and mint sauce",
+          se: "En friterade grönsaksblandning/ kyckling med linsmjöl  i het olja för att uppnå en fyllig och krispig smak. Serveras med en färsk koriander- och myntasås ",
         },
-        price: 150,
+        price: "70/80",
       },
       {
         name: {
@@ -209,74 +210,86 @@ export const menu = {
           se: "Papadam",
         },
         description: {
-          en: "Crispy lentil flour bread with mango chutney.",
-          se: "Krispigt linsmjölsbröd med mango chutney.",
+          en: "Crispy lentil flour bread",
+          se: "Krispigt linsmjölsbröd",
         },
-        price: 35,
+        price: 40,
       },
       {
         name: {
-          en: "Paneer Tikka",
-          se: "Paneer Tikka",
+          en: "Onion Roll",
+          se: "Onion Roll",
         },
         description: {
-          en: "Soft, juicy pieces of homemade cheese marinated in tandoori masala and then grilled in Tandoori ung.",
-          se: "Mjuka, saftiga bitar av hemlagad ost marinerad i tandoori masala och sedan grillad in Tandoori ung.",
+          en: "Sliced onions smothered in a simple, fragrant spiced chickpea flour and fried to crispy perfection.",
+          se: "Skivad lök kvävd i en enkel, doftande kryddad kikärtsmjöl och stekt till krispig perfektion.",
         },
-        price: 79,
+        price: 70,
       },
       {
         name: {
-          en: "Chole Puri",
-          se: "Chole Puri",
+          en: "Veg Samosa",
+          se: "Kött Samosa",
         },
         description: {
-          en: "Spicy chickpeas and fried bread, ginger, garlic, coriander and green chilli.",
-          se: "Kryddiga kikärtor och stekt bröd, ingefära, vitlök, koriander och grön chili.",
+          en: "Indian pirogue with minced lamb/veg filling, 2 pieces.",
+          se: "Indisk pirog med lammfärs/veg fylling , 2st",
         },
-        price: 65,
+        price: 70,
       },
       {
         name: {
-          en: "Samosa chaat",
-          se: "Samosa chaat",
+          en: "Samosa Chat",
+          se: "Samosa Chat",
         },
         description: {
-          en: "Homemade veg samosa flattened on a plate, topped with chickpeas, raita, cucumber, tomato, onion, coriander tamarind and mint chutney",
-          se: "Hemlagad veg samosa tillplattade på en tallrik, toppad med kikärtor, raita, gurka, tommat, lök, koriander tamarind och mynta chutney",
+          en: "Homemade veg samosa flattened on a plate, cucumber, tomato, onion, coriander.",
+          se: "Hemlagad veg samosa tillplattade på en tallrik , gurka, tommat, lök, koriander.",
         },
-        price: 79,
+        price: 70,
       },
       {
         name: {
-          en: "Chili prawns",
-          se: "Chili prawns",
+          en: "Chicken/ Tomato Soup",
+          se: "Kyckling/ Tomat Soppa",
         },
         description: {
-          en: "Grillade tigerräkor smaksatta med chili och koriander serveras på en mixsallad av rödlök, ingefära, tomat.",
-          se: "Grilled tiger prawns flavored with chilli and coriander are served on a mixed salad of red onion, ginger and tomato.",
+          en: "Chicken / tomato soup with coconuts spices served with fresh coriander",
+          se: "En fyllig kyckling / tomat soppa smaksatt med kokos krydda och färska koriander.",
         },
-        price: 99,
+        price: "80/70",
       },
       {
         name: {
-          en: "Onion Bhaji",
-          se: "Lök Bhaji",
+          en: "Chicken Chat",
+          se: "Chicken Chat",
         },
         description: {
-          en: "Grillade tigerräkor smaksatta med chili och koriander serveras på en mixsallad av rödlök, ingefära, tomat.",
-          se: "Grilled tiger prawns flavored with chilli and coriander are served on a mixed salad of red onion, ginger and tomato.",
+          en: "Mix red onions, cucumber, tomato, fresh coriander with grilled chicken pieces",
+          se: "Blandade rödlök, tomato, gurka, fräsk korriander, med grillade kycklingbitar  ",
         },
-        price: 99,
+        price: 80,
+      },
+      {
+        name: {
+          en: "Mountain  Heart  Stone  Cocktail",
+          se: "Mountain  Heart  Stone  Cocktail",
+        },
+        description: {
+          en: "Fry tiger prawns with sweet-chili sauce. Served with two different sauces.",
+          se: "Stek tiger räkor med sweet-chili sås. Serveras med två olika såser.",
+        },
+        price: 90,
       },
     ],
   },
 
   favourites: {
     source: "/favourite-banner.jpg",
+    index: 1,
     name: {
-      en: "Our Favourites",
-      se: "Våra Favoriter",
+      en: "Main Dishes",
+      se: "Huvud Rätter",
     },
     items: [
       {
@@ -285,59 +298,8 @@ export const menu = {
           se: "Tikka Masala",
         },
         description: {
-          en: "These dishes are roasted in our clay oven in a masala sauce with yogurt, cream, butter and nuts.",
-          se: "Dessa rätter är rostade i vår lerugn i en masalasås med yoghurt, grädde, smör och nötter.",
-        },
-        sub: [
-          {
-            name: {
-              en: "Chicken Masala/Chicen",
-              se: "Kyckling Masala/Kyckling",
-            },
-            price: 169,
-          },
-          {
-            name: {
-              en: "Lamb Fillet Masala",
-              se: "Lammytterfilé Masala",
-            },
-            price: 199,
-          },
-          {
-            name: {
-              en: "Tiger Prawns/Scampi Prawns Sek",
-              se: "Tigerräkor/Scampi prawns",
-            },
-            price: 199,
-          },
-          {
-            name: {
-              en: "Veg Masala",
-              se: "Veg Masala",
-            },
-            price: 169,
-          },
-        ],
-      },
-      {
-        name: {
-          en: "Mango Chicken Masala",
-          se: "Mango Kyckling Masala",
-        },
-        description: {
-          en: "These dishes are roasted in our clay oven in a masala sauce with yogurt, mango, cream, butter and nuts.",
-          se: "Dessa rätter är rostade i vår lerugn i en masalasås med yoghurt, mango, grädde, smör och nötter.",
-        },
-        price: 179,
-      },
-      {
-        name: {
-          en: "Vindaloo",
-          se: "Vindaloo",
-        },
-        description: {
-          en: "A very strong dish from South India. Marinated with Cumin Clubs own spice mix.",
-          se: "En mycket stark rätt från södra Indien. Marinad med Cumin Clubs egna kryddblandning.",
+          en: "Grilled chicken/ lamb in Tandoori spices cooked with mint, nuts and crème sauce",
+          se: "Grillad kyckling/ lamm i Tandoori kryddor tillagad med mynta, nötter & gräddså",
         },
         sub: [
           {
@@ -345,7 +307,64 @@ export const menu = {
               en: "Chicken",
               se: "Kyckling",
             },
-            price: 179,
+            price: 185,
+          },
+          {
+            name: {
+              en: "Lamb",
+              se: "Lammytterfilé",
+            },
+            price: 195,
+          },
+        ],
+      },
+      {
+        name: {
+          en: "Korma",
+          se: "Korma",
+        },
+        description: {
+          en: "These dishes are roasted in our clay oven in a masala sauce with yogurt, mango, cream, butter and nuts.",
+          se: "Dessa rätter är rostade i vår lerugn i en masalasås med yoghurt, mango, grädde, smör och nötter.",
+        },
+        price: undefined,
+        sub: [
+          {
+            name: {
+              en: "Chicken",
+              se: "Kyckling",
+            },
+            price: 185,
+          },
+          {
+            name: {
+              en: "Lamb, mild",
+              se: "Lamm, mild",
+            },
+            description: {
+              en: null,
+              se: null,
+            },
+            price: 195,
+          },
+        ],
+      },
+      {
+        name: {
+          en: "Vindaloo",
+          se: "Vindaloo",
+        },
+        description: {
+          en: "Chicken / lamb fillet cooked in red wine and piri piri from southern India",
+          se: "Kycklingfilé / lammfile brässerad i rödvin grovmalen piri piri från södra Indien",
+        },
+        sub: [
+          {
+            name: {
+              en: "Chicken",
+              se: "Kyckling",
+            },
+            price: 195,
             description: {
               en: null,
               se: null,
@@ -353,51 +372,22 @@ export const menu = {
           },
           {
             name: {
-              en: "Lamb",
-              se: "Lamm",
+              en: "Lamb, X-Stark",
+              se: "Lamm, X-Stark",
             },
-            price: 189,
-          },
-          {
-            name: {
-              en: "Småräkor",
-              se: "Shrimps",
-            },
-            price: 169,
-          },
-          {
-            name: {
-              en: "Tiger Prawns",
-              se: "Tigerräkor Prawns",
-            },
-            price: 199,
-          },
-          {
-            name: {
-              en: "Veg Vindaloo",
-              se: "Veg Vindaloo Sek",
-            },
-            price: 169,
-          },
-          {
-            name: {
-              en: "OUMPH! Soy fillet Vegan New",
-              se: "OUMPH! Sojafilé Vegon Ny",
-            },
-            price: 179,
-            veg: true,
+            price: 205,
           },
         ],
       },
 
       {
         name: {
-          en: "Tawa",
-          se: "Tawa",
+          en: "Alpine Spice",
+          se: "Alpine Spice",
         },
         description: {
-          en: "Cooked in a single pan with fresh spices including thyme, garlic and ginger.",
-          se: "Tillagad i en enda panna med färska kryddor, bland annat timjan, vitlök och ingefära.",
+          en: "A spicy dish from Himalaya, chicken fillet cooked in a spicy sauce.",
+          se: "En eldig anrättning från himalaya, kycklingfiléer med en kryddstark sås",
         },
         sub: [
           {
@@ -414,183 +404,69 @@ export const menu = {
             },
             price: 189,
           },
-          {
-            name: {
-              en: "Tiger/Scampi Prawns",
-              se: "Tigerräkor/Scampi Prawns",
-            },
-            price: 199,
-          },
-          {
-            name: {
-              en: "Mixed Tawa",
-              se: "Mixed Tawa",
-            },
-            price: 199,
-          },
-          {
-            name: {
-              en: "Paneer Tikka Tawa",
-              se: "Paneer Tikka Tawa",
-            },
-            price: 179,
-          },
-          {
-            name: {
-              en: "OUMPH! Soy Fillet Vegan",
-              se: "OUMPH! Sojafilé Vegan",
-            },
-            price: 179,
-          },
         ],
       },
       {
         name: {
-          en: "Ayurveda",
-          se: "Ayurveda",
+          en: "Kadai",
+          se: "Kadai",
         },
         description: {
-          en: "Ayurveda is a classical Indian life philosophy and healing art. At The Table Himalaya, we serve our ayurvedic dishes in a sauce of curry leaves, onion, mustard seeds, coconut, red chili and tamarind.",
-          se: "Ayurveda är en klassisk indisk livsfilosofi och läkekonst. På The Table Himalaya serverar vi våra ayurveda-rätter i en sås på curryblad, lök, senapsfrön, kokos, röd chili och tamarin.",
+          en: "Marinated chicken fillets, capsicum, onion vegetables in a basilica sauce ",
+          se: "Marinerade kycklingfiléer, paprika, lök, grönsaker i en basilikasås.",
         },
         sub: [
           {
             name: {
-              en: "Paneer Tikki Tawa",
-              se: "Paneer Tikki Tawa",
+              en: "Mellan",
+              se: "Mellan",
             },
-            price: 179,
+            price: 205,
           },
 
           {
             name: {
+              en: "Start",
+              se: "Start",
+            },
+            price: 215,
+          },
+        ],
+      },
+      {
+        name: {
+          en: "Makhani (Mild)",
+          se: "Makhani (Mild)",
+        },
+        description: {
+          en: "Butter chicken / lamb cooked with raisins, cashew nuts in a mild tandoori sauce.",
+          se: "Grillad kyckling / lamm  tillagad med russin, tandoori, cashew och pistagenötter i en mild tandoorisås.",
+        },
+        sub: [
+          {
+            name: {
               en: "Chicken",
               se: "Kyckling",
             },
-            price: 179,
+            price: 185,
           },
           {
             name: {
               en: "Lamb",
               se: "Lamm",
             },
-            price: 189,
-          },
-          {
-            name: {
-              en: "Veg Ayurveda",
-              se: "Veg Ayurveda",
-            },
-            price: 169,
-          },
-          {
-            name: {
-              en: "OUMPH! Soy Fillet Vegan",
-              se: "OUMPH! Sojafilé Vegan",
-            },
-            price: 179,
+            price: 195,
           },
         ],
       },
       {
         name: {
-          en: "Garlic Tikka Masala",
-          se: "Garlic Tikka Masala",
+          en: "Saag (Mellan)",
+          se: "Saag (Mellan)",
         },
         description: {
-          en: "Garlic Marinated and grilled chicken fillet with butter, cream and nuts in yogurt sauce.",
-          se: "Vitlöks Marinerad och grillad kycklingfilé med smör, grädde och nötter i yoghurtsås.",
-        },
-        sub: [
-          {
-            name: {
-              en: "Chicken Masala",
-              se: "Kyckling Masala",
-            },
-            price: 169,
-          },
-          {
-            name: {
-              en: "Fillet of Lamb Masala",
-              se: "Lammytterfilé Masala",
-            },
-            price: 199,
-          },
-          {
-            name: {
-              en: "Tiger/Scampi Prawns",
-              se: "Tigerräkor/Scampi Prawns",
-            },
-            price: 199,
-          },
-          {
-            name: {
-              en: "Mixed Masala",
-              se: "Mixed Masala",
-            },
-            description: {
-              en: "Grilled chicken, lamb fillet and tiger prawns with butter, cream and nuts in yoghurt sauce.",
-              se: "Grillad Kyckling, lammfilé och Tigerräkor med smör, grädde och nötter i yoghurtsås.",
-            },
-            price: 220,
-          },
-        ],
-      },
-      {
-        name: {
-          en: "Korai",
-          se: "Korai",
-        },
-        description: {
-          en: "Fresh paprika, onion, chili and coriander in a well-seasoned tomato sauce.",
-          se: "Färsk paprika, lök, chili och koriander i välkryddad tomatsås.",
-        },
-        sub: [
-          {
-            name: {
-              en: "Mixed Korai",
-              se: "Mixed Korai",
-            },
-            price: 220,
-          },
-          {
-            name: {
-              en: "Chicken",
-              se: "Kyckling",
-            },
-            price: 189,
-          },
-          {
-            name: {
-              en: "Lamb Fillet",
-              se: "Lammytterfilé",
-            },
-            price: 199,
-          },
-          {
-            name: {
-              en: "Tiger/Scampi Prawns",
-              se: "Tigerräkor/Scampi Prawns",
-            },
-            price: 209,
-          },
-          {
-            name: {
-              en: "Veg",
-              se: "Veg",
-            },
-            price: 169,
-          },
-        ],
-      },
-      {
-        name: {
-          en: "Madras Stew",
-          se: "Madrasgryta",
-        },
-        description: {
-          en: "South Indian stew with oriental spices.",
-          se: "Sydindisk gryta med orientaliska kryddor.",
+          en: "Marinated chicken / lamb fillets cooked with fresh spinach and spices",
+          se: " Marinerade kycklingfiléer / lammfile tillagad med färsk spenat & kryddor.",
         },
         sub: [
           {
@@ -598,53 +474,25 @@ export const menu = {
               en: "Chicken",
               se: "Kyckling",
             },
-            price: 179,
+            price: 190,
           },
           {
             name: {
               en: "Lamb",
               se: "Lamm",
             },
-            price: 189,
-          },
-          {
-            name: {
-              en: "Small Shrimps",
-              se: "Små Räkor/Shrimps",
-            },
-            price: 179,
-          },
-          {
-            name: {
-              en: "Tiger/Scampi Prawns",
-              se: "Tigerräkor/Scampi Prawns",
-            },
-            price: 209,
-          },
-          {
-            name: {
-              en: "Veg Madras",
-              se: "Veg Madras",
-            },
-            price: 169,
-          },
-          {
-            name: {
-              en: "OUMPH! Sojafilé Vegan Ny",
-              se: "OUMPH! Soy Fillet Vegan New",
-            },
-            price: 179,
+            price: 200,
           },
         ],
       },
       {
         name: {
-          en: "Paal",
-          se: "Paal",
+          en: "Balti (Mellan & Stark)",
+          se: "Balti (Mellan & Stark)",
         },
         description: {
-          en: "Curry dish with fresh habanero fruits, ginger and naga chili.",
-          se: "Curryrätt med färska habanero frukter, ingefära samt naga chili.",
+          en: "Marinated chicken / lamm fillets with green chili, onions, capsicums & garlic in a spicy sauce.",
+          se: "Marinerade kycklingfiléer med grön chili, lök, paprika, och vitlök i en kryddstark sås.",
         },
         sub: [
           {
@@ -652,43 +500,36 @@ export const menu = {
               en: "Chicken",
               se: "Kyckling",
             },
-            price: 179,
+            price: 205,
           },
           {
             name: {
               en: "Lamb",
               se: "Lamm",
             },
-            price: 189,
-          },
-
-          {
-            name: {
-              en: "Tiger/Scampi Prawns",
-              se: "Tigerräkor/Scampi Prawns",
-            },
-            price: 209,
+            price: 215,
           },
         ],
       },
       {
         name: {
-          en: "The Table Himalayan Spinach",
-          se: "The Table Himalaya Spenat",
+          en: "Mango chicken (Mild/ Mellan)",
+          se: "Mango chicken (Mild/ Mellan)",
         },
         description: {
-          en: "Cooked with leaf spinach and coriander in tomato sauce.",
-          se: "Tillagas med bladspenat och koriander i tomatsås.",
+          en: "Marinated chicken fillets cooked with mango, finely chopped garlic and ginger.",
+          se: "Marinerade kycklingfileer tilllagad med mango, finnhakade vitlök och ingefära. ",
         },
+        price: 190,
       },
       {
         name: {
-          en: "Daal Gost",
-          se: "Daal Gost",
+          en: "Mountain Misty Bites",
+          se: "Mountain Misty Bites",
         },
         description: {
-          en: "Cooked with mixed lentils and coriander in tomato sauce.",
-          se: "Tillagas med blandade linser och koriander i tomatsås.",
+          en: "Marinated chicken fillets cooked with fresh ginger, onion, garlic, tomatoes and a mixture of spices",
+          se: "Marinerade kycklingfiléer/ lamb fillet tillagad med färsk ingefära, lök, vitlök, tomat och en kryddblandning",
         },
         sub: [
           {
@@ -696,26 +537,118 @@ export const menu = {
               en: "Chicken",
               se: "Kyckling",
             },
-            price: 179,
+            price: 195,
           },
           {
             name: {
               en: "Lamb",
               se: "Lamm",
             },
-            price: 189,
+            price: 205,
           },
-
+        ],
+      },
+      {
+        name: {
+          en: "Jalfrezi (Mellan)",
+          se: "Jalfrezi (Mellan)",
+        },
+        description: {
+          en: "Marinated chicken / lamb  fillets cooked with fresh vegetables, capsicums, onion and indian cheese in a cream sauce",
+          se: "Marinerade kycklingfiléer tillagad med färska grönsaker, paprika, lök och indisk ost i en kryddig krämsås",
+        },
+        sub: [
           {
             name: {
-              en: "Chicken Adrak",
-              se: "Chicken Adrak",
+              en: "Chicken",
+              se: "Kyckling",
             },
-            description: {
-              en: "North Indian chicken stew with curry and distinct flavor of ginger.",
-              se: "Nordindisk kycklinggryta med curry och distinkt smak av ingefära.",
+            price: 205,
+          },
+          {
+            name: {
+              en: "Lamb",
+              se: "Lamm",
             },
-            price: 179,
+            price: 215,
+          },
+        ],
+      },
+      {
+        name: {
+          en: "Snowy Spice Haven",
+          se: "Snowy Spice Haven",
+        },
+        description: {
+          en: "Chicken fillets with green fiery chili pickles, fresh ginger, coriander, garlic, tomatoes & coconut sauce.",
+          se: "Kycklingfiléer med grön, eldiga pickles, färsk ingefära, koriander, vitlök, tomat och kokossås.",
+        },
+        sub: [
+          {
+            name: {
+              en: "Chicken",
+              se: "Kyckling",
+            },
+            price: 195,
+          },
+          {
+            name: {
+              en: "Lamb",
+              se: "Lamm",
+            },
+            price: 205,
+          },
+        ],
+      },
+      {
+        name: {
+          en: "Frosty Curry Cabin (Mellan)",
+          se: "Frosty Curry Cabin (Mellan)",
+        },
+        description: {
+          en: "Chicken / lamb fillet cooked with curry sauce.",
+          se: "Kyckling / lamm file tillagad med currysås.",
+        },
+        sub: [
+          {
+            name: {
+              en: "Chicken",
+              se: "Kyckling",
+            },
+            price: 195,
+          },
+          {
+            name: {
+              en: "Lamb",
+              se: "Lamm",
+            },
+            price: 205,
+          },
+        ],
+      },
+      {
+        name: {
+          en: "Rogan Josh (Mellan)",
+          se: "Rogan Josh (Mellan)",
+        },
+        description: {
+          en: "Lamb fillets with a smell of fresh saffron, cardamom, fresh coriander, tomatoes & almond.",
+          se: "Lamm filé med doft av saffran, kardemumma, färsk koriander, tomater och mandelflarn.",
+        },
+        sub: [
+          {
+            name: {
+              en: "Chicken",
+              se: "Kyckling",
+            },
+            price: 205,
+          },
+          {
+            name: {
+              en: "Lamb",
+              se: "Lamm",
+            },
+            price: 215,
           },
         ],
       },
@@ -723,6 +656,7 @@ export const menu = {
   },
   thali: {
     source: "/thali-banner.jpeg",
+    index: 2,
     name: {
       en: "Thali Dishes",
       se: "Thali Rätter",
@@ -734,10 +668,10 @@ export const menu = {
           se: "Vegan Thali",
         },
         description: {
-          en: "Vegan pakora, spinach vadji, dall, oumph(chaap), rice, salad and chapati bread.",
-          se: "Vegansk pakora, spenat vadji, dall, oumph(chaap), ris, sallad och chapatibröd.",
+          en: "Vegan pakauda, spinach vaji, okra( lady funger) , lenses, ris salad and chapati bread",
+          se: "Vegansk pakauda,  spenatvaji, okra, linser, , ris, sallad och chapatibröd.",
         },
-        price: 199,
+        price: 220,
       },
       {
         name: {
@@ -745,10 +679,10 @@ export const menu = {
           se: "Ayurveda Thali",
         },
         description: {
-          en: "Three vegetarian dishes: okra palak paneer, mix-veg and dill, served with rice, naan and dahi vada.",
-          se: "Tre vegetariska rätter: okra palak paneer, mix-veg och dill, serveras ris, naan och dahi vada.",
+          en: "Three vegetarian dishes: okra, palak panir, mix-veg, paprika, onion and lenses, served with rice, naan and raita",
+          se: "Tre vegetariska rätter: okra, palak panir, mix-veg, paprika, lök och linser, serveras med ris, naan och raita.    ",
         },
-        price: 199,
+        price: 220,
       },
       {
         name: {
@@ -757,10 +691,10 @@ export const menu = {
         },
 
         description: {
-          en: "Grilled lamb fillet, lamb sambal masala and steaks on lamb, served with rice, dahi vada and naan.",
-          se: "Grillad lammytterfilé, lamm sambal-masala och biffar på lamm, serveras med ris, dahi vada och naan.",
+          en: "Grilled lamb fillet, lamb sambal-masala, lamb kadai with peppers, onions, served with rice, basil sauce, raita and naan bread ",
+          se: "Grillad lammytterfilé, lamm sambal-masala, lamm kadai  med paprika, lök, serveras med ris, basilika sås, raita och naan bröd.",
         },
-        price: 225,
+        price: 245,
       },
       {
         name: {
@@ -769,214 +703,250 @@ export const menu = {
         },
 
         description: {
-          en: "Grilled chicken fillet, Chicken Tikka Masala and Chicken Basanti, served with rice, raita and garlic naan.",
-          se: "Grillad kycklingfilé, kyckling Tikka Masala och kyckling Basanti, serveras med ris, raita och vitlöksnaan.",
+          en: "Grilled chicken fillet, chicken tikka masala and chicken jalfrezi, served with rice, raita and naan bread.",
+          se: "Grillad kycklingfilé, kyckling Tikka Masala och kyckling jalfrezi, serveras med ris, raita och naan bröd.",
         },
-        price: 189,
+        price: 230,
       },
     ],
   },
   veg: {
     source: "/vegetarian-banner.jpg",
+    index: 3,
     name: {
-      en: "Vegetarian/Vegan",
-      se: "Vegetariska/Veganska",
+      en: "Vegetarian/Vegan (Rice & Salad included)",
+      se: "Vegetariska/Veganska (Ris & Sallad ingår)",
     },
     items: [
       {
         name: {
-          en: "Palak Paneer",
-          se: "Palak Paneer",
+          en: "Alo Ghobi (Melan, Vegan)",
+          se: "Alo Ghobi (Melan, Vegan)",
         },
         description: {
-          en: "Homemade cream cheese prepared with leaf spinach.",
-          se: "Hemlagad färskost tillagad med bladspenat.",
+          en: "Fine spiced cauliflower, potatoes with white cummin, peas and other spices",
+          se: "Lätt kryddad blomkål, potatis, ärter, spiskummin, samt andra kryddor",
         },
-        price: 179,
+        price: 180,
       },
       {
         name: {
-          en: "Paneer Tikka Masala",
-          se: "Paneer Tikka Masala",
+          en: "Saag Aloo (Melan, Vegan)",
+          se: "Saag Aloo (Melan, Vegan)",
         },
         description: {
-          en: "Homemade cheese with lentils and fresh coriander in a creamy sauce.",
-          se: "Hemgjord ost med linser och färsk koriander i gräddig sås.",
+          en: "Spinach with potatoes, fresh coriander, and Indian spices",
+          se: "Spenat med potatis, färsk koriander och indiska kryddor",
         },
-        price: 169,
+        price: 180,
       },
       {
         name: {
-          en: "Okra Palak Paneer",
-          se: "Okra Palak Paneer",
+          en: "Paneer Jalfrezi (Melan)",
+          se: "Paneer Jalfrezi (Melan)",
         },
         description: {
-          en: "Green okra, leaf spinach with homemade cheese and creamy sauce.",
-          se: "Grön okra, bladspenat med hemlagad ost och krämigt god sås.",
+          en: "Fresh Indian cheese cooked with capsicums, onions and mushrooms",
+          se: "Färsk indisk ost tillagad med paprika, lök och champinjoner",
         },
-        price: 169,
+        price: 180,
       },
       {
         name: {
-          en: "Matar Paneer",
-          se: "Matar Paneer",
+          en: "Range Flavors Mixed (Melan)",
+          se: "Range Flavors Mixed (Melan)",
         },
         description: {
-          en: "Green peas with homemade Indian cheese and fresh coriander in tomato and curry sauce.",
-          se: "Gröna ärtor med hemgjord indisk ost och färsk korinder i tomat-och curry sås.",
+          en: "Mixed vegetables with garam masala and other spices.",
+          se: "Blandade grönsaker med garam masala samt andra kryddor.  ",
         },
-        price: 169,
+        price: 170,
       },
       {
         name: {
-          en: "Four in one (Aloo, saag, gobi, dal)",
-          se: "Fyra i ett (aloo, saag, gobi, dal)",
+          en: "Dall Mix (Melan)",
+          se: "Dall Mix (Melan)",
         },
         description: {
-          en: "Fried spinach with potatoes, cauliflower and yellow lentils.",
-          se: "Stekt spenat med potatis, blomkål och gula linser.",
+          en: "Exotic mixed lentils with Indian spices",
+          se: "Exotiska blandade linser med indiska kryddor",
         },
-        price: 169,
+        price: 170,
       },
       {
         name: {
-          en: "Shahi aloo",
-          se: "Shahi aloo",
+          en: "Palak Paneer (Melan)",
+          se: "Palak Paneer (Melan)",
         },
         description: {
-          en: "Eggplant and potatoes cooked with onions and oriental herbs.",
-          se: "Aubergine och potatis tillagad med lök och orientaliska örter.",
+          en: "Homemade fresh Indian cheese with spinach and curry",
+          se: "Hemlagad färsk indisk ost med spenat och curry pulver",
         },
-        price: 169,
+        price: 180,
       },
       {
         name: {
-          en: "Bengali sabzi",
-          se: "Bengali sabzi",
+          en: "Panir Tikka Masala (Mild)",
+          se: "Panir Tikka Masala (Mild)",
         },
         description: {
-          en: "Fried pumpkin, green papaya and eggplant with fresh ginger, garlic and coriander, marinated in cumin. Served with a traditional Bengali sauce",
-          se: "Stekt pumpa, grön papaya och aubergine med färsk ingefära, vitlök och koriander, marinerad i kummin. Serveras med en traditionell bengalisk sås",
+          en: "Pan-fried homemade cheese with yogurt, cashew nuts, coconut, and tikka masala sauce",
+          se: "Smörstekt hemlagad ost med yoghurt, cashew nötter,kokos och tikka masalasås",
         },
-        price: 169,
+        price: 180,
+      },
+      {
+        name: {
+          en: "Vegetarisk Korma (Mild)",
+          se: "Vegetarisk Korma (Mild)",
+        },
+        description: {
+          en: "Mixed vegetable with yogurt, cashew nuts, coconut, and creme sauce",
+          se: "Blandade grönsaker med yoghurt, cashew nötter, kokos och gräddsås",
+        },
+        price: 170,
+      },
+      {
+        name: {
+          en: "Chana Tadka (Melan)",
+          se: "Chana Tadka (Melan)",
+        },
+        description: {
+          en: "Chickpeas cooked with curry sauce ",
+          se: "Kikärtor tillagad med currysås",
+        },
+        price: 170,
       },
     ],
   },
   vegan: {
     name: {
-      en: "Vegan",
-      se: "Vegan",
+      en: "Tawa",
+      se: "Tawa",
+    },
+    description: {
+      en: "Cooked in a special pan with fresh spices, including thyme, garlic and ginger.",
+      se: "Tillagad i speciall panna med färska kryddor, bland annat timjan, vitlök och ingefära.",
     },
     items: [
       {
         name: {
-          en: "Saag Vendi Vadji",
-          se: "Saag Vendi Vadji",
+          en: "Chicken Tawa",
+          se: "Chicken Tawa",
         },
-        description: {
-          en: "Fried spinach and okra with green chilli, onion, coriander and ginger in tomato sauce.",
-          se: "Stekt spenat och okra med grön chili, lök, koriander och ingefära i tomatsås.",
-        },
-        price: 175,
+        price: 195,
       },
       {
         name: {
-          en: "Vegan Kofte",
-          se: "Vegan Kofte",
+          en: "Lamb Tawa",
+          se: "Lamb Tawa",
         },
-        description: {
-          en: "Vegetable balls cooked in sauce. Gluten free.",
-          se: "Grönsaksbullar tillagade i sås. Glutenfri.",
-        },
-        price: 159,
+        price: 205,
       },
     ],
   },
   clay_oven: {
     source: "/clay-oven-banner.jpeg",
+    index: 4,
     name: {
-      en: "Clay Oven",
-      se: "Lerugn",
+      en: "Tandoori - Grill",
+      se: "Tandoori - Grill",
     },
     items: [
       {
         name: {
-          en: "Tandoori Grill Sizzler",
-          se: "Tandoori Grill Sizlar",
+          en: "(Rice & salad included. Contains nuts)",
+          se: "(Ris & Sallad Ingår. Innehåller Nötter)",
         },
-        description: {
-          en: "These dishes are grilled in our clay oven and served with stir-fried, fresh vegetables and tandoori sauce.",
-          se: "Dessa rätter grillas i vår lerugn och serveras med wokade, färska grönsaker och tandoorisås.",
-        },
+
         sub: [
           {
             name: {
-              en: "Chicken Grill",
-              se: "Kyckling Grill",
-            },
-            price: 189,
-          },
-          {
-            name: {
-              en: "Grill Fillet of Lamb",
-              se: "Lammytterfile Grill",
-            },
-            price: 199,
-          },
-          {
-            name: {
-              en: "Garlic Chicken Grill",
-              se: "Vitlökskyckling Grill",
+              en: "Chicken Tikka Sizzlar (Mellan & Stark)",
+              se: "Chicken Tikka Sizzlar (Mellan & Stark)",
             },
             description: {
-              en: "Chicken fillet marinated in garlic, ginger, kazu nuts, cream and fennel grilled in a clay oven and stir-fried fresh vegetables and sauce.",
-              se: "Kycklingfilé marinerad i vitlök, ingefära, kazu nötter, grädde och fänkål grillad i lerugn och wokade färska grönsaker och sås.",
+              en: "Marinated chicken fillets in a mild tandoori spice. Grilled in a clay oven and served with a mild cream sauce",
+              se: "Marinerade kycklingfiléer i en mild tandoori krydda Grillad och den serveras med en mild grädd masala sås",
             },
-            price: 189,
+            price: 215,
           },
           {
             name: {
-              en: "Chili Chicken Grill",
-              se: "Chili Kyckling Grill",
+              en: "Lamm Sekuva (Mild)",
+              se: "Lamm Sekuva (Mild)",
             },
             description: {
-              en: "Chicken fillet marinated in garlic and ginger with pickled chili and fresh green chili grilled in a clay oven and stir-fried fresh vegetables and sauce.",
-              se: "Kycklingfilé marinerad i vitlök och ingefära med inlagd chili och färsk grön chili grillad i lerugn och wokade färska grönsaker och sås.",
+              en: "A special grill tandoori lamb dish with green Masala. Served with mango sauce",
+              se: "Speciellt grillad lamm spett med grön Masala serveras med mango Masala sås",
             },
-            price: 189,
+            price: 240,
           },
           {
             name: {
-              en: "Mixed Chicken Grill",
-              se: "Blandad Kyckling Grill",
+              en: "Chili Chicken Tandoori (Stark)",
+              se: "Chili Chicken Tandoori (Stark)",
             },
             description: {
-              en: "Chicken fillet marinated in tandoori, garlic and green chili, grilled in a clay oven and stir-fried fresh vegetables and sauce.",
-              se: "Kycklingfilé marinerad i tandoori, vitlök och grön chili, grillad i lerugn och wokade färska grönsaker och sås.",
-            },
-            price: 189,
-          },
-          {
-            name: {
-              en: "Mughlai Shami Kabab Sizzler",
-              se: "Mughlai Shami Kabab Sizlar",
-            },
-            description: {
-              en: "Lamb with finely chopped onion, chilli, garlic, coriander and ginger, served with stir-fried vegetables and tandoori sauce.",
-              se: "Lamm med finhackad lök, chili, vitlök, koriander och ingefära, serveras med wokade grönsaker och tandoorisås.",
-            },
-            price: 189,
-          },
-          {
-            name: {
-              en: "The Table Himalaya Mixed Grill",
-              se: "The Table Himalaya Mixed Grill",
-            },
-            description: {
-              en: "Grilled chicken, lamb fillet and stir-fried tiger prawns, fresh vegetables and tandoori sauce.",
-              se: "Grillad kyckling, lammytterfilé och tigerräkor wokade, färska grönsaker och tandoorisås.",
+              en: "Marinated chicken fillets in garlic, green chili, ginger and tandoori spices served with a red wine sauce",
+              se: "Marinerad kycklingfiléer i vitlök, grön chili, ingefära och tandoori kryddor och serveras med en rödvinssås",
             },
             price: 220,
+          },
+          {
+            name: {
+              en: "Himalayan Heart & Heat (Mellan)",
+              se: "Himalayan Heart & Heat (Mellan)",
+            },
+            description: {
+              en: "Chicken fillets with fresh indian cheese, nuts & a spicy mixture. It ́s served with a basilikasauce",
+              se: "Kycklingfiléer med färsk indisk ost, nötter & kryddig fyllning. Den serveras med basilikasås ",
+            },
+            price: 230,
+          },
+          {
+            name: {
+              en: "Aurora Appetizer Mix (Mild)",
+              se: "Aurora Appetizer Mix (Mild)",
+            },
+            description: {
+              en: "A delicious mixture of different tandoori dishes: Chicken tikka, lamb,tiger shrimps,salmon and garlic tikka. It ́s served with a separate sauce ",
+              se: "En läcker blandning av olika tandoori rätter: chicken tikka, lamm, jätteräkor, lax och garlic tikka. Den serveras med en separat så",
+            },
+            price: 260,
+          },
+          {
+            name: {
+              en: "Garlic Chicken Tikka Sizzlar (Mild & Mellan)",
+              se: "Garlic Chicken Tikka Sizzlar (Mild & Mellan)",
+            },
+            description: {
+              en: "Grill chicken mixed with garlic, ginger, nuts, youghurt and creame sauce",
+              se: "Grillade kycklingfile marinerade med traditional indisk kryddor, garlic, ingefära, nötter, youghurt och gråddsås",
+            },
+            price: 230,
+          },
+          {
+            name: {
+              en: "Lamm Tikka Sizzlar (Mild, Mellan & Stark)",
+              se: "Lamm Tikka Sizzlar (Mild, Mellan & Stark)",
+            },
+            description: {
+              en: "Grill lamb served with special sallad with hot iron sizzlar form.",
+              se: "Grillad lammfile serveras med special sallad i varm järnform",
+            },
+            price: 240,
+          },
+          {
+            name: {
+              en: "Scampi Tandoori Sizzlar (Mild, Mellan & Stark)",
+              se: "Scampi Tandoori Sizzlar (Mild, Mellan & Stark)",
+            },
+            description: {
+              en: "Grill prawn with sweet-chilli sås, garlic, ingefära, paprika, koriander och served with masalasås",
+              se: "Grillad jätteräkor blandad med sweet-chili sås, koriander, vitlök, ingefära, lök, paprika och serveras med masalasås",
+            },
+            price: 250,
           },
         ],
       },
@@ -984,6 +954,7 @@ export const menu = {
   },
   mughlai_dishes: {
     source: "/mughlai-banner.jpg",
+    index: 5,
     name: {
       en: "Mughlai Dishes",
       se: "Mughlai Rätter",
@@ -991,12 +962,12 @@ export const menu = {
     items: [
       {
         name: {
-          en: "Biryani",
-          se: "Biryani",
+          en: "Biryani (Mild, Mellan & Stark)",
+          se: "Biryani (Mild, Mellan & Stark)",
         },
         description: {
-          en: "Indian feast risotto with nutmeg, cloves, cardamom, coriander and ginger and saffron. Served with sauce and salad.",
-          se: "Indisk fest-risotto med muskot, kryddnejlika, kardemumma, koriander och ingefära och saffran. Serveras med sås och sallad.",
+          en: "Chicken/lamb fillet with fresh ginger, garlic, coriander, special biryani masala, capsicum and saffranris with separat curry sauce",
+          se: "Kycklingfile / lammfile med lök,ingefära,garam masala,special biryani masala samt paprika, lök, saffaran ris med separat curry sås ",
         },
         sub: [
           {
@@ -1004,93 +975,44 @@ export const menu = {
               en: "Chicken",
               se: "Kyckling",
             },
-            price: 189,
+            price: 190,
           },
           {
             name: {
               en: "Lamb",
               se: "Lamm",
             },
-            price: 199,
-          },
-          {
-            name: {
-              en: "Tiger/Scampi Prawns",
-              se: "Tigerräkor/Scampi Prawns",
-            },
-            price: 209,
-          },
-          {
-            name: {
-              en: "Fish",
-              se: "Fisk",
-            },
-            price: 169,
-          },
-          {
-            name: {
-              en: "Veg",
-              se: "Veg",
-            },
-            price: 179,
+            price: 200,
           },
         ],
       },
       {
         name: {
-          en: "Korma",
-          se: "Korma",
+          en: "Vegetarian Biryani (Mild, Mellan & Stark)",
+          se: "Vegetarisk Biryani (Mild, Mellan & Stark)",
         },
         description: {
-          en: "Prepared with crème fraîche, raisins, spices and cashew nuts in a mild sauce.",
-          se: "Tillagas med crème fraîche, russin, kryddor och cashewnötter i en mild sås.",
+          en: " Mixed vegetable with fresh onion, ginger, garlic, special biryani masala, coriander, saffranris and seperat vegcurry sauce",
+          se: "Blandade grönsaker med lök, ingefära, specialbiryani masala, paprika, saffranris, koriander med vegcurrysås ",
         },
-        sub: [
-          {
-            name: {
-              en: "Chicken",
-              se: "Kyckling",
-            },
-            price: 189,
-          },
-          {
-            name: {
-              en: "Lamb",
-              se: "Lamm",
-            },
-            price: 199,
-          },
-          {
-            name: {
-              en: "Tiger/Scampi Prawns",
-              se: "Tigerräkor/Scampi Prawns",
-            },
-            price: 209,
-          },
-          {
-            name: {
-              en: "Veg Korma",
-              se: "Veg Korma",
-            },
-            price: 175,
-          },
-          {
-            name: {
-              en: "Mughlai Paneer Kofta",
-              se: "Mughlai Paneer Kofta",
-            },
-            description: {
-              en: "Homemade Indian cheese with crème fraîche, raisins, spices and cashew nuts in a mild sauce.",
-              se: "Hemlagad indisk ost med crème fraîche, russin, kryddor och cashewnötter i en mild sås.",
-            },
-            price: 189,
-          },
-        ],
+        price: 190,
+      },
+      {
+        name: {
+          en: "Shrimp Biryani (Mild, Mellan & Stark)",
+          se: "Räkor Biryani (Mild, Mellan & Stark)",
+        },
+        description: {
+          en: "Shrimps with fresh ginger, garlic, coriander, special biryani masala, capsicum and saffron rice with separate shrimpcurry sauce",
+          se: "Räkor med fräsk ingefära, koriander, special biryani masala, saffranris and and paprika med seprat currysås.",
+        },
+        price: 220,
       },
     ],
   },
   bengali_ratter: {
     source: "/bengali-banner.jpg",
+    index: 6,
     name: {
       en: "Bengali Dishes",
       se: "Bengali Rätter",
@@ -1120,49 +1042,62 @@ export const menu = {
 
   fish_and_seafood: {
     source: "/fish-banner.jpg",
+    index: 7,
     name: {
-      en: "Fish and Seafood",
-      se: "Fisk Och Skaldjur",
+      en: "Dishes from the Sea (Rice & salad included)",
+      se: "Rätter Från Havet (Ris & Sallad ingår)",
     },
     items: [
       {
         name: {
-          en: "Seafood Curry",
-          se: "Skaldjurscurry",
+          en: "Scampi Kadai (Mellan & Stark)",
+          se: "Scampi Kadai (Mellan & Stark)",
         },
         description: {
-          en: "Traditionally Goan spiced tiger prawns, scampi, green clams, prawns, mussels, squid and crabsticks, cooked in fish sauce.",
-          se: "Traditionellt Goankryddade tigerräkor, scampi, grön-musslor, räkor, musslor, bläckfisk och crabsticks, tillagad i fisksås.",
+          en: "Tiger shrimps and vegetables in a spicy basilica sauce",
+          se: "Jätteräkor med grönsaker i en kryddig basilika sås",
         },
-        price: 189,
+        price: 225,
       },
       {
         name: {
-          en: "Shrimp Palak",
-          se: "Shrimp Palak",
+          en: "Glacier Spice Trail Masala (Mellan & Stark)",
+          se: "Glacier Spice Trail Masala (Mellan & Stark)",
         },
         description: {
-          en: "Pumpkin and small prawns with leaf spinach and fresh coriander in tomato sauce.",
-          se: "Pumpa och små räkor med bladspenat och färsk koriander i tomatsås.",
+          en: "Tiger shrimps in a spicy green masala, nuts.",
+          se: "Jätteräkor i en het grön masala , nötter.",
         },
-        price: 189,
+        price: 220,
       },
       {
         name: {
-          en: "Salmon Tikka Masala",
-          se: "Lax Tikka Masala",
+          en: "Jhinga Vindaloo (X-Stark)",
+          se: "Jhinga Vindaloo (X-Stark)",
         },
         description: {
-          en: "Salmon fillet cooked in tomato and onion sauce.",
-          se: "Laxfilé tillagad i tomat och löksås.",
+          en: "Tiger shrimps sauted with a hot vindaloo curry sauce",
+          se: "Jätteräkor med curryblad och rödvin i en kryddig sås    ",
         },
-        price: 189,
+        price: 210,
+      },
+      {
+        name: {
+          en: "Machali Madrasi (Mellan & Stark)",
+          se: "Machali Madrasi (Mellan & Stark)",
+        },
+        description: {
+          en: "Salmon fish with fresh coriander, ginger and coconut milk from the southern part of India ",
+          se: "Kokt lax i en het madrasi curry med färsk koriander, ingefära och kokosmjölk från södra Indien",
+        },
+        price: 210,
       },
     ],
   },
 
   accessories: {
     source: "/accessories-banner.jpg",
+    index: 8,
     name: {
       en: "Accessories and Bread",
       se: "TILLBEHOR OCH BROD",
@@ -1170,21 +1105,25 @@ export const menu = {
     items: [
       {
         name: {
-          en: "Regular Naan",
-          se: "regelbunden Naan",
+          en: "Naan Bröd (Vanlig)",
+          se: "Naan Bröd (Vanlig)",
         },
-        price: 25,
+        description: {
+          en: "New made soft bread",
+          se: "Nybakat mjukt bröd",
+        },
+        price: 30,
       },
       {
         name: {
-          en: "Garlic Naan",
-          se: "Garlic Naan",
+          en: "Vitlök Naan Bröd",
+          se: "Vitlök Naan Bröd",
         },
         description: {
-          en: "Naan with garlic and coriander.",
-          se: "Naan med vitlök och koriander.",
+          en: "Naan with garlic.",
+          se: "Naan med vitlök.",
         },
-        price: 35,
+        price: 40,
       },
       {
         name: {
@@ -1192,10 +1131,10 @@ export const menu = {
           se: "Masala Naan",
         },
         description: {
-          en: "Naan with garlic and coriander.",
-          se: "Naan med vitlök och koriander.",
+          en: "Naan with different seeds",
+          se: " Naan med olika frön.",
         },
-        price: 25,
+        price: 40,
       },
       {
         name: {
@@ -1206,46 +1145,52 @@ export const menu = {
           en: "Homemade cheese baked in naan",
           se: "Hemlagad ost inbakad i naan",
         },
-        price: 35,
+        price: 40,
       },
       {
         name: {
-          en: "Potato Kulcha",
-          se: "Potato Kulcha",
+          en: "Minta Sås / Tamarin Sås / Mango chutney",
+          se: "Minta Sås / Tamarin Sås / Mango chutney",
         },
         description: {
-          en: "Potatoes baked in naan",
-          se: "Potatis inbakad i naan",
+          en: "Yoghurt with mint / tamarind / mango chutney.",
+          se: "Yogurt med minta / tamarin  / mango chutney. ",
         },
-        price: 29,
+        price: 40,
       },
       {
         name: {
-          en: "Peshwari naan",
-          se: "Peshwari naan",
+          en: "Raita",
+          se: "Raita",
         },
         description: {
-          en: "Dates, cheese, coconut and almonds baked in naan",
-          se: "Dadlar, ost, kokos, och mandel inbakade i naan",
+          en: "Tomatoes, carrot, cucumber, yogurt and spice",
+          se: "Tomat, morötter, yoghurt, gurkor och krydda",
         },
-        price: 35,
+        price: 40,
       },
       {
         name: {
-          en: "Chapati",
-          se: "Chapati",
+          en: "Extra Basmati Ris",
+          se: "Extra Basmati Ris",
         },
-        description: {
-          en: "Typical Indian bread baked on Indian wheat flour",
-          se: "Typiskt indiskt bröd bakat på indiskt vetemjöl",
+
+        price: 40,
+      },
+      {
+        name: {
+          en: "Chili Pickles",
+          se: "Chili Pickles",
         },
-        price: 35,
+
+        price: 40,
       },
     ],
   },
 
   desserts_and_children: {
     source: "/dessert-banner.jpg",
+    index: 9,
     name: {
       en: "Desserts/Children's Menu",
       se: "EFTERRÄTTER/BARNMENY",
@@ -1296,14 +1241,14 @@ export const menu = {
         sub: [
           {
             name: {
-              en: "Kesar Pista Kulfi",
-              se: "Kesar Pista Kulfi",
+              en: "Kulfi",
+              se: "Kulfi",
             },
             description: {
-              en: "Traditional Indian ice cream flavored with roasted cashew nuts and saffron",
-              se: "Traditionell indisk glass smaksatt med rostade cashewnötter och saffron",
+              en: "Indian ice cream with pistachios, cardamom, saffron and milk",
+              se: "Indisk glass med pistagenötter, kardemumma, saffran och mjölk",
             },
-            price: 69,
+            price: 60,
           },
           {
             name: {
@@ -1314,7 +1259,7 @@ export const menu = {
               en: "Indian milkshake made with mango, yoghurt and sugar.",
               se: "Indisk milkshake gjörd på mango, yoghurt, och socker",
             },
-            price: 49,
+            price: 60,
           },
           {
             name: {
@@ -1325,21 +1270,29 @@ export const menu = {
               en: "Mango and lime flavored ice cream",
               se: "Glass med smak av mango och lime",
             },
-            price: 69,
+            price: 60,
           },
           {
             name: {
-              en: "Mango Juice",
-              se: "Mango Juice",
+              en: "Glass",
+              se: "Glass",
             },
-            price: 39,
+            description: {
+              en: "Vanilla ice cream with caramel or chocolate sauce",
+              se: "Vaniljglass med kola eller chokladsås",
+            },
+            price: 60,
           },
           {
             name: {
-              en: "Gulab Jamun",
-              se: "Gulab Jamun",
+              en: "Frosty Peaks",
+              se: "Frosty Peaks",
             },
-            price: 69,
+            description: {
+              en: "Vanilla ice cream with fried banana, cream and caramel sauce",
+              se: "Vaniljglass med friterad banan, grädde och kolasås",
+            },
+            price: 70,
           },
         ],
       },

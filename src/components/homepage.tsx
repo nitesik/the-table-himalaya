@@ -26,7 +26,7 @@ export default function Homepage() {
     event.preventDefault();
 
     setIsLoading(true);
-    
+
     const res = await fetch("/api/mail", {
       method: "POST",
       headers: {
@@ -39,14 +39,14 @@ export default function Homepage() {
         date,
         phone,
         time,
-        message
+        message,
       }),
     });
     const data = await res.json();
     console.log(data);
 
     if (res.ok) {
-      toast.success('Reservation mail sent', {
+      toast.success("Reservation mail sent", {
         position: "top-center",
         autoClose: 5000,
         hideProgressBar: false,
@@ -55,26 +55,24 @@ export default function Homepage() {
         draggable: true,
         progress: undefined,
         theme: "light",
-        });
-        setIsLoading(false)
-    };
-
-    if (!res.ok) {
-      toast.error('Could not be sent, please try again later', {
-        position: "top-center",
-        autoClose: 5000,
-        hideProgressBar: false,
-        closeOnClick: true,
-        pauseOnHover: true,
-        draggable: true,
-        progress: undefined,
-        theme: "light",
-        });
-
-        setIsLoading(false);
+      });
+      setIsLoading(false);
     }
 
-    
+    if (!res.ok) {
+      toast.error("Could not be sent, please try again later", {
+        position: "top-center",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+      });
+
+      setIsLoading(false);
+    }
   }
 
   return (
@@ -91,13 +89,11 @@ export default function Homepage() {
             <h1 className="text-[23px] lg:text-[25px]">{homepage.title[t]}</h1>
             <button
               onClick={() =>
-                document
-                  .getElementById("form")
-                  ?.scrollIntoView({
-                    behavior: "smooth",
-                    block: "center",
-                    inline: "end",
-                  })
+                document.getElementById("form")?.scrollIntoView({
+                  behavior: "smooth",
+                  block: "center",
+                  inline: "end",
+                })
               }
               className="bg-white text-primary font-semibold px-5 py-3 rounded"
             >
@@ -143,21 +139,21 @@ export default function Homepage() {
               className="food-banner rounded-md flex-none overflow-hidden w-[250px] h-[300px] md:w-[300px] md:h-[400px] flex flex-col bg-cover bg-center justify-between"
               style={{ backgroundImage: `url(${item.source})` }}
             >
-              {item.price !== null ? (
+              {/* {item.price !== null ? (
                 <h1 className="bg-primary w-fit p-3 md:p-5 rounded-md font-bold">
                   {item.price}kr
                 </h1>
               ) : (
                 <div />
-              )}
-              <div className="bg-primary py-3 px-2 flex flex-col">
+              )} */}
+              {/* <div className="bg-primary py-3 px-2 flex flex-col">
                 <h1 className="text-[20px] md:text-[25px] font-bold">
                   {item.name[t]}
                 </h1>
                 <p className="text-[12px] md:text-[18px] food-description">
                   {item.description[t]}
                 </p>
-              </div>
+              </div> */}
             </div>
           ))}
         </div>
@@ -181,8 +177,12 @@ export default function Homepage() {
                   <h1 className="text-[23px] mt-3 font-semibold">
                     {homepage.phone[t]}
                   </h1>
-                  <Link href={"tel:0705474852"}><h1 className="mt-[10px]">+4686123780</h1></Link>
-                  <Link href={"tel:0705474852"}><h1 className="mt-[10px]">0760353799</h1></Link>
+                  <Link href={"tel:0705474852"}>
+                    <h1 className="mt-[10px]">+4686123780</h1>
+                  </Link>
+                  <Link href={"tel:0705474852"}>
+                    <h1 className="mt-[10px]">0760353799</h1>
+                  </Link>
                   {/* <h1 className="">093 234 34324</h1> */}
                 </div>
                 <div className="w-[250px] h-[175px] bg-white flex flex-col items-center">
@@ -193,7 +193,9 @@ export default function Homepage() {
                   <h1 className="text-[23px] mt-3 font-semibold">
                     {homepage.email[t]}
                   </h1>
-                  <Link href={"mailto:rajkumar.777@hotmail.com"}><h1 className="mt-[20px]">rajkumar.777@hotmail.com</h1></Link>
+                  <Link href={"mailto:rajkumar.777@hotmail.com"}>
+                    <h1 className="mt-[20px]">rajkumar.777@hotmail.com</h1>
+                  </Link>
                   {/* <h1 className="">test@gmail.com</h1> */}
                 </div>
               </div>
@@ -212,7 +214,7 @@ export default function Homepage() {
                 type="text"
                 className="focus:border-primary border outline-none"
                 placeholder={`${homepage.name[t]}*`}
-                onChange={e => setName(e.target.value)}
+                onChange={(e) => setName(e.target.value)}
                 value={name}
                 required
               />
@@ -220,7 +222,7 @@ export default function Homepage() {
                 type="email"
                 className="focus:border-primary border outline-none"
                 placeholder={`${homepage.mail[t]}*`}
-                onChange={e => setEmail(e.target.value)}
+                onChange={(e) => setEmail(e.target.value)}
                 value={email}
                 required
               />
@@ -228,7 +230,7 @@ export default function Homepage() {
                 type="tel"
                 className="focus:border-primary border outline-none"
                 placeholder={`${homepage.phone_number[t]}*`}
-                onChange={e => setPhone(e.target.value)}
+                onChange={(e) => setPhone(e.target.value)}
                 value={phone}
                 required
               />
@@ -236,7 +238,7 @@ export default function Homepage() {
                 type="number"
                 className="focus:border-primary border outline-none"
                 placeholder={`${homepage.guests[t]}*`}
-                onChange={e => setGuests(e.target.value)}
+                onChange={(e) => setGuests(e.target.value)}
                 value={guests}
                 required
               />
@@ -244,7 +246,7 @@ export default function Homepage() {
                 type="date"
                 className="focus:border-primary border outline-none"
                 placeholder={`${homepage.date[t]}*`}
-                onChange={e => setDate(e.target.value)}
+                onChange={(e) => setDate(e.target.value)}
                 value={date}
                 required
               />
@@ -252,7 +254,7 @@ export default function Homepage() {
                 type="time"
                 className="focus:border-primary border outline-none"
                 placeholder={`${homepage.time[t]}*`}
-                onChange={e => setTime(e.target.value)}
+                onChange={(e) => setTime(e.target.value)}
                 value={time}
                 required
               />
@@ -260,10 +262,13 @@ export default function Homepage() {
             <textarea
               placeholder={`${homepage.message[t]}`}
               className="focus:border-primary border outline-none w-full border-[#ddd] rounded pl-5 pt-3 h-[150px]"
-              onChange={e => setMessage(e.target.value)}
+              onChange={(e) => setMessage(e.target.value)}
               value={message}
             />
-            <button disabled={isLoading} className="bg-primary w-full text-white font-semibold py-3 rounded ">
+            <button
+              disabled={isLoading}
+              className="bg-primary w-full text-white font-semibold py-3 rounded "
+            >
               {homepage.reservation_button[t]}
             </button>
           </form>
@@ -276,11 +281,12 @@ export default function Homepage() {
             title="map"
             className="w-full h-[500px]"
             loading="lazy"
-            src={`https://www.google.com/maps/embed/v1/place?key=${process.env.NEXT_PUBLIC_GOOGLE_API}&q=cumin+stockholm&language=${t === "en" ? "en" : "sv"}`}
+            src={`https://www.google.com/maps/embed/v1/place?key=${
+              process.env.NEXT_PUBLIC_GOOGLE_API
+            }&q=cumin+stockholm&language=${t === "en" ? "en" : "sv"}`}
           ></iframe>
         </div>
       </div>
-      
     </div>
   );
 }

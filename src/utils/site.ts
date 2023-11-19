@@ -7,29 +7,29 @@ export const siteSetting = {
       {
         en: "Home",
         se: "Hem",
-        href: "/"
+        href: "/",
       },
       {
         en: "Menu",
         se: "Meny",
-        href: "/menu"
+        href: "/menu",
       },
       {
         en: "Drinks",
         se: "Drycker",
-        href: "/drinks"
+        href: "/drinks",
       },
       {
         en: "Catering",
         se: "Catering",
-        href: "/catering"
+        href: "/catering",
       },
       {
         en: "About Us",
         se: " Om oss",
-        href: "/about-us"
+        href: "/about-us",
       },
-    ]
+    ];
 
     return items;
   },
@@ -39,66 +39,55 @@ export const siteSetting = {
       {
         en: "Appetizers",
         se: "Förrätter",
-        src: "/appetizer.svg"
-
+        src: "/appetizer.svg",
       },
       {
-        en: "Our Favourites",
-        se: "Våra Favoriter",
-        src: "/favourites.svg"
-
+        en: "Main Dishes",
+        se: "Huvud Rätter",
+        src: "/favourites.svg",
       },
       {
         en: "Thali Dishes",
         se: "Thali Rätter",
-        src: "/thali.svg"
-
+        src: "/thali.svg",
       },
       {
         en: "Vegetarian/Vegan",
         se: "Vegetariska/Veganska",
-        src: "/veg.svg"
-
+        src: "/veg.svg",
       },
       {
-        en: "Clay Oven",
+        en: "Tandoori - Grill",
         se: "Lerugn",
-        src: "/clay_oven.svg"
-
+        src: "/clay_oven.svg",
       },
       {
         en: "Mughlai Dishes",
         se: "Mughlai Rätter",
-        src: "/mughal.svg"
-
+        src: "/mughal.svg",
       },
       {
         en: "Bengali Dishes",
         se: "Bengali Rätter",
-        src: "/bengali.svg"
-
+        src: "/bengali.svg",
       },
       {
         en: "Fish and Seafood",
         se: "Fisk Och Skaldjur",
-        src: "/fish.svg"
-
+        src: "/fish.svg",
       },
       {
         en: "Accessories and Bread",
         se: "Tillbehor Och Brod",
-        src: "/accessories.svg"
-
+        src: "/accessories.svg",
       },
       {
         en: "Desserts/Children's Menu",
         se: "Efterrätter/Barnmeny",
-        src: "/dessert.svg"
-
+        src: "/dessert.svg",
       },
-
-    ]
+    ];
 
     return items;
-  }
-}
+  },
+};
