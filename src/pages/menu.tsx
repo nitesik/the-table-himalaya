@@ -3,12 +3,34 @@ import { menu } from "@/utils/translations";
 import Head from "next/head";
 import Image from "next/image";
 import { useRouter } from "next/router";
-import { useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 
 export default function Menu() {
   const t = useRouter().locale as Language;
 
-  const testRef = useRef<HTMLDivElement>(null);
+  const [currentSection, setCurrentSection] = useState("");
+
+  function visibilityHandler() {
+    const sections = document.querySelectorAll(".customTest");
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.some((entry) => {
+          if (entry.isIntersecting) setCurrentSection(entry.target.id);
+        });
+      },
+      {
+        threshold: 0.6,
+        rootMargin: "50px",
+      }
+    );
+
+    sections.forEach((section) => observer.observe(section));
+  }
+
+  useEffect(() => {
+    visibilityHandler();
+  });
 
   return (
     <div>
@@ -26,7 +48,13 @@ export default function Menu() {
             className="w-[125px] md:w-[200px]  text-slate-800 font-semibold scroll text-center flex flex-shrink-0 justify-center border border-y-slate-200"
             key={item.en}
           >
-            <div className="py-[10px] md:py-[20px] flex flex-col items-center gap-3 w-full border-white border-b-[10px] hover:border-primary">
+            <div
+              className={`py-[10px] md:py-[20px] flex flex-col items-center gap-3 w-full border-b-[10px] hover:border-primary ${
+                index.toString() === currentSection
+                  ? "border-primary"
+                  : "border-white"
+              }`}
+            >
               <Image
                 className="stroke-gray-100"
                 src={item.src}
@@ -42,14 +70,14 @@ export default function Menu() {
         ))}
       </div>
 
-      <div ref={testRef} id="hey" className="flex justify-center my-[100px]">
+      <div className="flex justify-center my-[100px]">
         <div className="w-[350px] md:w-[700px] lg:w-[1000px] xl:w-[1200px]">
           <div
             className="w-full h-[200px] bg-cover bg-center rounded-lg mb-5 bg-black"
             style={{ backgroundImage: `url(${menu.appetizer.source})` }}
           />
           <div
-            className="flex items-center"
+            className="customTest flex items-center"
             id={menu.appetizer.index.toString()}
           >
             <h1 className="text-[27px] md:text-[40px] font-bold text-primary">
@@ -70,14 +98,14 @@ export default function Menu() {
         </div>
       </div>
 
-      <div id="bye" className="flex justify-center my-[100px]">
+      <div className="flex justify-center my-[100px]">
         <div className="w-[350px] md:w-[700px] lg:w-[1000px] xl:w-[1200px]">
           <div
             className="w-full h-[200px] bg-cover bg-center rounded-lg mb-5 bg-black"
             style={{ backgroundImage: `url(${menu.favourites.source})` }}
           />
           <div
-            className="flex items-center gap-5"
+            className="customTest flex items-center gap-5"
             id={menu.favourites.index.toString()}
           >
             <h1 className="text-[27px] md:text-[40px] font-bold text-primary">
@@ -122,7 +150,7 @@ export default function Menu() {
             style={{ backgroundImage: `url(${menu.thali.source})` }}
           />
           <div
-            className="flex items-center gap-5"
+            className="customTest flex items-center gap-5"
             id={menu.thali.index.toString()}
           >
             <h1 className="text-[27px] md:text-[40px] font-bold text-primary">
@@ -143,14 +171,14 @@ export default function Menu() {
         </div>
       </div>
 
-      <div id="test" className="flex justify-center mt-[100px]">
+      <div className="flex justify-center mt-[100px]">
         <div className="w-[350px] md:w-[700px] lg:w-[1000px] xl:w-[1200px]">
           <div
             className="w-full h-[200px] bg-cover bg-center rounded-lg mb-5 bg-black"
             style={{ backgroundImage: `url(${menu.veg.source})` }}
           />
           <div
-            className="flex items-center gap-5"
+            className="customTest flex items-center gap-5"
             id={menu.veg.index.toString()}
           >
             <h1 className="text-[27px] md:text-[40px] font-bold text-primary">
@@ -178,7 +206,7 @@ export default function Menu() {
             style={{ backgroundImage: `url(${menu.clay_oven.source})` }}
           />
           <div
-            className="flex items-center gap-5"
+            className="customTest flex items-center gap-5"
             id={menu.clay_oven.index.toString()}
           >
             <h1 className="text-[27px] md:text-[40px] font-bold text-primary">
@@ -224,7 +252,7 @@ export default function Menu() {
             style={{ backgroundImage: `url(${menu.mughlai_dishes.source})` }}
           />
           <div
-            className="flex items-center gap-5"
+            className="customTest flex items-center gap-5"
             id={menu.mughlai_dishes.index.toString()}
           >
             <h1 className="text-[27px] md:text-[40px] font-bold text-primary">
@@ -277,7 +305,7 @@ export default function Menu() {
             style={{ backgroundImage: `url(${menu.bengali_ratter.source})` }}
           />
           <div
-            className="flex items-center gap-5"
+            className="customTest flex items-center gap-5"
             id={menu.bengali_ratter.index.toString()}
           >
             <h1 className="text-[27px] md:text-[40px] font-bold text-primary">
@@ -323,7 +351,7 @@ export default function Menu() {
             style={{ backgroundImage: `url(${menu.fish_and_seafood.source})` }}
           />
           <div
-            className="flex items-center gap-5"
+            className="customTest flex items-center gap-5"
             id={menu.fish_and_seafood.index.toString()}
           >
             <h1 className="text-[27px] md:text-[40px] font-bold text-primary">
@@ -351,7 +379,7 @@ export default function Menu() {
             style={{ backgroundImage: `url(${menu.accessories.source})` }}
           />
           <div
-            className="flex items-center gap-5"
+            className="customTest flex items-center gap-5"
             id={menu.accessories.index.toString()}
           >
             <h1 className="text-[27px] md:text-[40px] font-bold text-primary">
@@ -406,7 +434,7 @@ export default function Menu() {
             }}
           />
           <div
-            className="flex items-center gap-5"
+            className="customTest flex items-center gap-5"
             id={menu.desserts_and_children.index.toString()}
           >
             <h1 className="text-[27px] md:text-[40px] font-bold text-primary">

@@ -5,7 +5,7 @@ export type Language = {
 
 export const homepage = {
   title: {
-    en: "ELEVIATE YOUR TASTE",
+    en: "ELEVATE YOUR TASTE",
     se: "DEN BÄSTA UPPLEVELSEN",
   },
   reservation_button: {
