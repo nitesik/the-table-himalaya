@@ -1,0 +1,85 @@
+import FridayLunch from "@/components/fridayLunch";
+import MondayLunch from "@/components/mondayLunch";
+import ThursdayLunch from "@/components/thursdayLunch";
+import TuesdayLunch from "@/components/tuesdayLunch";
+import WednesdayLunch from "@/components/wednesdayLunch";
+import { useState } from "react";
+
+export default function Lunch() {
+  const days = [
+    {
+      en: "Monday",
+      se: "MÅNDAG ",
+    },
+    {
+      en: "Tuesday",
+      se: "TISDAG",
+    },
+    {
+      en: "Wednesday",
+      se: "ONSDAG",
+    },
+    {
+      en: "Thursday",
+      se: "TORSDAG",
+    },
+    {
+      en: "Friday",
+      se: "FREDAG",
+    },
+    {
+      en: "Saturday",
+      se: null,
+    },
+    {
+      en: "Sunday",
+      se: null,
+    },
+  ];
+
+  const [lunch, setLunch] = useState(days[new Date().getDay() - 1].en);
+
+  return (
+    <main className="flex justify-center bg-white text-black text-center md:text-start flex-1">
+      <div className="w-[350px] md:w-[700px] lg:w-[1000px] xl:w-[1200px] flex flex-col items-center gap-5">
+        <h1 className="text-primary font-bold lg:text-[60px] mt-10">
+          Lunch Meny
+        </h1>
+        <div className="flex w-full text-2xl text-primary font-semibold justify-between">
+          {days.map(
+            (day, index) =>
+              day.se && (
+                <p
+                  key={index}
+                  onClick={() => setLunch(day.en)}
+                  className="hover:underline cursor-pointer"
+                >
+                  {day.se}
+                </p>
+              )
+          )}
+        </div>
+        <h3 className="font-semibold text-[30px] text-center">
+          9 VALFRIA RÄTTER VARJE DAG: MÅNDAG - FREDAG (INKL : RIS, KAFFE , HALVA
+          NAAN BRÖD, LÄSK OCH SALLAD BUFFE){" "}
+        </h3>
+        <h3 className="text-[30px] text-primary font-semibold">
+          LUNCH TID: 11:00 - 14:30
+        </h3>
+        <MondayLunch lunch={lunch} />
+        <TuesdayLunch lunch={lunch} />
+        <WednesdayLunch lunch={lunch} />
+        <ThursdayLunch lunch={lunch} />
+        <FridayLunch lunch={lunch} />
+        <div className="text-center text-2xl mt-10 text-primary font-bold mb-10">
+          <p className="">
+            Har du någon form av mat allergi? Låt oss veta det vid beställning,
+            så kan vi bättre tillgodose dina förväntningar av en trivsam och god
+            måltid.
+          </p>
+          <p>TEL: 08 123780 </p>
+        </div>
+      </div>
+    </main>
+  );
+}

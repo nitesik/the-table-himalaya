@@ -6,7 +6,7 @@ import type { AppProps } from "next/app";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import { ToastContainer } from "react-toastify";
-import 'react-toastify/dist/ReactToastify.css'
+import "react-toastify/dist/ReactToastify.css";
 
 export default function App({ Component, pageProps }: AppProps) {
   const [scrollTopButton, setScrollTopButton] = useState(false);
@@ -22,7 +22,7 @@ export default function App({ Component, pageProps }: AppProps) {
   }, [scroll]);
 
   return (
-    <>
+    <main className="flex flex-col min-h-screen">
       <ToastContainer
         position="top-center"
         autoClose={5000}
@@ -50,6 +50,6 @@ export default function App({ Component, pageProps }: AppProps) {
       </div>
       <Component {...pageProps} />
       <Footer />
-    </>
+    </main>
   );
 }
