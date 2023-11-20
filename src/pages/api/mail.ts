@@ -19,7 +19,7 @@ export default function POST(
   try {
     resend.emails.send({
       from: "clients@the-table-himalaya.com",
-      to: ['neetesh2000@gmail.com', 'prashunnaral8@gmail.com', 'rajkumar.777@hotmail.com'],
+      to: ['neetesh2000@gmail.com', 'prashunnaral8@gmail.com', 'rajkumar.777@hotmail.com','thetablehimalaya@gmail.com'],
       subject: `Table Reservation from ${name}`,
       html: `
         <div>
