@@ -19,11 +19,7 @@ export const siteSetting = {
         se: "Lunch",
         href: "/lunch",
       },
-      {
-        en: "Drinks",
-        se: "Drycker",
-        href: "/drinks",
-      },
+
       {
         en: "Catering",
         se: "Catering",

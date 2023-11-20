@@ -41,11 +41,11 @@ export default function Lunch() {
 
   return (
     <main className="flex justify-center bg-white text-black text-center md:text-start flex-1">
-      <div className="w-[350px] md:w-[700px] lg:w-[1000px] xl:w-[1200px] flex flex-col items-center gap-5">
-        <h1 className="text-primary font-bold lg:text-[60px] mt-10">
+      <div className="w-[350px] md:w-[700px] lg:w-[1000px] xl:w-[1200px] flex flex-col items-center gap-10">
+        <h1 className="text-primary font-bold text-3xl lg:text-[60px] mt-10">
           Lunch Meny
         </h1>
-        <div className="flex w-full text-2xl text-primary font-semibold justify-between">
+        <div className="flex w-full lg:text-2xl text-primary font-semibold justify-between lg:my-10">
           {days.map(
             (day, index) =>
               day.se && (
@@ -59,7 +59,7 @@ export default function Lunch() {
               )
           )}
         </div>
-        <h3 className="font-semibold text-[30px] text-center">
+        <h3 className="font-semibold text-xl lg:text-3xl lg:leading-[50px] text-center">
           9 VALFRIA RÄTTER VARJE DAG: MÅNDAG - FREDAG (INKL : RIS, KAFFE , HALVA
           NAAN BRÖD, LÄSK OCH SALLAD BUFFE){" "}
         </h3>
