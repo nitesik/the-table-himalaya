@@ -11,7 +11,7 @@ export default function AboutUs() {
   const t = router.locale as Language;
 
   return (
-    <div className="z-0">
+    <div className="">
       <Head>
         <title>The Table Himalaya - About Us</title>
       </Head>
@@ -22,9 +22,7 @@ export default function AboutUs() {
               <h1 className="text-[38px] font-semibold text-primary">
                 {about_us.about_us[t]}
               </h1>
-              <p>
-                {about_us.first_description[t]}
-              </p>
+              <p>{about_us.first_description[t]}</p>
               <div className="flex mt-5 justify-between">
                 <div className="flex flex-col items-center gap-3">
                   <Image src={icons.speed} alt="speed" />
@@ -67,14 +65,12 @@ export default function AboutUs() {
           <div className="grid w-full lg:max-w-[450px] flex-1">
             <div className="flex flex-col gap-3">
               <h2 className="text-[23px] font-semibold text-primary">
-              {about_us.about_us[t]}
+                {about_us.about_us[t]}
               </h2>
               <h1 className="text-[38px] font-semibold">
-              {about_us.second_title[t]}
+                {about_us.second_title[t]}
               </h1>
-              <p>
-              {about_us.second_description[t]}
-              </p>
+              <p>{about_us.second_description[t]}</p>
             </div>
           </div>
         </div>
@@ -84,10 +80,10 @@ export default function AboutUs() {
         <div className="w-[350px] md:w-[700px] mb-[0px] lg:w-[1000px] xl:w-[1200px]">
           <div>
             <h2 className="text-primary text-[29px] font-bold">
-            {about_us.featured_food[t]}
+              {about_us.featured_food[t]}
             </h2>
             <h1 className="text-[30px] lg:text-[45px] font-semibold lg:w-[13ch]">
-            {about_us.featured_food_info[t]}
+              {about_us.featured_food_info[t]}
             </h1>
           </div>
           <div className="flex mt-[50px] flex-col gap-14 text-start lg:gap-0 lg:flex-row justify-between">
@@ -96,19 +92,7 @@ export default function AboutUs() {
                 key={item.name.en}
                 className="h-[500px] lg:w-[300px] xl:w-[350px] lg:h-[450px] xl:h-[500px] bg-cover bg-no-repeat bg-center flex items-end"
                 style={{ backgroundImage: `url(${item.source})` }}
-              >
-                <div className="bg-primary py-3 px-5 text-white w-full grid gap-1">
-                  <div className="flex justify-between">
-                    <h1 className="text-[25px] font-bold">{item.name[t]}</h1>
-                    {item.price && (
-                      <p className="text-[25px] font-semibold">
-                        {item.price}kr
-                      </p>
-                    )}
-                  </div>
-                  <p className="text-sm">{item.description[t]}</p>
-                </div>
-              </div>
+              ></div>
             ))}
           </div>
         </div>
@@ -120,7 +104,9 @@ export default function AboutUs() {
             title="map"
             className="w-full h-[400px]"
             loading="lazy"
-            src={`https://www.google.com/maps/embed/v1/place?key=${process.env.NEXT_PUBLIC_GOOGLE_API}&q=cumin+stockholm&language=${t === "en" ? "en" : "sv"}`}
+            src={`https://www.google.com/maps/embed/v1/place?key=${
+              process.env.NEXT_PUBLIC_GOOGLE_API
+            }&q=cumin+stockholm&language=${t === "en" ? "en" : "sv"}`}
           ></iframe>
         </div>
       </div>

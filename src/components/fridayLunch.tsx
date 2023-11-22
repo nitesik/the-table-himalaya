@@ -86,10 +86,10 @@ export default function FridayLunch({ lunch }: { lunch: string }) {
         <div className="flex justify-between items-start">
           <div className="text-start w-[80%] lg:w-auto">
             <h3 className="text-xl lg:text-3xl font-semibold text-primary">
-              7. GARLIC TIKKA SIZZLAR ( Mellan sås)
+              7. CHICKEN TIKKA SIZZLAR (Mellan sås)
             </h3>
             <p className="text-xl">
-              Marinerade kycklingfiléer i en mild tandoori krydda
+              (Kycklingfile med lök och paprika, MELLAN/STARK)
             </p>
           </div>
           <hr className="flex-1 border mx-4 hidden lg:inline border-black mt-5" />

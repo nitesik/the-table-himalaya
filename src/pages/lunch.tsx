@@ -77,7 +77,7 @@ export default function Lunch() {
             så kan vi bättre tillgodose dina förväntningar av en trivsam och god
             måltid.
           </p>
-          <p>TEL: 08 123780 </p>
+          <p>TEL: 08 6123780 </p>
         </div>
       </div>
     </main>
