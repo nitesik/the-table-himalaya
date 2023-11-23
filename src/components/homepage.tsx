@@ -101,11 +101,11 @@ export default function Homepage() {
             </button>
           </div>
         </div>
-        <div className="bg-wallpaper2 bg-cover lg:flex lg:flex-1 h-[300px] md:h-[600px] lg:h-full "></div>
+        <div className="bg-wallpaper2 bg-cover bg-center lg:flex lg:flex-1 h-[300px] md:h-[600px] lg:h-full "></div>
       </div>
 
       <div className="flex justify-center bg-white text-black text-center md:text-start">
-        <div className="w-[350px] md:w-[700px] lg:w-[1000px] xl:w-[1200px] grid grid-cols-1 lg:grid-cols-2 gap-4 my-[100px] ">
+        <div className="w-[350px] md:w-[700px] lg:w-[1000px] xl:w-[1200px] grid grid-cols-1 lg:grid-cols-1 gap-4 my-[100px] ">
           <div className="flex flex-col gap-7">
             <h2 className="text-[23px] text-primary">{homepage.intro[t]}</h2>
             <h1 className="text-[32px] text-primary font-bold">
@@ -113,13 +113,12 @@ export default function Homepage() {
             </h1>
             <p className="text-lg">{homepage.intro_description_one[t]}</p>
             <p className="text-lg">{homepage.intro_description_two[t]}</p>
-            <div className="flex justify-between [&>img]:rounded-lg [&>img]:w-[110px] [&>img]:md:w-[160px] lg:[&>img]:w-[150px] xl:[&>img]:w-[180px]">
+            <div className="flex justify-between lg:w-[700px] [&>img]:rounded-lg [&>img]:w-[110px] [&>img]:md:w-[160px] lg:[&>img]:w-[150px] xl:[&>img]:w-[180px]">
               <Image src={icons.chicken_tikka} alt="food" />
               <Image src={icons.chicken_korai} alt="food" />
               <Image src={icons.mixed_grill} alt="food" />
             </div>
           </div>
-          <div className="bg-wallpaper1 bg-cover rounded-lg h-[350px] lg:h-full"></div>
         </div>
       </div>
 
