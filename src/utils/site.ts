@@ -68,11 +68,6 @@ export const siteSetting = {
         src: "/mughal.svg",
       },
       {
-        en: "Bengali Dishes",
-        se: "Bengali Rätter",
-        src: "/bengali.svg",
-      },
-      {
         en: "Fish and Seafood",
         se: "Fisk Och Skaldjur",
         src: "/fish.svg",
