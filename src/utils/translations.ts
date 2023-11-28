@@ -1010,36 +1010,7 @@ export const menu = {
       },
     ],
   },
-  /* bengali_ratter: {
-    source: "/bengali-banner.jpg",
-    index: 6,
-    name: {
-      en: "Bengali Dishes",
-      se: "Bengali Rätter",
-    },
-    items: [
-      {
-        name: {
-          en: "Kala Bhuna Mangso",
-          se: "Kala Bhuna Mangso",
-        },
-        description: {
-          en: "Very traditional Bengali dish; slow cooked with oriental spices from Chittagong, Bangladesh's second largest city Traditional bengali dish, slow cooked with oriental spices, has its origins in Chittagong(Bangladesh)",
-          se: "Mycket traditionell bengalisk rätt; långkok med orientaliska kryddor från Chittagong, Bangladesh näst största stad Traditional bengali dish, slow cooked with oriental spices, has its origins in Chittagong(Bangladesh)",
-        },
-        sub: [
-          {
-            name: {
-              en: "Lamb",
-              se: "Lamm",
-            },
-            price: 199,
-          },
-        ],
-      },
-    ],
-  }, */
-
+  
   fish_and_seafood: {
     source: "/fish-banner.jpg",
     index: 7,
