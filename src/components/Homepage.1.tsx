@@ -116,7 +116,9 @@ export default function Homepage() {
               <Image src={icons.chicken_tikka} alt="food" />
               <Image src={icons.chicken_korai} alt="food" />
               <Image src={icons.mixed_grill} alt="food" />
-              
+              <Image src={icons.lamb_thali} alt="food" />
+              <Image src={icons.sizzleer} alt="food" />
+
 
             </div>
           </div>
