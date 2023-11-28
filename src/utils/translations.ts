@@ -418,16 +418,16 @@ export const menu = {
         sub: [
           {
             name: {
-              en: "Mellan",
-              se: "Mellan",
+              en: "Chicken",
+              se: "Kyckling",
             },
             price: 205,
           },
 
           {
             name: {
-              en: "Start",
-              se: "Start",
+              en: "Lamb",
+              se: "Lamm",
             },
             price: 215,
           },
