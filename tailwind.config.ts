@@ -14,7 +14,7 @@ const config: Config = {
       },
       backgroundImage: {
         'nav-bg': "url('/navbar-background.jpg')",
-        'wallpaper1': "url('/wallpaper.jpg')",
+        'wallpaper1': "url('/himalaya.jpg')",
         'restaurant': "url('/bar.jpg')",
         'reservation': "url('/reservation_wallpaper.jpg')",
         'wallpaper2': "url('/wallpaper1.jpg')",
