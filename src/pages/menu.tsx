@@ -297,53 +297,7 @@ export default function Menu() {
           </div>
         </div>
       </div>
-
-      <div className="flex justify-center my-[100px]">
-        <div className="w-[350px] md:w-[700px] lg:w-[1000px] xl:w-[1200px]">
-          <div
-            className="w-full h-[200px] bg-cover bg-center rounded-lg mb-5 bg-black"
-            style={{ backgroundImage: `url(${menu.bengali_ratter.source})` }}
-          />
-          <div
-            className="customTest flex items-center gap-5"
-            id={menu.bengali_ratter.index.toString()}
-          >
-            <h1 className="text-[27px] md:text-[40px] font-bold text-primary">
-              {menu.bengali_ratter.name[t]}
-            </h1>
-            <hr className="flex-1 border-[1px] border-primary" />
-          </div>
-          <div className="w-full grid lg:grid-cols-1 gap-7">
-            {menu.bengali_ratter.items.map((item) => (
-              <div className="mt-5" key={item.name[t]}>
-                <h2 className="text-[25px] md:text-[32px] text-primary font-bold">
-                  {item.name[t]}
-                </h2>
-                <p className="text-[18px] text-primary mt-3 font-semibold">
-                  {item.description?.[t]}
-                </p>
-                <div className="grid grid-cols-3 items-start gap-5 mt-1">
-                  {item.sub?.map((sub) => (
-                    <div
-                      key={sub.name[t]}
-                      className="flex flex-col flex-grow w-[300px] gap-3 ml-3 mt-5"
-                    >
-                      <div className="flex items-center gap-5 text-primary font-semibold">
-                        <div className="flex items-center gap-1 ">
-                          <>•</>
-                          <h1>{sub.name[t]} </h1>
-                        </div>
-                        <p>{sub.price} kr</p>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
-
+      
       <div className="flex justify-center my-[100px]">
         <div className="w-[350px] md:w-[700px] lg:w-[1000px] xl:w-[1200px]">
           <div
