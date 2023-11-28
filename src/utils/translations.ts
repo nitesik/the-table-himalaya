@@ -1010,7 +1010,7 @@ export const menu = {
       },
     ],
   },
-  bengali_ratter: {
+  /* bengali_ratter: {
     source: "/bengali-banner.jpg",
     index: 6,
     name: {
@@ -1038,7 +1038,7 @@ export const menu = {
         ],
       },
     ],
-  },
+  }, */
 
   fish_and_seafood: {
     source: "/fish-banner.jpg",
