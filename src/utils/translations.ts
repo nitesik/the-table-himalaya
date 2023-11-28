@@ -412,8 +412,8 @@ export const menu = {
           se: "Kadai",
         },
         description: {
-          en: "Marinated chicken fillets, capsicum, onion vegetables in a basilica sauce ",
-          se: "Marinerade kycklingfiléer, paprika, lök, grönsaker i en basilikasås.",
+          en: "Marinated chicken fillets, lamb, capsicum, onion vegetables in a basilica sauce ",
+          se: "Marinerade kycklingfiléer, lamm, paprika, lök, grönsaker i en basilikasås.",
         },
         sub: [
           {
@@ -1138,12 +1138,12 @@ export const menu = {
       },
       {
         name: {
-          en: "Paneer Naan",
-          se: "Paneer Naan",
+          en: "Peshawari Naan",
+          se: "Peshawari Naan",
         },
         description: {
-          en: "Homemade cheese baked in naan",
-          se: "Hemlagad ost inbakad i naan",
+          en: "Naan bread baked with raisins, cashews, coconut and baked with a sweet taste ",
+          se: "Naan bröd bakad med russin, cashewnötter, kokos och bakas med söt smak. ",
         },
         price: 40,
       },
@@ -1263,8 +1263,8 @@ export const menu = {
           },
           {
             name: {
-              en: "Ice Cream Sorbet",
-              se: "Ice Cream Sorbet",
+              en: "Ice Cream Sarbat",
+              se: "Ice Cream Sarbat",
             },
             description: {
               en: "Mango and lime flavored ice cream",
