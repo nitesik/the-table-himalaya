@@ -37,7 +37,11 @@ export default function Lunch() {
     },
   ];
 
-  const [lunch, setLunch] = useState(days[new Date().getDay() - 1].en);
+  const dayIndex = new Date().getDay() === 0 ? 6 : new Date().getDay() - 1;
+  const [lunch, setLunch] = useState(days[dayIndex].en); 
+
+
+  /* const [lunch, setLunch] = useState(days[new Date().getDay() - 1].en); */
 
   return (
     <main className="flex justify-center bg-white text-black text-center md:text-start flex-1">
