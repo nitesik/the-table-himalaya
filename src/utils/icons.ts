@@ -2,16 +2,6 @@ import logo from '@/assets/table-himalaya-custom.svg';
 import chicken_korai from "@/assets/chicken-korai.jpg"
 import chicken_tikka from "@/assets/chicken-tikka.jpg"
 import mixed_grill from "@/assets/mixed-grill.jpg";
-
-import lamb_thali from "@/assets/lamb_thali.jpg";
-
-import sizzleer from "@/assets/sizzleer.jpg";
-
-
-
-
-
-
 import phone from "@/assets/phone.svg";
 import mail from "@/assets/mail.svg";
 import grape from "@/assets/grape.svg";
@@ -31,8 +21,6 @@ export const icons = {
   chicken_korai,
   chicken_tikka,
   mixed_grill,
-  lamb_thali,
-  sizzleer,
   phone,
   mail,
   grape,
