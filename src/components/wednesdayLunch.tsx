@@ -33,7 +33,7 @@ export default function WednesdayLunch({ lunch }: { lunch: string }) {
         <div className="flex justify-between items-start">
           <div className="text-start w-[80%] lg:w-auto">
             <h3 className="text-xl lg:text-3xl font-semibold text-primary">
-              3. CHICKEN MANGO
+              3. CHICKEN MANGU
             </h3>
             <p className="text-xl">
               (Kycklingfile med mango smak Mellan/Stark)

@@ -56,7 +56,7 @@ export default function AboutUs() {
             />
             <Image
               src={icons.food_two}
-              alt="food"
+              alt="food"              
               height={270}
               className="rounded lg:-translate-x-[50px] w-full lg:w-[175px] object-fill "
             />
