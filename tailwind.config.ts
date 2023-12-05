@@ -17,7 +17,7 @@ const config: Config = {
         'wallpaper1': "url('/proper.jpg')",
         'restaurant': "url('/bando.jpg')",
         'reservation': "url('/reservation_wallpaper.jpg')",
-        'wallpaper2': "url('/proper.jpg')",
+        'wallpaper2': "url('/snow.jpg')",
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
