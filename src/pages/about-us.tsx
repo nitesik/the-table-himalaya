@@ -41,7 +41,7 @@ export default function AboutUs() {
               </div>
             </div>
           </div>
-          <div className="bg-restaurant bg-cover bg-center flex-none lg:flex-1 h-[300px] lg:h-[600px] w-full rounded"></div>
+          <div className="bg-restaurant bg-cover bg-center flex-none lg:flex-1 h-[300px] lg:h-[350px] w-full rounded"></div>
         </div>
       </div>
 
