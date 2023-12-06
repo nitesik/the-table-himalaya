@@ -3,6 +3,7 @@ import MondayLunch from "@/components/mondayLunch";
 import ThursdayLunch from "@/components/thursdayLunch";
 import TuesdayLunch from "@/components/tuesdayLunch";
 import WednesdayLunch from "@/components/wednesdayLunch";
+import Head from "next/head";
 import { useState } from "react";
 
 export default function Lunch() {
@@ -38,13 +39,15 @@ export default function Lunch() {
   ];
 
   const dayIndex = new Date().getDay() === 0 ? 6 : new Date().getDay() - 1;
-  const [lunch, setLunch] = useState(days[dayIndex].en); 
-
+  const [lunch, setLunch] = useState(days[dayIndex].en);
 
   /* const [lunch, setLunch] = useState(days[new Date().getDay() - 1].en); */
 
   return (
     <main className="flex justify-center bg-white text-black text-center md:text-start flex-1">
+      <Head>
+        <title>The Table Himalaya - Lunches</title>
+      </Head>
       <div className="w-[350px] md:w-[700px] lg:w-[1000px] xl:w-[1200px] flex flex-col items-center gap-10">
         <h1 className="text-primary font-bold text-3xl lg:text-[60px] mt-10">
           Lunch Meny
