@@ -7,7 +7,6 @@ import { useRouter } from "next/router";
 import { useState } from "react";
 import { toast } from "react-toastify";
 
-
 export default function Homepage() {
   const router = useRouter();
 
@@ -89,11 +88,13 @@ export default function Homepage() {
             </h1>
             <h1 className="text-[23px] lg:text-[25px]">{homepage.title[t]}</h1>
             <button
-              onClick={() => document.getElementById("form")?.scrollIntoView({
-                behavior: "smooth",
-                block: "center",
-                inline: "end",
-              })}
+              onClick={() =>
+                document.getElementById("form")?.scrollIntoView({
+                  behavior: "smooth",
+                  block: "center",
+                  inline: "end",
+                })
+              }
               className="bg-white text-primary font-semibold px-5 py-3 rounded"
             >
               {homepage.reservation_button[t]}
@@ -104,7 +105,7 @@ export default function Homepage() {
       </div>
 
       <div className="flex justify-center bg-white text-black text-center md:text-start">
-        <div className="w-[350px] md:w-[700px] lg:w-[1000px] xl:w-[1200px] grid grid-cols-1 lg:grid-cols-1 gap-4 my-[100px] ">
+        <div className="w-[350px] md:w-[700px] lg:w-[1000px] xl:w-[1200px] grid grid-cols-1 lg:grid-cols-1 gap-4 lg:gap-7 my-[100px] ">
           <div className="flex flex-col gap-7">
             <h2 className="text-[23px] text-primary">{homepage.intro[t]}</h2>
             <h1 className="text-[32px] text-primary font-bold">
@@ -112,13 +113,13 @@ export default function Homepage() {
             </h1>
             <p className="text-lg">{homepage.intro_description_one[t]}</p>
             <p className="text-lg">{homepage.intro_description_two[t]}</p>
-            <div className="flex justify-between lg:w-[700px] [&>img]:rounded-lg [&>img]:w-[110px] [&>img]:md:w-[160px] lg:[&>img]:w-[150px] xl:[&>img]:w-[180px]">
+            <div className="flex justify-between lg:w-full [&>img]:rounded-lg [&>img]:w-[110px] [&>img]:md:w-[160px] lg:[&>img]:w-[150px] xl:[&>img]:w-[180px]">
               <Image src={icons.chicken_tikka} alt="food" />
               <Image src={icons.chicken_korai} alt="food" />
               <Image src={icons.mixed_grill} alt="food" />
-              
             </div>
           </div>
+          <div className="bg-snow bg-cover w-full h-[200px] lg:h-[600px] rounded-lg"></div>
         </div>
       </div>
 
@@ -215,48 +216,55 @@ export default function Homepage() {
                 placeholder={`${homepage.name[t]}*`}
                 onChange={(e) => setName(e.target.value)}
                 value={name}
-                required />
+                required
+              />
               <input
                 type="email"
                 className="focus:border-primary border outline-none"
                 placeholder={`${homepage.mail[t]}*`}
                 onChange={(e) => setEmail(e.target.value)}
                 value={email}
-                required />
+                required
+              />
               <input
                 type="tel"
                 className="focus:border-primary border outline-none"
                 placeholder={`${homepage.phone_number[t]}*`}
                 onChange={(e) => setPhone(e.target.value)}
                 value={phone}
-                required />
+                required
+              />
               <input
                 type="number"
                 className="focus:border-primary border outline-none"
                 placeholder={`${homepage.guests[t]}*`}
                 onChange={(e) => setGuests(e.target.value)}
                 value={guests}
-                required />
+                required
+              />
               <input
                 type="date"
                 className="focus:border-primary border outline-none"
                 placeholder={`${homepage.date[t]}*`}
                 onChange={(e) => setDate(e.target.value)}
                 value={date}
-                required />
+                required
+              />
               <input
                 type="time"
                 className="focus:border-primary border outline-none"
                 placeholder={`${homepage.time[t]}*`}
                 onChange={(e) => setTime(e.target.value)}
                 value={time}
-                required />
+                required
+              />
             </div>
             <textarea
               placeholder={`${homepage.message[t]}`}
               className="focus:border-primary border outline-none w-full border-[#ddd] rounded pl-5 pt-3 h-[150px]"
               onChange={(e) => setMessage(e.target.value)}
-              value={message} />
+              value={message}
+            />
             <button
               disabled={isLoading}
               className="bg-primary w-full text-white font-semibold py-3 rounded "
@@ -273,7 +281,9 @@ export default function Homepage() {
             title="map"
             className="w-full h-[500px]"
             loading="lazy"
-            src={`https://www.google.com/maps/embed/v1/place?key=${process.env.NEXT_PUBLIC_GOOGLE_API}&q=cumin+stockholm&language=${t === "en" ? "en" : "sv"}`}
+            src={`https://www.google.com/maps/embed/v1/place?key=${
+              process.env.NEXT_PUBLIC_GOOGLE_API
+            }&q=cumin+stockholm&language=${t === "en" ? "en" : "sv"}`}
           ></iframe>
         </div>
       </div>

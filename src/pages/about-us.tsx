@@ -1,4 +1,4 @@
-import { icons } from "@/utils/icons";
+import { galleryArray, icons } from "@/utils/icons";
 import { Language } from "@/utils/site";
 import { about_us, homepage } from "@/utils/translations";
 import Head from "next/head";
@@ -16,7 +16,7 @@ export default function AboutUs() {
         <title>The Table Himalaya - About Us</title>
       </Head>
       <div className="flex justify-center py-[50px]">
-        <div className="w-[350px] md:w-[700px] mb-[25px] lg:mb-[100px] lg:w-[1000px] xl:w-[1200px] flex items-center flex-col lg:flex-row justify-center gap-10">
+        <div className="w-[350px] md:w-[700px] mb-[25px] lg:mb-[100px] lg:w-[1000px] xl:w-[1200px] flex items-start flex-col justify-center gap-10">
           <div className="grid place-content-center max-w-[450px] flex-1">
             <div className="flex flex-col lg:text-start text-center gap-5">
               <h1 className="text-[38px] font-semibold text-primary">
@@ -41,7 +41,7 @@ export default function AboutUs() {
               </div>
             </div>
           </div>
-          <div className="bg-restaurant bg-cover bg-center flex-none lg:flex-1 h-[300px] lg:h-[350px] w-full rounded"></div>
+          <div className="bg-restaurant bg-cover bg-center flex-none h-[300px] lg:h-[750px] w-full rounded"></div>
         </div>
       </div>
 
@@ -56,7 +56,7 @@ export default function AboutUs() {
             />
             <Image
               src={icons.food_two}
-              alt="food"              
+              alt="food"
               height={270}
               className="rounded lg:-translate-x-[50px] w-full lg:w-[175px] object-fill "
             />
@@ -86,13 +86,23 @@ export default function AboutUs() {
               {about_us.featured_food_info[t]}
             </h1>
           </div>
-          <div className="flex mt-[50px] flex-col gap-14 text-start lg:gap-0 lg:flex-row justify-between">
-            {homepage.dishes.slice(3, 6).map((item) => (
+          <div className="grid mt-[50px] grid-cols-1 gap-14 text-start lg:gap-1 lg:grid-cols-3 justify-between">
+            {/* {homepage.dishes.slice(3, 6).map((item) => (
               <div
                 key={item.name.en}
                 className="h-[500px] lg:w-[300px] xl:w-[350px] lg:h-[450px] xl:h-[500px] bg-cover bg-no-repeat bg-center flex items-end"
                 style={{ backgroundImage: `url(${item.source})` }}
               ></div>
+            ))} */}
+            {galleryArray.map((item, index) => (
+              <Image
+                key={index}
+                src={item.src}
+                alt="images"
+                className={`object-cover h-[300px] w-full ${
+                  [4, 5].includes(index) ? "object-left" : "object-center"
+                }`}
+              />
             ))}
           </div>
         </div>
