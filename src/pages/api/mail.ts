@@ -17,8 +17,6 @@ export default function POST(req: NextApiRequest, res: NextApiResponse) {
       .send({
         from: "clients@the-table-himalaya.com",
         to: [
-          "neetesh2000@gmail.com",
-          "prashunnaral8@gmail.com",
           "rajkumar.777@hotmail.com",
           "thetablehimalaya@gmail.com",
         ],
