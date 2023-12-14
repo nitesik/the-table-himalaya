@@ -177,10 +177,10 @@ export default function Homepage() {
                   <h1 className="text-[23px] mt-3 font-semibold">
                     {homepage.phone[t]}
                   </h1>
-                  <Link href={"tel:0705474852"}>
+                  <Link href={"tel:4686123780"}>
                     <h1 className="mt-[10px]">+4686123780</h1>
                   </Link>
-                  <Link href={"tel:0705474852"}>
+                  <Link href={"tel:0760353799"}>
                     <h1 className="mt-[10px]">0760353799</h1>
                   </Link>
                   {/* <h1 className="">093 234 34324</h1> */}
