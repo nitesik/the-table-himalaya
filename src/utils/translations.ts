@@ -1704,8 +1704,8 @@ export const drinks = {
 
 export const catering = {
   description: {
-    en: "Surely it's fun to have a party? Arranging food for many people, on the other hand, can be a stressful moment and you would like to have time to participate yourself as well. That's why we at Table Himalaya have come up with a perfect catering plan for your event.",
-    se: "Visst är det kul att ha fest? Att ordna mat för många personer kan däremot vara ett stressmoment och man vill gärna hinna delta själv också. Därför har vi på Table Himalaya kommit fram till en perfekt cateringplan för ert event.",
+    en: "Indulge in a unique dining experience at our separate serving room, connected to our restaurant. Perfect for birthdays, meetings, and private parties. Choose from our extensive menu or rent our event venue for your next gathering. Call us today for more details and to book your special event at our hotel.",
+    se: "Njut av en unik matupplevelse i vårt separata serveringsrum, anslutet till vår restaurang. Perfekt för födelsedagar, möten och privata fester. Välj från vår omfattande meny eller hyr vår evenemangslokal för din nästa sammankomst. Ring oss idag för mer information och för att boka ditt speciella evenemang på vårt hotell",
   },
 
   chef_info: {
