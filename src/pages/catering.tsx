@@ -83,7 +83,7 @@ export default function Catering() {
       <div className="w-[350px] md:w-[700px] mb-[100px] lg:w-[1000px] xl:w-[1200px] flex flex-col items-center">
         <div className="mt-[50px]">
           <h1 className="text-center text-[32px] md:text-left md:w-full md:text-[45px] font-semibold">
-            Catering Service
+            Catering & Event Service
           </h1>
           <p className="text-[17px] md:text-left text-center md:text-[23px] mt-5">
             {catering.description[t]}
