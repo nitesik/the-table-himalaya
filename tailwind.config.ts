@@ -16,7 +16,7 @@ const config: Config = {
         "nav-bg": "url('/navbar-background.jpg')",
         wallpaper1: "url('/proper.jpg')",
         snow: 'url("/snow.jpg")',
-        restaurant: "url('/prism.jpg')",
+        restaurant: "url('/pris.jpg')",
         reservation: "url('/reservation_wallpaper.jpg')",
         wallpaper2: "url('/proper.jpg')",
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
