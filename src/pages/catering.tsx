@@ -202,25 +202,7 @@ export default function Catering() {
           )}
         </h1>
 
-        <div className="mt-[35px] md:mt-[50px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-          {catering.category[categoryIndex].items.map((item) => (
-            <div key={item.name[t]} className="flex items-start gap-5">
-              <Image
-                src={item.source}
-                alt="image"
-                width={138}
-                height={138}
-                className="rounded-xl mt-[10px]"
-              />
-              <div>
-                <h1 className="text-[23px] text-primary font-semibold">
-                  {item.name[t]}
-                </h1>
-                <p>{item.description?.[t]}</p>
-              </div>
-            </div>
-          ))}
-        </div>
+     
       </div>
     </div>
   );
