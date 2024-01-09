@@ -1855,11 +1855,7 @@ export const catering = {
           source: "/naan.jpg",
         }, */
       ],
-      price: "149 kr per person",
-        delivery: {
-        en: "Delivery SEK 450 within customs",
-        se: "Leverans 450kr inom tullarna",
-      },
+      
     },
     {
       name: {
