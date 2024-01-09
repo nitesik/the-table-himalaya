@@ -1739,7 +1739,7 @@ export const catering = {
         se: "Välj valfri 2",
       },*/
       items: [
-        {
+        /*{
           name: {
             en: "Onion Bhaji",
             se: "Onion Bhaji",
@@ -1795,7 +1795,7 @@ export const catering = {
             en: "Mix salad, homemade Indian cheese, olive oil, lime juice.",
             se: "Mix sallad, hemlagad indisk ost, olivolja, limesaft.",
           },
-        },
+        }, */
       ],
     },
     {
