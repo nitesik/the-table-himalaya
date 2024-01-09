@@ -1739,7 +1739,7 @@ export const catering = {
         se: "Välj valfri 2",
       },*/
       items: [
-        /*{
+        {
           name: {
             en: "Onion Bhaji",
             se: "Onion Bhaji",
@@ -1795,7 +1795,7 @@ export const catering = {
             en: "Mix salad, homemade Indian cheese, olive oil, lime juice.",
             se: "Mix sallad, hemlagad indisk ost, olivolja, limesaft.",
           },
-        },*/
+        },
       ],
     },
     {
@@ -1805,7 +1805,7 @@ export const catering = {
       },
       source: "/buffet.png",
       items: [
-        /*{
+        {
           name: {
             en: "Onion Bhaji",
             se: "Onion Bhaji",
@@ -1853,13 +1853,13 @@ export const catering = {
             se: "Naanbröd",
           },
           source: "/naan.jpg",
-        },*/
+        },
       ],
-      /*price: "149 kr per person",
+      price: "149 kr per person",
       delivery: {
         en: "Delivery SEK 450 within customs",
         se: "Leverans 450kr inom tullarna",
-      },*/
+      },
     },
     {
       name: {
@@ -1867,12 +1867,12 @@ export const catering = {
         se: "Huvudrets ",
       },
       source: "/main-course.png",
-      /*description: {
+      description: {
         en: "Choose any 2",
         se: "Välj valfri 2",
-      },*/
+      },
       items: [
-        /*{
+        {
           name: {
             en: "Mixed Chicken Grill",
             se: "Mixed Kyckling Grill",
@@ -1939,7 +1939,7 @@ export const catering = {
             en: "Vegetable buns in a spinach sauce (gluten and dairy free)",
             se: "Vegetabiliska bullar i en spenatsås (gluten- och mjölkfri)",
           },
-        },*/
+        },
       ],
     },
     {
@@ -1948,12 +1948,12 @@ export const catering = {
         en: "Dessert",
       },
       source: "/dessert.png",
-      /*description: {
+      description: {
         en: "Choose any 1",
         se: "Välj valfri 1",
-      },*/
+      },
       items: [
-        /*{
+        {
           name: {
             en: "Gulab Jamun",
             se: "Gulab Jamun",
@@ -1982,7 +1982,7 @@ export const catering = {
             en: "Halwa made of carrot, dry fruits, nuts and condensed milk",
             se: "Halwa gjorde morot, torkad frukt, nötter och kondenserad mjölk",
           },
-        },*/
+        },
       ],
     },
   ],
