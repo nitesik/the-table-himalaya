@@ -20,7 +20,7 @@ import snow from "../../public/snow.jpg";
 import oumph_korai from "../../public/oumph-korai.jpg";
 import lamb_biryani from "../../public/lamb-biryani.jpg";
 import wallpaper2 from "../../public/wallpaper2.jpg";
-import gallery from "../../public/gallery.jpg";
+import gallery from "../../public/pris.jpg";
 import gallery2 from "../../public/gallery2.jpg";
 import gallery3 from "../../public/gallery3.jpg";
 import gallery4 from "../../public/gallery4.jpg";
