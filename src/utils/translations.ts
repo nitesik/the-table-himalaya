@@ -1868,11 +1868,11 @@ export const catering = {
       },
       source: "/main-course.png",
       description: {
-        en: "Choose any 2",
-        se: "Välj valfri 2",
+        en: " ",
+        se: " ",
       },
       items: [
-        {
+        /*{
           name: {
             en: "Mixed Chicken Grill",
             se: "Mixed Kyckling Grill",
@@ -1939,7 +1939,7 @@ export const catering = {
             en: "Vegetable buns in a spinach sauce (gluten and dairy free)",
             se: "Vegetabiliska bullar i en spenatsås (gluten- och mjölkfri)",
           },
-        }, 
+        }, */
       ],
     },
     {
@@ -1949,8 +1949,8 @@ export const catering = {
       },
       source: "/dessert.png",
       description: {
-        en: "Choose any 1",
-        se: "Välj valfri 1",
+        en: " ",
+        se: " ",
       }, 
       items: [
         {
