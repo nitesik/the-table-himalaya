@@ -1994,8 +1994,8 @@ export const about_us = {
     se: "Om Oss",
   },
   first_description: {
-    en: "At the core of our ethos, we embrace the transformative journey of hospitality. Our restaurant is not just about providing a service but about sculpting an experience that unites and fulfills. With a variety of services tailored to each event, from intimate birthday gatherings to professional business meetings, our versatile event space and dedicated dining rooms ensure that every occasion is exceptional. For custom parties and requests, our doors are open - reach out and let us create your perfect event",
-    se: "I kärnan av vårt etos omfamnar vi gästfrihetens transformativa resa. Vår restaurang handlar inte bara om att ge en service utan om att skulptera en upplevelse som förenar och uppfyller. Med en mängd olika tjänster skräddarsydda för varje evenemang, från intima födelsedagssammankomster till professionella affärsmöten, garanterar vårt mångsidiga evenemangsutrymme och dedikerade matsalar att varje tillfälle är exceptionellt. För skräddarsydda fester och önskemål är våra dörrar öppna - nå ut och låt oss skapa ditt perfekta event",
+    en: "You will witness God shaping the divided seas as we bring together our own divided forms, ultimately replenishing them by the end of this process.",
+    se: "Du kommer att bevittna hur Gud formar de delade haven när vi sammanför våra egna delade former, och till slut fyller på dem i slutet av denna process.",
   },
   fast_service: {
     en: "Fast Service",
