@@ -1855,7 +1855,11 @@ export const catering = {
           source: "/naan.jpg",
         }, */
       ],
-      
+      price: "   ",
+      delivery: {
+        en: "   ",
+        se: "   ",
+      }      
     },
     {
       name: {
