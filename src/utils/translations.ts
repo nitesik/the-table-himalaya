@@ -1856,7 +1856,7 @@ export const catering = {
         }, */
       ],
       /*price: "149 kr per person",
-      delivery: {
+        delivery: {
         en: "Delivery SEK 450 within customs",
         se: "Leverans 450kr inom tullarna",
       }, */
@@ -1867,12 +1867,12 @@ export const catering = {
         se: "Huvudrets ",
       },
       source: "/main-course.png",
-      /*description: {
+      description: {
         en: "Choose any 2",
         se: "Välj valfri 2",
-      }, */
+      },
       items: [
-        /*{
+        {
           name: {
             en: "Mixed Chicken Grill",
             se: "Mixed Kyckling Grill",
@@ -1939,7 +1939,7 @@ export const catering = {
             en: "Vegetable buns in a spinach sauce (gluten and dairy free)",
             se: "Vegetabiliska bullar i en spenatsås (gluten- och mjölkfri)",
           },
-        }, */
+        }, 
       ],
     },
     {
@@ -1951,7 +1951,7 @@ export const catering = {
       description: {
         en: "Choose any 1",
         se: "Välj valfri 1",
-      },
+      }, 
       items: [
         {
           name: {
