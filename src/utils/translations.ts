@@ -1953,36 +1953,36 @@ export const catering = {
         se: " ",
       }, 
       items: [
-        /*{
+        {
           name: {
-            en: "Gulab Jamun",
-            se: "Gulab Jamun",
+            en: "",
+            se: "",
           },
           source: "/gulab-jamun.jpg",
 
           description: {
-            en: "Soft lumps made of cottage cheese in cardamom syrup",
-            se: "Mjuka klimpar gjorda av keso i kardemummsirap",
+            en: "",
+            se: "",
           },
         },
         {
           name: {
-            en: "Fruit with vanilla cream",
-            se: "Frukt med vanilla cream",
+            en: "",
+            se: "",
           },
           source: "/fruit-vanilla.jpg",
         },
         {
           name: {
-            en: "Gajar Ka Halwa",
-            se: "Gajar Ka Halwa",
+            en: "",
+            se: "",
           },
           source: "/gajar-halwa.jpg",
           description: {
-            en: "Halwa made of carrot, dry fruits, nuts and condensed milk",
-            se: "Halwa gjorde morot, torkad frukt, nötter och kondenserad mjölk",
+            en: "",
+            se: "",
           },
-        }, */
+        },
       ],
     },
   ],
