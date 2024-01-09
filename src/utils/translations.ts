@@ -1734,12 +1734,12 @@ export const catering = {
         se: "Förrätt och Sallad",
       },
       source: "/starters.png",
-      description: {
+      /*description: {
         en: "Choose any 2",
         se: "Välj valfri 2",
-      },
+      },*/
       items: [
-        {
+        /*{
           name: {
             en: "Onion Bhaji",
             se: "Onion Bhaji",
@@ -1795,7 +1795,7 @@ export const catering = {
             en: "Mix salad, homemade Indian cheese, olive oil, lime juice.",
             se: "Mix sallad, hemlagad indisk ost, olivolja, limesaft.",
           },
-        },
+        },*/
       ],
     },
     {
@@ -1805,7 +1805,7 @@ export const catering = {
       },
       source: "/buffet.png",
       items: [
-        {
+        /*{
           name: {
             en: "Onion Bhaji",
             se: "Onion Bhaji",
@@ -1853,13 +1853,13 @@ export const catering = {
             se: "Naanbröd",
           },
           source: "/naan.jpg",
-        },
+        },*/
       ],
-      price: "149 kr per person",
+      /*price: "149 kr per person",
       delivery: {
         en: "Delivery SEK 450 within customs",
         se: "Leverans 450kr inom tullarna",
-      },
+      },*/
     },
     {
       name: {
@@ -1867,12 +1867,12 @@ export const catering = {
         se: "Huvudrets ",
       },
       source: "/main-course.png",
-      description: {
+      /*description: {
         en: "Choose any 2",
         se: "Välj valfri 2",
-      },
+      },*/
       items: [
-        {
+        /*{
           name: {
             en: "Mixed Chicken Grill",
             se: "Mixed Kyckling Grill",
@@ -1939,7 +1939,7 @@ export const catering = {
             en: "Vegetable buns in a spinach sauce (gluten and dairy free)",
             se: "Vegetabiliska bullar i en spenatsås (gluten- och mjölkfri)",
           },
-        },
+        },*/
       ],
     },
     {
@@ -1948,12 +1948,12 @@ export const catering = {
         en: "Dessert",
       },
       source: "/dessert.png",
-      description: {
+      /*description: {
         en: "Choose any 1",
         se: "Välj valfri 1",
-      },
+      },*/
       items: [
-        {
+        /*{
           name: {
             en: "Gulab Jamun",
             se: "Gulab Jamun",
@@ -1982,7 +1982,7 @@ export const catering = {
             en: "Halwa made of carrot, dry fruits, nuts and condensed milk",
             se: "Halwa gjorde morot, torkad frukt, nötter och kondenserad mjölk",
           },
-        },
+        },*/
       ],
     },
   ],
@@ -1994,8 +1994,8 @@ export const about_us = {
     se: "Om Oss",
   },
   first_description: {
-    en: "You will witness God shaping the divided seas as we bring together our own divided forms, ultimately replenishing them by the end of this process.",
-    se: "Du kommer att bevittna hur Gud formar de delade haven när vi sammanför våra egna delade former, och slutligen fyller på dem i slutet av denna process.",
+    en: "At the core of our ethos, we embrace the transformative journey of hospitality. Our restaurant is not just about providing a service but about sculpting an experience that unites and fulfills. With a variety of services tailored to each event, from intimate birthday gatherings to professional business meetings, our versatile event space and dedicated dining rooms ensure that every occasion is exceptional. For custom parties and requests, our doors are open - reach out and let us create your perfect event",
+    se: "I kärnan av vårt etos omfamnar vi gästfrihetens transformativa resa. Vår restaurang handlar inte bara om att ge en service utan om att skulptera en upplevelse som förenar och uppfyller. Med en mängd olika tjänster skräddarsydda för varje evenemang, från intima födelsedagssammankomster till professionella affärsmöten, garanterar vårt mångsidiga evenemangsutrymme och dedikerade matsalar att varje tillfälle är exceptionellt. För skräddarsydda fester och önskemål är våra dörrar öppna - nå ut och låt oss skapa ditt perfekta event",
   },
   fast_service: {
     en: "Fast Service",
