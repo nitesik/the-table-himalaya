@@ -1953,7 +1953,7 @@ export const catering = {
         se: " ",
       }, 
       items: [
-        {
+        /*{
           name: {
             en: "",
             se: "",
@@ -1982,7 +1982,7 @@ export const catering = {
             en: "",
             se: "",
           },
-        },
+        },*/
       ],
     },
   ],
