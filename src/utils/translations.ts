@@ -1953,7 +1953,7 @@ export const catering = {
         se: " ",
       }, 
       items: [
-        {
+        /*{
           name: {
             en: "Gulab Jamun",
             se: "Gulab Jamun",
@@ -1982,7 +1982,7 @@ export const catering = {
             en: "Halwa made of carrot, dry fruits, nuts and condensed milk",
             se: "Halwa gjorde morot, torkad frukt, nötter och kondenserad mjölk",
           },
-        },
+        }, */
       ],
     },
   ],
