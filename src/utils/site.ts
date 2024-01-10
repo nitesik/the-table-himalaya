@@ -21,8 +21,8 @@ export const siteSetting = {
       },
 
       {
-        en: "Catering",
-        se: "Catering",
+        en: "Catering/Event Service",
+        se: "Catering/Event Service",
         href: "/catering",
       },
       {
