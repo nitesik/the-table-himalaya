@@ -1,7 +1,7 @@
 export type Language = {
-  en: string;
-  se: string;
-};
+  en: string
+  se: string
+}
 
 export const homepage = {
   title: {
@@ -9,8 +9,8 @@ export const homepage = {
     se: "DEN BÄSTA UPPLEVELSEN",
   },
   reservation_button: {
-    en: "Make A Reservation",
-    se: "Reservera",
+    en: "Book Now",
+    se: "BOKA NU",
   },
 
   intro: {
@@ -44,7 +44,7 @@ export const homepage = {
         en: "These dishes are roasted in a clay oven in a masala sauce with yoghurt, cheese, butter and nuts",
         se: "Dessa rätter är rostade i en lerugn i en masalasås med yoghurt, ost, smör och nötter",
       },
-      source: "/chicken-tikka.jpg",
+      source: "/samosa.jpeg",
     },
     {
       price: 125,
@@ -104,7 +104,7 @@ export const homepage = {
         en: "Indian party risotto made from lamb with a lot of good spices and saffron",
         se: "Indisk festrisotto gjord på lamm med mycket goda kryddor och saffran",
       },
-      source: "/lamb-biryani.jpg",
+      source: "/palak_paneer.jpg",
     },
   ],
 
@@ -182,7 +182,7 @@ export const homepage = {
     en: "Message",
     se: "meddelande",
   },
-};
+}
 
 export const menu = {
   appetizer: {
@@ -668,8 +668,8 @@ export const menu = {
           se: "Vegan Thali",
         },
         description: {
-          en: "Vegan pakauda, spinach vaji, okra( lady funger) , lenses, ris salad and chapati bread",
-          se: "Vegansk pakauda,  spenatvaji, okra, linser, , ris, sallad och chapatibröd.",
+          en: "Vegan Spinach vaji, lady finger, lentil, rice, salad and papadom",
+          se: "Vegansk spenat vaji, okra, linser, ris, sallad och papadom.",
         },
         price: 220,
       },
@@ -679,8 +679,8 @@ export const menu = {
           se: "Ayurveda Thali",
         },
         description: {
-          en: "Three vegetarian dishes: okra, palak panir, mix-veg, paprika, onion and lenses, served with rice, naan and raita",
-          se: "Tre vegetariska rätter: okra, palak panir, mix-veg, paprika, lök och linser, serveras med ris, naan och raita.    ",
+          en: "Three vegetarian dishes: palak panir, mix-veg, paprika, onion and lenses, served with rice, naan and raita",
+          se: "Tre vegetariska rätter: palak panir, mix-veg, paprika, lök och linser, serveras med ris, naan och raita.    ",
         },
         price: 220,
       },
@@ -1010,7 +1010,7 @@ export const menu = {
       },
     ],
   },
-  
+
   fish_and_seafood: {
     source: "/fish-banner.jpg",
     index: 7,
@@ -1269,7 +1269,7 @@ export const menu = {
       },
     ],
   },
-};
+}
 
 export const drinks = {
   bottle_beer: {
@@ -1700,7 +1700,7 @@ export const drinks = {
       },
     ],
   },
-};
+}
 
 export const catering = {
   description: {
@@ -1859,7 +1859,7 @@ export const catering = {
       delivery: {
         en: "   ",
         se: "   ",
-      }      
+      },
     },
     {
       name: {
@@ -1951,7 +1951,7 @@ export const catering = {
       description: {
         en: " ",
         se: " ",
-      }, 
+      },
       items: [
         /*{
           name: {
@@ -1986,7 +1986,7 @@ export const catering = {
       ],
     },
   ],
-};
+}
 
 export const about_us = {
   about_us: {
@@ -2025,4 +2025,4 @@ export const about_us = {
     en: "Fresh taste and great price",
     se: "Fräsch smak och bra pris",
   },
-};
+}

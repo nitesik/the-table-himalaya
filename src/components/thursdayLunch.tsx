@@ -21,10 +21,10 @@ export default function ThursdayLunch({ lunch }: { lunch: string }) {
         <div className="flex justify-between items-start">
           <div className="text-start w-[80%] lg:w-auto">
             <h3 className="text-xl lg:text-3xl font-semibold text-primary">
-              2. LAMM MADRASI
+              2. LAMM KARAI
             </h3>
             <p className="text-xl">
-              (lammfile med doft av curryblad,senapfrön, Mellan)
+              (lammfile med paprika och lök i basilika sås, Mellan)
             </p>
           </div>
           <hr className="flex-1 border mx-4 hidden lg:inline border-black mt-5" />
@@ -45,10 +45,10 @@ export default function ThursdayLunch({ lunch }: { lunch: string }) {
         <div className="flex justify-between items-start">
           <div className="text-start w-[80%] lg:w-auto">
             <h3 className="text-xl lg:text-3xl font-semibold text-primary">
-              4. DALL MIX
+              4. Dall Pumpa
             </h3>
             <p className="text-xl">
-              (Exotiska blandade linser med indiska kryddor, Mellan)
+              (Exotiska blandade linser med pumpa, Mellan)
             </p>
           </div>
           <hr className="flex-1 border mx-4 hidden lg:inline border-black mt-5" />
@@ -70,7 +70,7 @@ export default function ThursdayLunch({ lunch }: { lunch: string }) {
             </p>
           </div>
           <hr className="flex-1 border mx-4 hidden lg:inline border-black mt-5" />
-          <p className="text-xl lg:text-3xl font-semibold">130kr</p>
+          <p className="text-xl lg:text-3xl font-semibold">135kr</p>
         </div>
         <div className="flex justify-between items-start">
           <div className="text-start w-[80%] lg:w-auto">
@@ -83,29 +83,29 @@ export default function ThursdayLunch({ lunch }: { lunch: string }) {
             </p>
           </div>
           <hr className="flex-1 border mx-4 hidden lg:inline border-black mt-5" />
-          <p className="text-xl lg:text-3xl font-semibold">130kr</p>
+          <p className="text-xl lg:text-3xl font-semibold">135kr</p>
         </div>
         <div className="flex justify-between items-start">
           <div className="text-start w-[80%] lg:w-auto">
             <h3 className="text-xl lg:text-3xl font-semibold text-primary">
-              7. GARLIC TIKKA SIZZLAR ( Mellan sås)
+              7. MIX TIKKA SIZZLAR ( Mellan sås)
             </h3>
             <p className="text-xl">
-              Marinerade kycklingfiléer i en mild tandoori krydda
+            Tre olika Kryddmarinerade, chilli, vitlök, och tandoori kycklingfiléer i en mild tandoori krydda sås
             </p>
           </div>
           <hr className="flex-1 border mx-4 hidden lg:inline border-black mt-5" />
-          <p className="text-xl lg:text-3xl font-semibold">130kr</p>
+          <p className="text-xl lg:text-3xl font-semibold">135kr</p>
         </div>
         <div className="flex justify-between items-start">
           <div className="text-start w-[80%] lg:w-auto">
             <h3 className="text-xl lg:text-3xl font-semibold text-primary">
-              8. TRE SMÅ RÄTTER (Mellan)
+              8. TRE SMÅ RÄTTER 
             </h3>
-            <p className="text-xl">(Bolmkål med poatais, vegan, MELLAN)</p>
+            <p className="text-xl">(Valfri tre olika små rätter från dagens lunch menyn, nr.1-4)</p>
           </div>
           <hr className="flex-1 border mx-4 hidden lg:inline border-black mt-5" />
-          <p className="text-xl lg:text-3xl font-semibold">130kr</p>
+          <p className="text-xl lg:text-3xl font-semibold">135kr</p>
         </div>
         <div className="flex justify-between items-start">
           <div className="text-start w-[80%] lg:w-auto">
@@ -113,7 +113,7 @@ export default function ThursdayLunch({ lunch }: { lunch: string }) {
               9. AYURVEDA LAMM / KYCKLING
             </h3>
             <p className="text-xl">
-              ndisk hälsöfilsofi rätter , med curryblad,lök, senapfrö,kokos,
+              Indisk hälsöfilsofi rätter , med curryblad,lök, senapfrö,kokos,
               rödchilli och tamarin.{" "}
             </p>
           </div>

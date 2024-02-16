@@ -1,31 +1,31 @@
-import { icons } from "@/utils/icons";
-import { type Language, homepage } from "@/utils/translations";
-import Head from "next/head";
-import Image from "next/image";
-import Link from "next/link";
-import { useRouter } from "next/router";
-import { useState } from "react";
-import { toast } from "react-toastify";
+import { icons } from "@/utils/icons"
+import { type Language, homepage } from "@/utils/translations"
+import Head from "next/head"
+import Image from "next/image"
+import Link from "next/link"
+import { useRouter } from "next/router"
+import { useState } from "react"
+import { toast } from "react-toastify"
 
 export default function Homepage() {
-  const router = useRouter();
+  const router = useRouter()
 
-  const t = router.locale as keyof Language;
+  const t = router.locale as keyof Language
 
-  const [name, setName] = useState<string>("");
-  const [email, setEmail] = useState<string>("");
-  const [date, setDate] = useState<string>("");
-  const [phone, setPhone] = useState<string>("");
-  const [time, setTime] = useState<string>("");
-  const [message, setMessage] = useState<string>("");
-  const [guests, setGuests] = useState<string>("");
+  const [name, setName] = useState<string>("")
+  const [email, setEmail] = useState<string>("")
+  const [date, setDate] = useState<string>("")
+  const [phone, setPhone] = useState<string>("")
+  const [time, setTime] = useState<string>("")
+  const [message, setMessage] = useState<string>("")
+  const [guests, setGuests] = useState<string>("")
 
-  const [isLoading, setIsLoading] = useState(false);
+  const [isLoading, setIsLoading] = useState(false)
 
   async function formHandler(event: React.FormEvent<HTMLFormElement>) {
-    event.preventDefault();
+    event.preventDefault()
 
-    setIsLoading(true);
+    setIsLoading(true)
 
     const res = await fetch("/api/mail", {
       method: "POST",
@@ -41,9 +41,9 @@ export default function Homepage() {
         time,
         message,
       }),
-    });
-    const data = await res.json();
-    console.log(data);
+    })
+    const data = await res.json()
+    console.log(data)
 
     if (res.ok) {
       toast.success("Reservation mail sent", {
@@ -55,8 +55,8 @@ export default function Homepage() {
         draggable: true,
         progress: undefined,
         theme: "light",
-      });
-      setIsLoading(false);
+      })
+      setIsLoading(false)
     }
 
     if (!res.ok) {
@@ -69,9 +69,9 @@ export default function Homepage() {
         draggable: true,
         progress: undefined,
         theme: "light",
-      });
+      })
 
-      setIsLoading(false);
+      setIsLoading(false)
     }
   }
 
@@ -83,9 +83,21 @@ export default function Homepage() {
       <div className="flex flex-col lg:flex-row bg-cover px-2 h-fit lg:h-[70vh]">
         <div className="w-full md:h-[50%] py-[50px] lg:w-[35%] lg:h-[70vh] bg-primary grid place-content-center text-white">
           <div className="flex flex-col items-center gap-4">
+            <Image
+              src={icons.namaste}
+              alt="namaste"
+              className="namaste-image"
+            />
+            <Image
+              src={icons.swagatam}
+              alt="swagatam"
+              className="welcome-image"
+            />
+
             <h1 className="text-[23px] lg:text-[32px] font-bold">
               The Table Himalaya
             </h1>
+
             <h1 className="text-[23px] lg:text-[25px]">{homepage.title[t]}</h1>
             <button
               onClick={() =>
@@ -95,7 +107,7 @@ export default function Homepage() {
                   inline: "end",
                 })
               }
-              className="bg-white text-primary font-semibold px-5 py-3 rounded"
+              className="text-2xl bg-white text-primary font-semibold px-5 py-3 rounded mt-2 "
             >
               {homepage.reservation_button[t]}
             </button>
@@ -288,5 +300,5 @@ export default function Homepage() {
         </div>
       </div>
     </div>
-  );
+  )
 }
