@@ -9,8 +9,8 @@ export const homepage = {
     se: "DEN BÄSTA UPPLEVELSEN",
   },
   reservation_button: {
-    en: "Make A Reservation",
-    se: "Reservera",
+    en: "Book Now",
+    se: "BOKA NU",
   },
 
   intro: {
