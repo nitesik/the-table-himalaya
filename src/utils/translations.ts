@@ -669,7 +669,7 @@ export const menu = {
         },
         description: {
           en: "Vegan Spinach vaji, lady finger, lentil, rice, salad and papadom",
-          se: "Vegansk spenat vaji,,okra, linser, ris, sallad och papadom.",
+          se: "Vegansk spenat vaji, okra, linser, ris, sallad och papadom.",
         },
         price: 220,
       },

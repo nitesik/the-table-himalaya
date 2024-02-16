@@ -52,3 +52,20 @@ textarea {
 .menu-scroll::-webkit-scrollbar-thumb {
   background-color: #26554fff;
 }
+
+
+/* Animate the border */
+/* @keyframes rotateBorder {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.rotate-border {
+  animation: rotateBorder 5s linear infinite;
+} */
+
+

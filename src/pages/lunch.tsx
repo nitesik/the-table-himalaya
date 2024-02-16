@@ -1,10 +1,10 @@
-import FridayLunch from "@/components/fridayLunch";
-import MondayLunch from "@/components/mondayLunch";
-import ThursdayLunch from "@/components/thursdayLunch";
-import TuesdayLunch from "@/components/tuesdayLunch";
-import WednesdayLunch from "@/components/wednesdayLunch";
-import Head from "next/head";
-import { useState } from "react";
+import FridayLunch from "@/components/fridayLunch"
+import MondayLunch from "@/components/mondayLunch"
+import ThursdayLunch from "@/components/thursdayLunch"
+import TuesdayLunch from "@/components/tuesdayLunch"
+import WednesdayLunch from "@/components/wednesdayLunch"
+import Head from "next/head"
+import { useState } from "react"
 
 export default function Lunch() {
   const days = [
@@ -36,10 +36,10 @@ export default function Lunch() {
       en: "Sunday",
       se: null,
     },
-  ];
+  ]
 
-  const dayIndex = new Date().getDay() === 0 ? 6 : new Date().getDay() - 1;
-  const [lunch, setLunch] = useState(days[dayIndex].en);
+  const dayIndex = new Date().getDay() === 0 ? 6 : new Date().getDay() - 1
+  const [lunch, setLunch] = useState(days[dayIndex].en)
 
   /* const [lunch, setLunch] = useState(days[new Date().getDay() - 1].en); */
 
@@ -66,7 +66,7 @@ export default function Lunch() {
               )
           )}
         </div>
-        <h3 className="font-semibold text-xl lg:text-3xl lg:leading-[50px] text-center">
+        <h3 className="animate-blinkingBg text-white font-bold text-xl lg:text-4xl lg:leading-[50px] text-center border-8 border-black p-6 bg-teal-800">
           9 VALFRIA RÄTTER VARJE DAG: MÅNDAG - FREDAG (INKL : RIS, KAFFE , HALVA
           NAAN BRÖD, LÄSK OCH SALLAD BUFFE){" "}
         </h3>
@@ -88,5 +88,5 @@ export default function Lunch() {
         </div>
       </div>
     </main>
-  );
+  )
 }
