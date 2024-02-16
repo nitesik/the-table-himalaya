@@ -18,7 +18,10 @@ import chef from "@/assets/chef.jpg";
 
 import snow from "../../public/snow.jpg";
 import oumph_korai from "../../public/oumph-korai.jpg";
-import lamb_biryani from "../../public/lamb-biryani.jpg";
+import lamb_biryani from "../../public/lamb-biryani.jpeg";
+import vindaloo from "../../public/vindaloo.jpeg"
+import palak_paneer from "../../public/palak_paneer.jpg"
+import samosa from "../../public/samosa.jpeg"
 import wallpaper2 from "../../public/wallpaper2.jpg";
 import gallery from "../../public/pris.jpg";
 import gallery2 from "../../public/gallery2.jpg";
@@ -35,6 +38,9 @@ export const galleryArray = [
   { src: lamb_biryani },
   { src: gallery10 },
   { src: snow },
+  { src: vindaloo},
+  { src: samosa},
+  { src: palak_paneer},
   { src: gallery },
   { src: gallery2 },
   { src: gallery3 },
@@ -50,8 +56,11 @@ export const icons = {
   chicken_tikka,
   mixed_grill,
   phone,
+  palak_paneer,
+  samosa,
   mail,
   grape,
+  vindaloo,
   headphones,
   speed,
   food_one,

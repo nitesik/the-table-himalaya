@@ -44,7 +44,7 @@ export const homepage = {
         en: "These dishes are roasted in a clay oven in a masala sauce with yoghurt, cheese, butter and nuts",
         se: "Dessa rätter är rostade i en lerugn i en masalasås med yoghurt, ost, smör och nötter",
       },
-      source: "/chicken-tikka.jpg",
+      source: "/samosa.jpeg",
     },
     {
       price: 125,
@@ -104,7 +104,7 @@ export const homepage = {
         en: "Indian party risotto made from lamb with a lot of good spices and saffron",
         se: "Indisk festrisotto gjord på lamm med mycket goda kryddor och saffran",
       },
-      source: "/lamb-biryani.jpg",
+      source: "/palak_paneer.jpg",
     },
   ],
 
