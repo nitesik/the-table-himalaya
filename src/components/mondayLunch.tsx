@@ -1,5 +1,5 @@
 export default function MondayLunch({ lunch }: { lunch: string }) {
-  if (lunch !== "Monday") return;
+  if (lunch !== "Monday") return
 
   return (
     <div className="w-full flex flex-col items-center">
@@ -49,7 +49,7 @@ export default function MondayLunch({ lunch }: { lunch: string }) {
             <p className="text-xl">(Poatais, ärtor och ost, MELLAN)</p>
           </div>
           <hr className="flex-1 border mx-4 hidden lg:inline border-black mt-5" />
-          <p className="text-xl lg:text-3xl font-semibold">115kr</p>
+          <p className="text-xl lg:text-3xl font-semibold">120kr</p>
         </div>
       </div>
       <h1 className="text-3xl lg:text-[40px] font-semibold mt-10 text-primary">
@@ -85,10 +85,11 @@ export default function MondayLunch({ lunch }: { lunch: string }) {
         <div className="flex justify-between items-start">
           <div className="text-start w-[80%] lg:w-auto">
             <h3 className="text-xl lg:text-3xl font-semibold text-primary">
-              7. MIX TIKKA SIZZLAR (Mellan sås)
+              7. MIX TIKKA SIZZLAR (Mild sås)
             </h3>
             <p className="text-xl">
-              (Tre olika Kryddmarinerade, chilli, vitlök, och tandoori kycklingfiléer i en mild tandoori krydda sås)
+              (Tre olika Kryddmarinerade, chilli, vitlök, och tandoori
+              kycklingfiléer i en mild tandoori krydda sås)
             </p>
           </div>
           <hr className="flex-1 border mx-4 hidden lg:inline border-black mt-5" />
@@ -97,9 +98,11 @@ export default function MondayLunch({ lunch }: { lunch: string }) {
         <div className="flex justify-between items-start">
           <div className="text-start w-[80%] lg:w-auto">
             <h3 className="text-xl lg:text-3xl font-semibold text-primary">
-              8. TRE SMÅ RÄTTER 
+              8. TRE SMÅ RÄTTER
             </h3>
-            <p className="text-xl">(Valfri tre olika små rätter från dagens lunch menyn, nr.1-4)</p>
+            <p className="text-xl">
+              (Valfri tre olika små rätter från dagens lunch menyn, nr.1-4)
+            </p>
           </div>
           <hr className="flex-1 border mx-4 hidden lg:inline border-black mt-5" />
           <p className="text-xl lg:text-3xl font-semibold">135kr</p>
@@ -119,5 +122,5 @@ export default function MondayLunch({ lunch }: { lunch: string }) {
         </div>
       </div>
     </div>
-  );
+  )
 }
