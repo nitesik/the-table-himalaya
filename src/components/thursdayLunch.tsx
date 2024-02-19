@@ -88,7 +88,7 @@ export default function ThursdayLunch({ lunch }: { lunch: string }) {
         <div className="flex justify-between items-start">
           <div className="text-start w-[80%] lg:w-auto">
             <h3 className="text-xl lg:text-3xl font-semibold text-primary">
-              7. MIX TIKKA SIZZLAR (Mild sås)
+              7. MIX TIKKA SIZZLAR ( Mellan sås)
             </h3>
             <p className="text-xl">
             Tre olika Kryddmarinerade, chilli, vitlök, och tandoori kycklingfiléer i en mild tandoori krydda sås
