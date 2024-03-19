@@ -40,6 +40,11 @@ export default function App({ Component, pageProps }: AppProps) {
     <main className="flex flex-col min-h-screen">
       <Head>
         <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4421463422364704"
+          crossOrigin="anonymous"
+        ></script>
+        <script
           dangerouslySetInnerHTML={{
             __html: `
               window.dataLayer = window.dataLayer || [];
@@ -52,6 +57,7 @@ export default function App({ Component, pageProps }: AppProps) {
             `,
           }}
         />
+        <meta name="google-adsense-account" content="ca-pub-4421463422364704" />
       </Head>
       <Script
         strategy="afterInteractive"
