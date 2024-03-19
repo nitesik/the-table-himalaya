@@ -10,6 +10,7 @@ export default function Document() {
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4421463422364704"
           crossOrigin="anonymous"
         ></Script>
+        <meta name="google-adsense-account" content="ca-pub-4421463422364704" />
       </Head>
       <body>
         <Main />
